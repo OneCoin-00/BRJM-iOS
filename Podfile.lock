@@ -1,0 +1,173 @@
+PODS:
+  - Alamofire (5.5.0)
+  - APNGKit (1.2.2)
+  - CHIPageControl (0.1.8):
+    - CHIPageControl/Aji (= 0.1.8)
+    - CHIPageControl/Aleppo (= 0.1.8)
+    - CHIPageControl/Chimayo (= 0.1.8)
+    - CHIPageControl/Fresno (= 0.1.8)
+    - CHIPageControl/Jalapeno (= 0.1.8)
+    - CHIPageControl/Jaloro (= 0.1.8)
+    - CHIPageControl/Paprika (= 0.1.8)
+    - CHIPageControl/Puya (= 0.1.8)
+  - CHIPageControl/Aji (0.1.8)
+  - CHIPageControl/Aleppo (0.1.8)
+  - CHIPageControl/Chimayo (0.1.8)
+  - CHIPageControl/Fresno (0.1.8)
+  - CHIPageControl/Jalapeno (0.1.8)
+  - CHIPageControl/Jaloro (0.1.8)
+  - CHIPageControl/Paprika (0.1.8)
+  - CHIPageControl/Puya (0.1.8)
+  - DeviceKit (4.6.1)
+  - Differentiator (4.0.1)
+  - IQKeyboardManagerSwift (6.5.0)
+  - lottie-ios (3.4.1)
+  - MaterialComponents/Availability (124.2.0)
+  - MaterialComponents/BottomSheet (124.2.0):
+    - MaterialComponents/Elevation
+    - MaterialComponents/private/KeyboardWatcher
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowElevations
+    - MaterialComponents/ShadowLayer
+    - MaterialComponents/ShapeLibrary
+    - MaterialComponents/Shapes
+  - MaterialComponents/Elevation (124.2.0):
+    - MaterialComponents/Availability
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+  - MaterialComponents/private/Application (124.2.0)
+  - MaterialComponents/private/Color (124.2.0):
+    - MaterialComponents/Availability
+  - MaterialComponents/private/KeyboardWatcher (124.2.0):
+    - MaterialComponents/private/Application
+  - MaterialComponents/private/Math (124.2.0)
+  - MaterialComponents/ShadowElevations (124.2.0)
+  - MaterialComponents/ShadowLayer (124.2.0):
+    - MaterialComponents/ShadowElevations
+  - MaterialComponents/ShapeLibrary (124.2.0):
+    - MaterialComponents/private/Math
+    - MaterialComponents/Shapes
+  - MaterialComponents/Shapes (124.2.0):
+    - MaterialComponents/private/Color
+    - MaterialComponents/private/Math
+    - MaterialComponents/ShadowLayer
+  - MaterialDesignWidgets (0.1.1)
+  - Nuke (10.7.1)
+  - PullToDismiss (2.2)
+  - ReactorKit (2.0.1):
+    - RxSwift (~> 5.0)
+  - RxAlamofire (5.7.1):
+    - RxAlamofire/Core (= 5.7.1)
+  - RxAlamofire/Core (5.7.1):
+    - Alamofire (~> 5.4)
+    - RxSwift (~> 5.1)
+  - RxCocoa (5.1.3):
+    - RxRelay (~> 5)
+    - RxSwift (~> 5)
+  - RxDataSources (4.0.1):
+    - Differentiator (~> 4.0)
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxGesture (3.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxKeyboard (1.0.0):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxOptional (4.0.0):
+    - RxCocoa (~> 5)
+    - RxSwift (~> 5)
+  - RxRelay (5.1.3):
+    - RxSwift (~> 5)
+  - RxRetroSwift (3.0.1):
+    - RxCocoa (~> 5.0)
+    - RxSwift (~> 5.0)
+  - RxSwift (5.1.3)
+  - SwiftyJSON (5.0.1)
+  - SwiftyUserDefaults (5.3.0)
+  - TweeTextField (1.6.4)
+  - ViewPager-Swift (2.0.1)
+
+DEPENDENCIES:
+  - Alamofire (~> 5.2)
+  - APNGKit (~> 1.0)
+  - CHIPageControl (~> 0.1.3)
+  - DeviceKit (~> 4.0)
+  - IQKeyboardManagerSwift (= 6.5.0)
+  - lottie-ios
+  - MaterialComponents/BottomSheet
+  - MaterialDesignWidgets
+  - Nuke (~> 10.0)
+  - PullToDismiss (~> 2.2)
+  - ReactorKit (= 2.0.1)
+  - RxAlamofire (~> 5)
+  - RxCocoa (~> 5)
+  - RxDataSources (= 4.0.1)
+  - RxGesture (= 3.0.0)
+  - RxKeyboard (= 1.0.0)
+  - RxOptional (= 4.0.0)
+  - RxRetroSwift
+  - RxSwift (~> 5)
+  - SwiftyJSON
+  - SwiftyUserDefaults (~> 5.0)
+  - TweeTextField
+  - ViewPager-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - APNGKit
+    - CHIPageControl
+    - DeviceKit
+    - Differentiator
+    - IQKeyboardManagerSwift
+    - lottie-ios
+    - MaterialComponents
+    - MaterialDesignWidgets
+    - Nuke
+    - PullToDismiss
+    - ReactorKit
+    - RxAlamofire
+    - RxCocoa
+    - RxDataSources
+    - RxGesture
+    - RxKeyboard
+    - RxOptional
+    - RxRelay
+    - RxRetroSwift
+    - RxSwift
+    - SwiftyJSON
+    - SwiftyUserDefaults
+    - TweeTextField
+    - ViewPager-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  APNGKit: 939475205746e11a212c265f39dbb9dca70011e8
+  CHIPageControl: 76b35c8309d8dd155e869c109cc6ffc0aaa465ff
+  DeviceKit: 316f28290430467278b8a0d1c895968efa9e16e2
+  Differentiator: 886080237d9f87f322641dedbc5be257061b0602
+  IQKeyboardManagerSwift: 6cd19976c6e871907c4ed9127c2d3affdd4defc2
+  lottie-ios: 016449b5d8be0c3dcbcfa0a9988469999cd04c5d
+  MaterialComponents: 1a9b2d9d45b1601ae544de85089adc4c464306d4
+  MaterialDesignWidgets: 6d02d3fbba2fa89f6e773983346ad2187d7ef8ff
+  Nuke: 279f17a599fd1c83cf51de5e0e1f2db143a287b0
+  PullToDismiss: 033572b7152fbf68db0407db882d546312813837
+  ReactorKit: a63c5e11e0fd32d59d672e54178b0ed2876b764b
+  RxAlamofire: 8e144c62dcc01d68dcb366bfc542eb6dd46bab78
+  RxCocoa: e2ed092d5432e4296aa818021d27de4090ac0354
+  RxDataSources: efee07fa4de48477eca0a4611e6d11e2da9c1114
+  RxGesture: 0cd8e37ff9a266e1c31f46bcaed6de1c536bc81e
+  RxKeyboard: 6683c4344304a00f943c158bd8a43ce5469c82a7
+  RxOptional: 9904e2219d59260c3c171273d475b2126de187e8
+  RxRelay: 5a18c2eb2d68326ebaf0112f80d837ae41b92b97
+  RxRetroSwift: 72a2686f5a4b421a03ef2b0fb2a91ce8a793fba9
+  RxSwift: 915abbdfb62214aa89ccd0b194d44fb478019b27
+  SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
+  SwiftyUserDefaults: 63f80248cf5bfb3458825d9a78f2eb7e1293a040
+  TweeTextField: 726de695eead9784f7ed02e22f6944bfcfcca07a
+  ViewPager-Swift: 7d83f5d4888a0fa808c08c8405ba84e603a2eb58
+
+PODFILE CHECKSUM: a8e2201f6b008c3e41c295feabe42b0639258c13
+
+COCOAPODS: 1.11.3

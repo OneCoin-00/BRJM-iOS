@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="e8j-Z9-ywI">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="samsung-sharpsans-bold.otf">
+            <string>SamsungSharpSans-Bold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Cover View Controller-->
+        <scene sceneID="mRN-ER-Wlx">
+            <objects>
+                <viewController storyboardIdentifier="CoverViewController" id="qtc-Tq-2a1" customClass="CoverViewController" customModule="infovine_waiting" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V6K-4H-GWl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="mhO-qp-pYJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="clD-wJ-ljK"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Afa-KE-uro" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="884.05797101449286" y="93.75"/>
+        </scene>
+        <!--Cover Navigation Controller-->
+        <scene sceneID="oOd-VY-DpC">
+            <objects>
+                <navigationController storyboardIdentifier="CoverNavigationController" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="e8j-Z9-ywI" customClass="CoverNavigationController" customModule="infovine_waiting" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="owy-IO-5KV">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="qtc-Tq-2a1" kind="relationship" relationship="rootViewController" id="KsQ-8J-0Va"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="knG-GG-rCk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-26.086956521739133" y="93.75"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="2Qh-Rn-AsV">
+            <objects>
+                <viewController id="Vm1-yi-Fe8" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="I5D-it-WcU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cover" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XIt-wI-gwS">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                <fontDescription key="fontDescription" name="SamsungSharpSans-Bold" family="Samsung Sharp Sans" pointSize="25"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="gta-Zo-67l"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="XIt-wI-gwS" firstAttribute="leading" secondItem="gta-Zo-67l" secondAttribute="leading" id="T7y-pO-shk"/>
+                            <constraint firstItem="gta-Zo-67l" firstAttribute="trailing" secondItem="XIt-wI-gwS" secondAttribute="trailing" id="bzR-PW-uYg"/>
+                            <constraint firstItem="gta-Zo-67l" firstAttribute="bottom" secondItem="XIt-wI-gwS" secondAttribute="bottom" id="caT-Ih-kQL"/>
+                            <constraint firstItem="XIt-wI-gwS" firstAttribute="top" secondItem="I5D-it-WcU" secondAttribute="top" id="gfg-A6-QAI"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="414" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="u2e-Rk-htP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-686" y="-173"/>
+        </scene>
+    </scenes>
+</document>

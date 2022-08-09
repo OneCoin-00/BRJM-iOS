@@ -1,0 +1,15 @@
+// #공통
+"confirm" = "확인";
+"cancel" = "취소";
+"close" = "닫기";
+"finish" = "종료";
+"next" = "다음";
+"yes" = "네";
+"no" = "아니오";
+"modify" = "수정";
+"previous" = "이전";
+"complete" = "완료";
+"delete" = "삭제";
+"retry" = "재시도";
+"save" = "저장";
+"refresh" = "새로고침";

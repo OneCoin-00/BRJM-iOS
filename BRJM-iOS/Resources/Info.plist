@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSAppTransportSecurity</key>
+	<dict>
+		<key>NSAllowsArbitraryLoads</key>
+		<true/>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>LeferiBaseBold.otf</string>
+		<string>LeferiBaseRegular.otf</string>
+		<string>LeferiPointBlack.otf</string>
+		<string>LeferiPointBlackOblique.otf</string>
+		<string>LeferiPointSpecial.otf</string>
+		<string>LeferiPointSpecialItalic.otf</string>
+		<string>LeferiPointWhite.otf</string>
+		<string>LeferiPointWhiteOblique.otf</string>
+	</array>
+</dict>
+</plist>
