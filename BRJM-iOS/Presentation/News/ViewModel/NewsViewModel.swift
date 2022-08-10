@@ -2,15 +2,15 @@ import Foundation
 
 
 /**
- - Note: 홈 뷰 모델
+ - Note: 환경 소식 뷰 모델
  */
-class HomeViewModel: NSObject {
+class NewsViewModel: NSObject {
     
-    typealias ResponseCallback = (_ response: BaseModel) -> Void
+    typealias ResponseCallback = (_ response: NewsModel) -> Void
     public var _callback: ResponseCallback?
 }
 
-extension HomeViewModel {
+extension NewsViewModel {
     
     public func requestCompletion(callBack: @escaping ResponseCallback) {
         _callback = callBack

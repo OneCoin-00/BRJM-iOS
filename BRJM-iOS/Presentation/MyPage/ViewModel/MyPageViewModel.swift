@@ -2,15 +2,15 @@ import Foundation
 
 
 /**
- - Note: 홈 뷰 모델
+ - Note: 마이페이지 뷰 모델
  */
-class HomeViewModel: NSObject {
+class MyPageViewModel: NSObject {
     
-    typealias ResponseCallback = (_ response: BaseModel) -> Void
+    typealias ResponseCallback = (_ response: MyPageModel) -> Void
     public var _callback: ResponseCallback?
 }
 
-extension HomeViewModel {
+extension MyPageViewModel {
     
     public func requestCompletion(callBack: @escaping ResponseCallback) {
         _callback = callBack

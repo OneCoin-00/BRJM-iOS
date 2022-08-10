@@ -113,7 +113,6 @@ extension UILabel {
     
     /// ------------------------------------------------------------
     /// Typography
-    /** 파라미터 값 추후 변경 */
     /**
      - note: 대제목
      - parameters:
@@ -127,42 +126,49 @@ extension UILabel {
     /**
      - note: 소제목
      - parameters:
+        - type: 폰트 굵기 - bord or reqular
      */
-    func subheading(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize) {
-        self.font = UIFont.leferiBase(type, size: size)
+    func subheading(type: UIFont.LeferiBaseType) {
+        self.font = UIFont.leferiBase(type, size: 20)
         self.setLineSpacing(lineSpacing: 30)
     }
     
     /**
      - note: 본문  제목
      - parameters:
-        - type: 폰트 굵기
-        - size: 폰트 크기 - 17 or 16
+        - type: 폰트 굵기 - bord or reqular
      */
-    func bodyText(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize) {
-        self.font = UIFont.leferiBase(type, size: size)
+    func bodyTitle(type: UIFont.LeferiBaseType) {
+        self.font = UIFont.leferiBase(type, size: 18)
         self.setLineSpacing(lineSpacing: 24)
     }
     
     /**
      - note: 본문  내용
      - parameters:
-        - type: 폰트 굵기 - semibord or reqular
+        - type: 폰트 굵기 - bord or reqular
      */
     func bodyText(type: UIFont.LeferiBaseType) {
-        self.font = UIFont.leferiBase(type, size: 15)
+        self.font = UIFont.leferiBase(type, size: 16)
+        self.setLineSpacing(lineSpacing: 24)
+    }
+    
+    /**
+     - note: 버튼
+     */
+    func buttonText(type: UIFont.LeferiBaseType) {
+        self.font = UIFont.leferiBase(.bold, size: 14)
         self.setLineSpacing(lineSpacing: 24)
     }
     
     /**
      - note: 알림 및 작은 텍스트
      - parameters:
-        - type: 폰트 굵기 - semibord or reqular
-        - size: 폰트 크기 - 14 or 12
-        - lineSpacing: 폰트 행간 - 22 or 16
+        - type: 폰트 굵기 - bord or reqular
+        - size: 폰트 크기 - 14 or 12 or 10
      */
-    func smallLetters(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize, lineSpacing: Double) {
+    func smallLetters(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize) {
         self.font = UIFont.leferiBase(type, size: size)
-        self.setLineSpacing(lineSpacing: lineSpacing)
+        self.setLineSpacing(lineSpacing: 24)
     }
 }
