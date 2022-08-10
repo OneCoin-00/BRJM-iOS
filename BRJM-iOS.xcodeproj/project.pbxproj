@@ -120,6 +120,8 @@
 		55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F6F28A3A0B8001B7113 /* MemberScreen.storyboard */; };
 		55441F7228A3A168001B7113 /* MemberNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7128A3A168001B7113 /* MemberNavigationController.swift */; };
 		55441F7428A3A2B7001B7113 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7328A3A2B7001B7113 /* MemberViewController.swift */; };
+		55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */; };
+		55441F7828A3B2EE001B7113 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7728A3B2EE001B7113 /* PasswordViewController.swift */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -249,6 +251,8 @@
 		55441F6F28A3A0B8001B7113 /* MemberScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemberScreen.storyboard; sourceTree = "<group>"; };
 		55441F7128A3A168001B7113 /* MemberNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberNavigationController.swift; sourceTree = "<group>"; };
 		55441F7328A3A2B7001B7113 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
+		55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEmailViewController.swift; sourceTree = "<group>"; };
+		55441F7728A3B2EE001B7113 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		719AF713B3DFB44C6C15EBFB /* Pods-BRJM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.release.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRJM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45322179C542CC362FFDD98 /* Pods-BRJM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -698,6 +702,8 @@
 				55441F6F28A3A0B8001B7113 /* MemberScreen.storyboard */,
 				55441F7128A3A168001B7113 /* MemberNavigationController.swift */,
 				55441F7328A3A2B7001B7113 /* MemberViewController.swift */,
+				55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */,
+				55441F7728A3B2EE001B7113 /* PasswordViewController.swift */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -868,6 +874,7 @@
 				145A94CA285891120082D8ED /* CoverViewModel.swift in Sources */,
 				145A94D0285891120082D8ED /* CommonRequest.swift in Sources */,
 				55441F5628A38BED001B7113 /* WriteViewModel.swift in Sources */,
+				55441F7828A3B2EE001B7113 /* PasswordViewController.swift in Sources */,
 				145A94D7285891120082D8ED /* UICollectionView+Reusable.swift in Sources */,
 				55441F5E28A38C72001B7113 /* WriteModel.swift in Sources */,
 				145A9499285891120082D8ED /* anim.swift in Sources */,
@@ -937,6 +944,7 @@
 				145A94A4285891120082D8ED /* UnpopStack.swift in Sources */,
 				55441F6228A38C87001B7113 /* MyPageModel.swift in Sources */,
 				145A949D285891120082D8ED /* Ease.swift in Sources */,
+				55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */,
 				55441F6428A39A8E001B7113 /* TweeTextField.swift in Sources */,
 				145A94AB285891120082D8ED /* EZNavigationController.swift in Sources */,
 				55441F4028A38906001B7113 /* NewsViewController.swift in Sources */,
@@ -1108,7 +1116,7 @@
 				INFOPLIST_FILE = "BRJM-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = CoverScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = MemberScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
@@ -1138,7 +1146,7 @@
 				INFOPLIST_FILE = "BRJM-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = CoverScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = MemberScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
