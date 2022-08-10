@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.5.0)
+  - Alamofire (5.6.2)
   - APNGKit (1.2.2)
   - CHIPageControl (0.1.8):
     - CHIPageControl/Aji (= 0.1.8)
@@ -114,7 +114,7 @@ DEPENDENCIES:
   - ViewPager-Swift
 
 SPEC REPOS:
-  trunk:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - APNGKit
     - CHIPageControl
@@ -142,7 +142,7 @@ SPEC REPOS:
     - ViewPager-Swift
 
 SPEC CHECKSUMS:
-  Alamofire: 1c4fb5369c3fe93d2857c780d8bbe09f06f97e7c
+  Alamofire: d368e1ff8a298e6dde360e35a3e68e6c610e7204
   APNGKit: 939475205746e11a212c265f39dbb9dca70011e8
   CHIPageControl: 76b35c8309d8dd155e869c109cc6ffc0aaa465ff
   DeviceKit: 316f28290430467278b8a0d1c895968efa9e16e2
@@ -168,6 +168,6 @@ SPEC CHECKSUMS:
   TweeTextField: 726de695eead9784f7ed02e22f6944bfcfcca07a
   ViewPager-Swift: 7d83f5d4888a0fa808c08c8405ba84e603a2eb58
 
-PODFILE CHECKSUM: a8e2201f6b008c3e41c295feabe42b0639258c13
+PODFILE CHECKSUM: ff37c521efa2cd3efe163cd4c419980bd7c957cf
 
 COCOAPODS: 1.11.3
