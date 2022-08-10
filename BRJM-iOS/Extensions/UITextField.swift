@@ -87,6 +87,27 @@ extension UITextField {
     @objc func clear(sender: AnyObject) {
         self.text = ""
     }
+    
+    /**
+     - note: 폰트 적용
+     */
+    func setFont() {
+        self.textColor = .black
+        self.font = UIFont.leferiBase(.regular, size: 18)
+    }
+    
+    func setFont(_ type: UIFont.LeferiBaseType) {
+        self.textColor = .black
+        self.font = UIFont.leferiBase(type, size: 18)
+    }
+    
+    func setPlaceholder(text: String) {
+        self.attributedPlaceholder = NSAttributedString(string: text, attributes: [NSAttributedString.Key.foregroundColor : BaseConstraint.COLOR_GRAY_30])
+    }
+    
+    func setPlaceholder(_ type: UIFont.LeferiBaseType, text: String) {
+        self.attributedPlaceholder = NSAttributedString(string: text, attributes: [NSAttributedString.Key.foregroundColor : BaseConstraint.COLOR_GRAY_30, NSAttributedString.Key.font : UIFont.leferiBase(type, size: 18)])
+    }
 }
 
 class UITextFieldPadding : UITextField {
