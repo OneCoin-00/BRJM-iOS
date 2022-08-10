@@ -105,10 +105,6 @@
 		55441F3E28A388F1001B7113 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F3D28A388F1001B7113 /* WriteViewController.swift */; };
 		55441F4028A38906001B7113 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F3F28A38906001B7113 /* NewsViewController.swift */; };
 		55441F4228A38918001B7113 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F4128A38918001B7113 /* MyPageViewController.swift */; };
-		55441F4428A38950001B7113 /* BoardNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F4328A38950001B7113 /* BoardNavigationController.swift */; };
-		55441F4628A38967001B7113 /* WriteNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F4528A38967001B7113 /* WriteNavigationController.swift */; };
-		55441F4828A38978001B7113 /* NewsNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F4728A38978001B7113 /* NewsNavigationController.swift */; };
-		55441F4A28A3898D001B7113 /* MyPageNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F4928A3898D001B7113 /* MyPageNavigationController.swift */; };
 		55441F5428A38BE2001B7113 /* BoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F5328A38BE2001B7113 /* BoardViewModel.swift */; };
 		55441F5628A38BED001B7113 /* WriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F5528A38BED001B7113 /* WriteViewModel.swift */; };
 		55441F5828A38BF6001B7113 /* NewsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F5728A38BF6001B7113 /* NewsViewModel.swift */; };
@@ -117,6 +113,13 @@
 		55441F5E28A38C72001B7113 /* WriteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F5D28A38C72001B7113 /* WriteModel.swift */; };
 		55441F6028A38C7A001B7113 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F5F28A38C7A001B7113 /* NewsModel.swift */; };
 		55441F6228A38C87001B7113 /* MyPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F6128A38C86001B7113 /* MyPageModel.swift */; };
+		55441F6428A39A8E001B7113 /* TweeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F6328A39A8E001B7113 /* TweeTextField.swift */; };
+		55441F6628A39B63001B7113 /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F6528A39B63001B7113 /* BaseButton.swift */; };
+		55441F6C28A3A037001B7113 /* MemberModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F6B28A3A037001B7113 /* MemberModel.swift */; };
+		55441F6E28A3A05D001B7113 /* MemberViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F6D28A3A05D001B7113 /* MemberViewModel.swift */; };
+		55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F6F28A3A0B8001B7113 /* MemberScreen.storyboard */; };
+		55441F7228A3A168001B7113 /* MemberNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7128A3A168001B7113 /* MemberNavigationController.swift */; };
+		55441F7428A3A2B7001B7113 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7328A3A2B7001B7113 /* MemberViewController.swift */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -231,10 +234,6 @@
 		55441F3D28A388F1001B7113 /* WriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		55441F3F28A38906001B7113 /* NewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
 		55441F4128A38918001B7113 /* MyPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
-		55441F4328A38950001B7113 /* BoardNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardNavigationController.swift; sourceTree = "<group>"; };
-		55441F4528A38967001B7113 /* WriteNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteNavigationController.swift; sourceTree = "<group>"; };
-		55441F4728A38978001B7113 /* NewsNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsNavigationController.swift; sourceTree = "<group>"; };
-		55441F4928A3898D001B7113 /* MyPageNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageNavigationController.swift; sourceTree = "<group>"; };
 		55441F5328A38BE2001B7113 /* BoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardViewModel.swift; sourceTree = "<group>"; };
 		55441F5528A38BED001B7113 /* WriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteViewModel.swift; sourceTree = "<group>"; };
 		55441F5728A38BF6001B7113 /* NewsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsViewModel.swift; sourceTree = "<group>"; };
@@ -243,6 +242,13 @@
 		55441F5D28A38C72001B7113 /* WriteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteModel.swift; sourceTree = "<group>"; };
 		55441F5F28A38C7A001B7113 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		55441F6128A38C86001B7113 /* MyPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPageModel.swift; sourceTree = "<group>"; };
+		55441F6328A39A8E001B7113 /* TweeTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweeTextField.swift; sourceTree = "<group>"; };
+		55441F6528A39B63001B7113 /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		55441F6B28A3A037001B7113 /* MemberModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberModel.swift; sourceTree = "<group>"; };
+		55441F6D28A3A05D001B7113 /* MemberViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewModel.swift; sourceTree = "<group>"; };
+		55441F6F28A3A0B8001B7113 /* MemberScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemberScreen.storyboard; sourceTree = "<group>"; };
+		55441F7128A3A168001B7113 /* MemberNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberNavigationController.swift; sourceTree = "<group>"; };
+		55441F7328A3A2B7001B7113 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		719AF713B3DFB44C6C15EBFB /* Pods-BRJM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.release.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRJM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45322179C542CC362FFDD98 /* Pods-BRJM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -324,6 +330,8 @@
 				145A942C285891120082D8ED /* Animation */,
 				145A9436285891120082D8ED /* ImagePicker.swift */,
 				145A9448285891120082D8ED /* LabelWithPadding.swift */,
+				55441F6328A39A8E001B7113 /* TweeTextField.swift */,
+				55441F6528A39B63001B7113 /* BaseButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -416,6 +424,7 @@
 				145A9465285891120082D8ED /* Base */,
 				145A9461285891120082D8ED /* Common-Popup */,
 				145A9469285891120082D8ED /* Cover */,
+				55441F6828A39F3A001B7113 /* Member */,
 				145A9459285891120082D8ED /* Home */,
 				55441F2628A387AD001B7113 /* Board */,
 				55441F2A28A387F1001B7113 /* Write */,
@@ -466,9 +475,9 @@
 		145A9465285891120082D8ED /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				145A9468285891120082D8ED /* BaseConstraint.swift */,
 				145A9466285891120082D8ED /* BaseViewController.swift */,
 				145A9467285891120082D8ED /* UINavigationController+Extension.swift */,
-				145A9468285891120082D8ED /* BaseConstraint.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -579,7 +588,6 @@
 				55441F2728A387C5001B7113 /* Model */,
 				55441F2828A387CE001B7113 /* ViewModel */,
 				55441F3328A388A0001B7113 /* BoardScreen.storyboard */,
-				55441F4328A38950001B7113 /* BoardNavigationController.swift */,
 				55441F3B28A388DD001B7113 /* BoardViewController.swift */,
 			);
 			path = Board;
@@ -607,7 +615,6 @@
 				55441F2D28A38833001B7113 /* Model */,
 				55441F3028A38844001B7113 /* ViewModel */,
 				55441F3528A388AE001B7113 /* WriteScreen.storyboard */,
-				55441F4528A38967001B7113 /* WriteNavigationController.swift */,
 				55441F3D28A388F1001B7113 /* WriteViewController.swift */,
 			);
 			path = Write;
@@ -619,7 +626,6 @@
 				55441F2E28A38839001B7113 /* Model */,
 				55441F3128A38847001B7113 /* ViewModel */,
 				55441F3728A388B8001B7113 /* NewsScreen.storyboard */,
-				55441F4728A38978001B7113 /* NewsNavigationController.swift */,
 				55441F3F28A38906001B7113 /* NewsViewController.swift */,
 			);
 			path = News;
@@ -631,7 +637,6 @@
 				55441F2F28A3883C001B7113 /* Model */,
 				55441F3228A3884A001B7113 /* ViewModel */,
 				55441F3928A388C1001B7113 /* MyPageScreen.storyboard */,
-				55441F4928A3898D001B7113 /* MyPageNavigationController.swift */,
 				55441F4128A38918001B7113 /* MyPageViewController.swift */,
 			);
 			path = MyPage;
@@ -681,6 +686,34 @@
 			isa = PBXGroup;
 			children = (
 				55441F5928A38C01001B7113 /* MyPageViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		55441F6828A39F3A001B7113 /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				55441F6928A3A015001B7113 /* Model */,
+				55441F6A28A3A020001B7113 /* ViewModel */,
+				55441F6F28A3A0B8001B7113 /* MemberScreen.storyboard */,
+				55441F7128A3A168001B7113 /* MemberNavigationController.swift */,
+				55441F7328A3A2B7001B7113 /* MemberViewController.swift */,
+			);
+			path = Member;
+			sourceTree = "<group>";
+		};
+		55441F6928A3A015001B7113 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				55441F6B28A3A037001B7113 /* MemberModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		55441F6A28A3A020001B7113 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				55441F6D28A3A05D001B7113 /* MemberViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -767,6 +800,7 @@
 			files = (
 				55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */,
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
+				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
 				145A94C2285891120082D8ED /* HomeScreen.storyboard in Resources */,
 				14596DB1285892EE004A5CCF /* loading.json in Resources */,
 				14596DB0285892EE004A5CCF /* Assets.xcassets in Resources */,
@@ -832,7 +866,6 @@
 				145A94D8285891120082D8ED /* UIApplication+Extensions.swift in Sources */,
 				145A949A285891120082D8ED /* Animator.swift in Sources */,
 				145A94CA285891120082D8ED /* CoverViewModel.swift in Sources */,
-				55441F4828A38978001B7113 /* NewsNavigationController.swift in Sources */,
 				145A94D0285891120082D8ED /* CommonRequest.swift in Sources */,
 				55441F5628A38BED001B7113 /* WriteViewModel.swift in Sources */,
 				145A94D7285891120082D8ED /* UICollectionView+Reusable.swift in Sources */,
@@ -841,6 +874,7 @@
 				55441F3E28A388F1001B7113 /* WriteViewController.swift in Sources */,
 				145A94C8285891120082D8ED /* UINavigationController+Extension.swift in Sources */,
 				145A949F285891120082D8ED /* Constraint.swift in Sources */,
+				55441F7428A3A2B7001B7113 /* MemberViewController.swift in Sources */,
 				145A94A8285891120082D8ED /* EZNavigationConfiguration.swift in Sources */,
 				145A94D1285891120082D8ED /* NetworkDefine.swift in Sources */,
 				145A94A0285891120082D8ED /* ImagePicker.swift in Sources */,
@@ -849,7 +883,6 @@
 				145A94A6285891120082D8ED /* UINavigationController+SwizzledPushAndPop.swift in Sources */,
 				145A94B0285891120082D8ED /* UINavigationController+EZCustomTransitions.swift in Sources */,
 				145A94B3285891120082D8ED /* Session.swift in Sources */,
-				55441F4628A38967001B7113 /* WriteNavigationController.swift in Sources */,
 				145A94B9285891120082D8ED /* RxUtils.swift in Sources */,
 				145A9490285891120082D8ED /* BottomPopupViewController.swift in Sources */,
 				145A9495285891120082D8ED /* BottomPopupTransitionHandler.swift in Sources */,
@@ -887,37 +920,40 @@
 				145A94A2285891120082D8ED /* EZPushPopAnimator.swift in Sources */,
 				145A94AC285891120082D8ED /* EZDebouncer.swift in Sources */,
 				55441F5A28A38C01001B7113 /* MyPageViewModel.swift in Sources */,
+				55441F7228A3A168001B7113 /* MemberNavigationController.swift in Sources */,
 				145A94B4285891120082D8ED /* DateUtils.swift in Sources */,
 				55441F5C28A38C62001B7113 /* BoardModel.swift in Sources */,
 				145A94D5285891120082D8ED /* BaseModel.swift in Sources */,
 				145A94D4285891120082D8ED /* FileModel.swift in Sources */,
 				145A949C285891120082D8ED /* Promise.swift in Sources */,
 				145A94C5285891120082D8ED /* ConfirmPopupView.swift in Sources */,
+				55441F6C28A3A037001B7113 /* MemberModel.swift in Sources */,
 				55441F6028A38C7A001B7113 /* NewsModel.swift in Sources */,
 				145A94C6285891120082D8ED /* AlertPopupView.swift in Sources */,
 				145A94B8285891120082D8ED /* DialogUtils.swift in Sources */,
-				55441F4A28A3898D001B7113 /* MyPageNavigationController.swift in Sources */,
 				145A949E285891120082D8ED /* AnimatorType.swift in Sources */,
 				145A9492285891120082D8ED /* BottomPopupNavigationController.swift in Sources */,
 				145A94E3285891120082D8ED /* UILabel.swift in Sources */,
 				145A94A4285891120082D8ED /* UnpopStack.swift in Sources */,
 				55441F6228A38C87001B7113 /* MyPageModel.swift in Sources */,
 				145A949D285891120082D8ED /* Ease.swift in Sources */,
+				55441F6428A39A8E001B7113 /* TweeTextField.swift in Sources */,
 				145A94AB285891120082D8ED /* EZNavigationController.swift in Sources */,
 				55441F4028A38906001B7113 /* NewsViewController.swift in Sources */,
 				145A94BD285891120082D8ED /* AppAppearance.swift in Sources */,
 				145A94C0285891120082D8ED /* HomeViewController.swift in Sources */,
 				145A9491285891120082D8ED /* BottomPopupDismissInteractionController.swift in Sources */,
 				145A9494285891120082D8ED /* BottomPopupPresentAnimator.swift in Sources */,
-				55441F4428A38950001B7113 /* BoardNavigationController.swift in Sources */,
 				145A94B7285891120082D8ED /* SLoader.swift in Sources */,
 				145A94DE285891120082D8ED /* UIButton.swift in Sources */,
 				145A94D9285891120082D8ED /* Reusable.swift in Sources */,
 				145A94DC285891120082D8ED /* UITextField.swift in Sources */,
+				55441F6628A39B63001B7113 /* BaseButton.swift in Sources */,
 				145A94A3285891120082D8ED /* EZTransitionCoordinator.swift in Sources */,
 				145A94E4285891120082D8ED /* UINavigationController.swift in Sources */,
 				145A948E285891120082D8ED /* BottomPopupUtils.swift in Sources */,
 				145A94E0285891120082D8ED /* UIWindow.swift in Sources */,
+				55441F6E28A3A05D001B7113 /* MemberViewModel.swift in Sources */,
 				145A94A5285891120082D8ED /* EZSafeTimer.swift in Sources */,
 				145A94A1285891120082D8ED /* EZNavigationControllerTransitionHelper.swift in Sources */,
 				55441F3C28A388DD001B7113 /* BoardViewController.swift in Sources */,

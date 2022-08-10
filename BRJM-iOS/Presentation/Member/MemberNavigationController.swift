@@ -1,7 +1,7 @@
 import UIKit
 
 
-class BoardNavigationController: UINavigationController {
+class MemberNavigationController: EZNavigationController {
 
     /** Style */
     override var shouldAutorotate : Bool {
@@ -52,4 +52,5 @@ class BoardNavigationController: UINavigationController {
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
     }
+
 }

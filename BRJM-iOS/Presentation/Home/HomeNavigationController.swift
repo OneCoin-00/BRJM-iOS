@@ -1,7 +1,7 @@
 import UIKit
 
 
-class HomeNavigationController: UINavigationController {
+class HomeNavigationController: EZNavigationController {
 
     /** Style */
     override var shouldAutorotate : Bool {
