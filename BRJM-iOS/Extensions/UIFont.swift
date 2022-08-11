@@ -36,11 +36,12 @@ extension UIFont {
     
     
     static func leferiBase(_ type: LeferiBaseType = .regular, size: CGFloat = UIFont.systemFontSize) -> UIFont {
-        return UIFont(name: "LeferiBase\(type.rawValue)", size: size)!
+        return UIFont(name: "LeferiBase-\(type.rawValue)", size: size) ?? UIFont.systemFont(ofSize: size)
+
     }
     
     static func leferiPoint(_ type: LeferiPointType = .white, size: CGFloat = UIFont.systemFontSize) -> UIFont {
-        return UIFont(name: "LeferiPoint\(type.rawValue)", size: size)!
+        return UIFont(name: "LeferiPoint-\(type.rawValue)", size: size)!
     }
     
     var isBold: Bool {
