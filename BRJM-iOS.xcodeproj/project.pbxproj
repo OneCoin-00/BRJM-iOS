@@ -97,6 +97,14 @@
 		145A94E2285891120082D8ED /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A948A285891120082D8ED /* UIFont.swift */; };
 		145A94E3285891120082D8ED /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A948B285891120082D8ED /* UILabel.swift */; };
 		145A94E4285891120082D8ED /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A948C285891120082D8ED /* UINavigationController.swift */; };
+		55259CE028A4EB1500B89159 /* LeferiPoint-White.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CD828A4EB1500B89159 /* LeferiPoint-White.otf */; };
+		55259CE128A4EB1500B89159 /* LeferiPoint-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CD928A4EB1500B89159 /* LeferiPoint-Black.otf */; };
+		55259CE228A4EB1500B89159 /* LeferiBase-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDA28A4EB1500B89159 /* LeferiBase-Regular.otf */; };
+		55259CE328A4EB1500B89159 /* LeferiBase-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDB28A4EB1500B89159 /* LeferiBase-Bold.otf */; };
+		55259CE428A4EB1500B89159 /* LeferiPoint-SpecialItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDC28A4EB1500B89159 /* LeferiPoint-SpecialItalic.otf */; };
+		55259CE528A4EB1500B89159 /* LeferiPoint-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */; };
+		55259CE628A4EB1500B89159 /* LeferiPoint-Special.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */; };
+		55259CE728A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */; };
 		55441F3428A388A0001B7113 /* BoardScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F3328A388A0001B7113 /* BoardScreen.storyboard */; };
 		55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F3528A388AE001B7113 /* WriteScreen.storyboard */; };
 		55441F3828A388B8001B7113 /* NewsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F3728A388B8001B7113 /* NewsScreen.storyboard */; };
@@ -123,14 +131,6 @@
 		55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */; };
 		55441F7828A3B2EE001B7113 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7728A3B2EE001B7113 /* PasswordViewController.swift */; };
 		55EFB9F928A4A9840022F8AD /* ValidateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */; };
-		55EFB9FA28A4ADD30022F8AD /* LeferiBase-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59128A3712500AF842C /* LeferiBase-Bold.otf */; };
-		55EFB9FB28A4ADD60022F8AD /* LeferiBase-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59228A3712500AF842C /* LeferiBase-Regular.otf */; };
-		55EFB9FC28A4ADD80022F8AD /* LeferiPoint-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59428A3712500AF842C /* LeferiPoint-Black.otf */; };
-		55EFB9FD28A4ADDB0022F8AD /* LeferiPoint-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59528A3712500AF842C /* LeferiPoint-BlackOblique.otf */; };
-		55EFB9FE28A4ADDD0022F8AD /* LeferiPoint-Special.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59728A3712500AF842C /* LeferiPoint-Special.otf */; };
-		55EFB9FF28A4ADE00022F8AD /* LeferiPoint-SpecialItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59628A3712500AF842C /* LeferiPoint-SpecialItalic.otf */; };
-		55EFBA0028A4ADE30022F8AD /* LeferiPoint-White.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59328A3712500AF842C /* LeferiPoint-White.otf */; };
-		55EFBA0128A4ADE60022F8AD /* LeferiPoint-WhiteOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59828A3712500AF842C /* LeferiPoint-WhiteOblique.otf */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -229,14 +229,14 @@
 		145A948B285891120082D8ED /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		145A948C285891120082D8ED /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		1AEA7D3DAF5098428EF5605C /* Pods-DKMM_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKMM_iOS.release.xcconfig"; path = "Target Support Files/Pods-DKMM_iOS/Pods-DKMM_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		5517C59128A3712500AF842C /* LeferiBase-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Bold.otf"; sourceTree = "<group>"; };
-		5517C59228A3712500AF842C /* LeferiBase-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Regular.otf"; sourceTree = "<group>"; };
-		5517C59328A3712500AF842C /* LeferiPoint-White.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-White.otf"; sourceTree = "<group>"; };
-		5517C59428A3712500AF842C /* LeferiPoint-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Black.otf"; sourceTree = "<group>"; };
-		5517C59528A3712500AF842C /* LeferiPoint-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-BlackOblique.otf"; sourceTree = "<group>"; };
-		5517C59628A3712500AF842C /* LeferiPoint-SpecialItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-SpecialItalic.otf"; sourceTree = "<group>"; };
-		5517C59728A3712500AF842C /* LeferiPoint-Special.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Special.otf"; sourceTree = "<group>"; };
-		5517C59828A3712500AF842C /* LeferiPoint-WhiteOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-WhiteOblique.otf"; sourceTree = "<group>"; };
+		55259CD828A4EB1500B89159 /* LeferiPoint-White.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-White.otf"; sourceTree = "<group>"; };
+		55259CD928A4EB1500B89159 /* LeferiPoint-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Black.otf"; sourceTree = "<group>"; };
+		55259CDA28A4EB1500B89159 /* LeferiBase-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Regular.otf"; sourceTree = "<group>"; };
+		55259CDB28A4EB1500B89159 /* LeferiBase-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Bold.otf"; sourceTree = "<group>"; };
+		55259CDC28A4EB1500B89159 /* LeferiPoint-SpecialItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-SpecialItalic.otf"; sourceTree = "<group>"; };
+		55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-BlackOblique.otf"; sourceTree = "<group>"; };
+		55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Special.otf"; sourceTree = "<group>"; };
+		55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-WhiteOblique.otf"; sourceTree = "<group>"; };
 		55441F3328A388A0001B7113 /* BoardScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardScreen.storyboard; sourceTree = "<group>"; };
 		55441F3528A388AE001B7113 /* WriteScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteScreen.storyboard; sourceTree = "<group>"; };
 		55441F3728A388B8001B7113 /* NewsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsScreen.storyboard; sourceTree = "<group>"; };
@@ -292,14 +292,14 @@
 		14596DA4285892EE004A5CCF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5517C59128A3712500AF842C /* LeferiBase-Bold.otf */,
-				5517C59228A3712500AF842C /* LeferiBase-Regular.otf */,
-				5517C59428A3712500AF842C /* LeferiPoint-Black.otf */,
-				5517C59528A3712500AF842C /* LeferiPoint-BlackOblique.otf */,
-				5517C59728A3712500AF842C /* LeferiPoint-Special.otf */,
-				5517C59628A3712500AF842C /* LeferiPoint-SpecialItalic.otf */,
-				5517C59328A3712500AF842C /* LeferiPoint-White.otf */,
-				5517C59828A3712500AF842C /* LeferiPoint-WhiteOblique.otf */,
+				55259CDB28A4EB1500B89159 /* LeferiBase-Bold.otf */,
+				55259CDA28A4EB1500B89159 /* LeferiBase-Regular.otf */,
+				55259CD928A4EB1500B89159 /* LeferiPoint-Black.otf */,
+				55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */,
+				55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */,
+				55259CDC28A4EB1500B89159 /* LeferiPoint-SpecialItalic.otf */,
+				55259CD828A4EB1500B89159 /* LeferiPoint-White.otf */,
+				55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -817,25 +817,25 @@
 			files = (
 				55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */,
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
-				55EFB9FA28A4ADD30022F8AD /* LeferiBase-Bold.otf in Resources */,
 				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
-				55EFB9FB28A4ADD60022F8AD /* LeferiBase-Regular.otf in Resources */,
+				55259CE028A4EB1500B89159 /* LeferiPoint-White.otf in Resources */,
 				145A94C2285891120082D8ED /* HomeScreen.storyboard in Resources */,
 				14596DB1285892EE004A5CCF /* loading.json in Resources */,
-				55EFB9FC28A4ADD80022F8AD /* LeferiPoint-Black.otf in Resources */,
-				55EFB9FF28A4ADE00022F8AD /* LeferiPoint-SpecialItalic.otf in Resources */,
 				14596DB0285892EE004A5CCF /* Assets.xcassets in Resources */,
 				55441F3A28A388C1001B7113 /* MyPageScreen.storyboard in Resources */,
-				55EFBA0028A4ADE30022F8AD /* LeferiPoint-White.otf in Resources */,
+				55259CE528A4EB1500B89159 /* LeferiPoint-BlackOblique.otf in Resources */,
 				55441F3428A388A0001B7113 /* BoardScreen.storyboard in Resources */,
+				55259CE328A4EB1500B89159 /* LeferiBase-Bold.otf in Resources */,
 				145A94AF285891120082D8ED /* EZCustomNavigation Guide.txt in Resources */,
+				55259CE428A4EB1500B89159 /* LeferiPoint-SpecialItalic.otf in Resources */,
 				55441F3828A388B8001B7113 /* NewsScreen.storyboard in Resources */,
-				55EFBA0128A4ADE60022F8AD /* LeferiPoint-WhiteOblique.otf in Resources */,
-				55EFB9FE28A4ADDD0022F8AD /* LeferiPoint-Special.otf in Resources */,
 				145A948F285891120082D8ED /* BottomPopupController Guide.txt in Resources */,
+				55259CE728A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf in Resources */,
+				55259CE128A4EB1500B89159 /* LeferiPoint-Black.otf in Resources */,
 				145A94C4285891120082D8ED /* CommonScreen.storyboard in Resources */,
+				55259CE628A4EB1500B89159 /* LeferiPoint-Special.otf in Resources */,
+				55259CE228A4EB1500B89159 /* LeferiBase-Regular.otf in Resources */,
 				14596DBB28589372004A5CCF /* Localizable.strings in Resources */,
-				55EFB9FD28A4ADDB0022F8AD /* LeferiPoint-BlackOblique.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -36,7 +36,7 @@ extension UIFont {
     
     
     static func leferiBase(_ type: LeferiBaseType = .regular, size: CGFloat = UIFont.systemFontSize) -> UIFont {
-        return UIFont(name: "LeferiBase-\(type.rawValue)", size: size) ?? UIFont.systemFont(ofSize: size)
+        return UIFont(name: "LeferiBaseType-\(type.rawValue)", size: size)!
 
     }
     
