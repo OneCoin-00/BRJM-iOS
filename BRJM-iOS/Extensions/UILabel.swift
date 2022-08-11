@@ -114,60 +114,12 @@ extension UILabel {
     /// ------------------------------------------------------------
     /// Typography
     /**
-     - note: 대제목
-     - parameters:
-        - type: 폰트 굵기 - bord or medium
-     */
-    func headline(type: UIFont.LeferiBaseType) {
-        self.font = UIFont.leferiBase(type, size: 24)
-        self.setLineSpacing(lineSpacing: 34)
-    }
-    
-    /**
-     - note: 소제목
+     - note: 폰트 설정
      - parameters:
         - type: 폰트 굵기 - bord or reqular
+        - size: 폰트 크기 - 30 ~ 10
      */
-    func subheading(type: UIFont.LeferiBaseType) {
-        self.font = UIFont.leferiBase(type, size: 20)
-        self.setLineSpacing(lineSpacing: 30)
-    }
-    
-    /**
-     - note: 본문  제목
-     - parameters:
-        - type: 폰트 굵기 - bord or reqular
-     */
-    func bodyTitle(type: UIFont.LeferiBaseType) {
-        self.font = UIFont.leferiBase(type, size: 18)
-        self.setLineSpacing(lineSpacing: 24)
-    }
-    
-    /**
-     - note: 본문  내용
-     - parameters:
-        - type: 폰트 굵기 - bord or reqular
-     */
-    func bodyText(type: UIFont.LeferiBaseType) {
-        self.font = UIFont.leferiBase(type, size: 16)
-        self.setLineSpacing(lineSpacing: 24)
-    }
-    
-    /**
-     - note: 버튼
-     */
-    func buttonText(type: UIFont.LeferiBaseType) {
-        self.font = UIFont.leferiBase(.bold, size: 14)
-        self.setLineSpacing(lineSpacing: 24)
-    }
-    
-    /**
-     - note: 알림 및 작은 텍스트
-     - parameters:
-        - type: 폰트 굵기 - bord or reqular
-        - size: 폰트 크기 - 14 or 12 or 10
-     */
-    func smallLetters(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize) {
+    func setFont(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize) {
         self.font = UIFont.leferiBase(type, size: size)
         self.setLineSpacing(lineSpacing: 24)
     }

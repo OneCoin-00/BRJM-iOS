@@ -122,6 +122,15 @@
 		55441F7428A3A2B7001B7113 /* MemberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7328A3A2B7001B7113 /* MemberViewController.swift */; };
 		55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */; };
 		55441F7828A3B2EE001B7113 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7728A3B2EE001B7113 /* PasswordViewController.swift */; };
+		55EFB9F928A4A9840022F8AD /* ValidateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */; };
+		55EFB9FA28A4ADD30022F8AD /* LeferiBase-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59128A3712500AF842C /* LeferiBase-Bold.otf */; };
+		55EFB9FB28A4ADD60022F8AD /* LeferiBase-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59228A3712500AF842C /* LeferiBase-Regular.otf */; };
+		55EFB9FC28A4ADD80022F8AD /* LeferiPoint-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59428A3712500AF842C /* LeferiPoint-Black.otf */; };
+		55EFB9FD28A4ADDB0022F8AD /* LeferiPoint-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59528A3712500AF842C /* LeferiPoint-BlackOblique.otf */; };
+		55EFB9FE28A4ADDD0022F8AD /* LeferiPoint-Special.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59728A3712500AF842C /* LeferiPoint-Special.otf */; };
+		55EFB9FF28A4ADE00022F8AD /* LeferiPoint-SpecialItalic.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59628A3712500AF842C /* LeferiPoint-SpecialItalic.otf */; };
+		55EFBA0028A4ADE30022F8AD /* LeferiPoint-White.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59328A3712500AF842C /* LeferiPoint-White.otf */; };
+		55EFBA0128A4ADE60022F8AD /* LeferiPoint-WhiteOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5517C59828A3712500AF842C /* LeferiPoint-WhiteOblique.otf */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -220,14 +229,14 @@
 		145A948B285891120082D8ED /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		145A948C285891120082D8ED /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		1AEA7D3DAF5098428EF5605C /* Pods-DKMM_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKMM_iOS.release.xcconfig"; path = "Target Support Files/Pods-DKMM_iOS/Pods-DKMM_iOS.release.xcconfig"; sourceTree = "<group>"; };
-		5517C59128A3712500AF842C /* LeferiBaseBold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiBaseBold.otf; sourceTree = "<group>"; };
-		5517C59228A3712500AF842C /* LeferiBaseRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiBaseRegular.otf; sourceTree = "<group>"; };
-		5517C59328A3712500AF842C /* LeferiPointWhite.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiPointWhite.otf; sourceTree = "<group>"; };
-		5517C59428A3712500AF842C /* LeferiPointBlack.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiPointBlack.otf; sourceTree = "<group>"; };
-		5517C59528A3712500AF842C /* LeferiPointBlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiPointBlackOblique.otf; sourceTree = "<group>"; };
-		5517C59628A3712500AF842C /* LeferiPointSpecialItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiPointSpecialItalic.otf; sourceTree = "<group>"; };
-		5517C59728A3712500AF842C /* LeferiPointSpecial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiPointSpecial.otf; sourceTree = "<group>"; };
-		5517C59828A3712500AF842C /* LeferiPointWhiteOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = LeferiPointWhiteOblique.otf; sourceTree = "<group>"; };
+		5517C59128A3712500AF842C /* LeferiBase-Bold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Bold.otf"; sourceTree = "<group>"; };
+		5517C59228A3712500AF842C /* LeferiBase-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Regular.otf"; sourceTree = "<group>"; };
+		5517C59328A3712500AF842C /* LeferiPoint-White.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-White.otf"; sourceTree = "<group>"; };
+		5517C59428A3712500AF842C /* LeferiPoint-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Black.otf"; sourceTree = "<group>"; };
+		5517C59528A3712500AF842C /* LeferiPoint-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-BlackOblique.otf"; sourceTree = "<group>"; };
+		5517C59628A3712500AF842C /* LeferiPoint-SpecialItalic.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-SpecialItalic.otf"; sourceTree = "<group>"; };
+		5517C59728A3712500AF842C /* LeferiPoint-Special.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Special.otf"; sourceTree = "<group>"; };
+		5517C59828A3712500AF842C /* LeferiPoint-WhiteOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-WhiteOblique.otf"; sourceTree = "<group>"; };
 		55441F3328A388A0001B7113 /* BoardScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardScreen.storyboard; sourceTree = "<group>"; };
 		55441F3528A388AE001B7113 /* WriteScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteScreen.storyboard; sourceTree = "<group>"; };
 		55441F3728A388B8001B7113 /* NewsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsScreen.storyboard; sourceTree = "<group>"; };
@@ -253,6 +262,7 @@
 		55441F7328A3A2B7001B7113 /* MemberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberViewController.swift; sourceTree = "<group>"; };
 		55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEmailViewController.swift; sourceTree = "<group>"; };
 		55441F7728A3B2EE001B7113 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
+		55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUtils.swift; sourceTree = "<group>"; };
 		719AF713B3DFB44C6C15EBFB /* Pods-BRJM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.release.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRJM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45322179C542CC362FFDD98 /* Pods-BRJM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -282,14 +292,14 @@
 		14596DA4285892EE004A5CCF /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				5517C59128A3712500AF842C /* LeferiBaseBold.otf */,
-				5517C59228A3712500AF842C /* LeferiBaseRegular.otf */,
-				5517C59428A3712500AF842C /* LeferiPointBlack.otf */,
-				5517C59528A3712500AF842C /* LeferiPointBlackOblique.otf */,
-				5517C59728A3712500AF842C /* LeferiPointSpecial.otf */,
-				5517C59628A3712500AF842C /* LeferiPointSpecialItalic.otf */,
-				5517C59328A3712500AF842C /* LeferiPointWhite.otf */,
-				5517C59828A3712500AF842C /* LeferiPointWhiteOblique.otf */,
+				5517C59128A3712500AF842C /* LeferiBase-Bold.otf */,
+				5517C59228A3712500AF842C /* LeferiBase-Regular.otf */,
+				5517C59428A3712500AF842C /* LeferiPoint-Black.otf */,
+				5517C59528A3712500AF842C /* LeferiPoint-BlackOblique.otf */,
+				5517C59728A3712500AF842C /* LeferiPoint-Special.otf */,
+				5517C59628A3712500AF842C /* LeferiPoint-SpecialItalic.otf */,
+				5517C59328A3712500AF842C /* LeferiPoint-White.otf */,
+				5517C59828A3712500AF842C /* LeferiPoint-WhiteOblique.otf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -409,6 +419,7 @@
 				145A9451285891120082D8ED /* RxUtils.swift */,
 				145A9450285891120082D8ED /* DialogUtils.swift */,
 				145A944E285891120082D8ED /* DataLoadUtils.swift */,
+				55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -806,17 +817,25 @@
 			files = (
 				55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */,
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
+				55EFB9FA28A4ADD30022F8AD /* LeferiBase-Bold.otf in Resources */,
 				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
+				55EFB9FB28A4ADD60022F8AD /* LeferiBase-Regular.otf in Resources */,
 				145A94C2285891120082D8ED /* HomeScreen.storyboard in Resources */,
 				14596DB1285892EE004A5CCF /* loading.json in Resources */,
+				55EFB9FC28A4ADD80022F8AD /* LeferiPoint-Black.otf in Resources */,
+				55EFB9FF28A4ADE00022F8AD /* LeferiPoint-SpecialItalic.otf in Resources */,
 				14596DB0285892EE004A5CCF /* Assets.xcassets in Resources */,
 				55441F3A28A388C1001B7113 /* MyPageScreen.storyboard in Resources */,
+				55EFBA0028A4ADE30022F8AD /* LeferiPoint-White.otf in Resources */,
 				55441F3428A388A0001B7113 /* BoardScreen.storyboard in Resources */,
 				145A94AF285891120082D8ED /* EZCustomNavigation Guide.txt in Resources */,
 				55441F3828A388B8001B7113 /* NewsScreen.storyboard in Resources */,
+				55EFBA0128A4ADE60022F8AD /* LeferiPoint-WhiteOblique.otf in Resources */,
+				55EFB9FE28A4ADDD0022F8AD /* LeferiPoint-Special.otf in Resources */,
 				145A948F285891120082D8ED /* BottomPopupController Guide.txt in Resources */,
 				145A94C4285891120082D8ED /* CommonScreen.storyboard in Resources */,
 				14596DBB28589372004A5CCF /* Localizable.strings in Resources */,
+				55EFB9FD28A4ADDB0022F8AD /* LeferiPoint-BlackOblique.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -943,6 +962,7 @@
 				145A94E3285891120082D8ED /* UILabel.swift in Sources */,
 				145A94A4285891120082D8ED /* UnpopStack.swift in Sources */,
 				55441F6228A38C87001B7113 /* MyPageModel.swift in Sources */,
+				55EFB9F928A4A9840022F8AD /* ValidateUtils.swift in Sources */,
 				145A949D285891120082D8ED /* Ease.swift in Sources */,
 				55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */,
 				55441F6428A39A8E001B7113 /* TweeTextField.swift in Sources */,
@@ -1112,6 +1132,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KAUKJL57T4;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BRJM-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -1142,6 +1163,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KAUKJL57T4;
+				EXCLUDED_ARCHS = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "BRJM-iOS/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

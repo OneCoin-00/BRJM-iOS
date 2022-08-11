@@ -113,6 +113,43 @@ public class BaseViewController: UIViewController {
     }
     
     /**
+     - Note: 네비게이션 바 설정
+     */
+    public func setNavigationBar(label: UILabel, button: UIButton, title: String) {
+        
+        /** 타이틀 */
+        label.text = title
+        label.textColor = .black
+        label.setFont(type: .regular, size: 18)
+        
+        /** 뒤로가기 버튼*/
+        button.setImage(UIImage(named: "icNavigationBack"))
+    }
+    
+    /**
+     - Note: line 버튼
+     */
+    public func lineButton(_ button: UIButton, lineColor: UIColor) {
+        button.setTitleColor(lineColor)
+        button.backgroundColor = .clear
+        button.layer.cornerRadius = 8
+        button.layer.borderWidth = 1
+        button.layer.borderColor = lineColor.cgColor
+        button.setBackgroundColor(.clear, for: .normal)
+    }
+    
+    /**
+     - Note: full 버튼
+     */
+    public func fullButton(_ button: UIButton, backgroundColor: UIColor) {
+        button.setTitleColor(.white)
+        button.layer.cornerRadius = 8
+        button.layer.borderWidth = 0
+        button.backgroundColor = backgroundColor
+        button.setBackgroundColor(backgroundColor, for: .normal)
+    }
+    
+    /**
      - Note: 토스트 메세지
      - Parameters:
         - message: 메세지

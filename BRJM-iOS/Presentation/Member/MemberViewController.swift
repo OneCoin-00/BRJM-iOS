@@ -22,7 +22,7 @@ class MemberViewController : BaseViewController {
         }.disposed(by: disposeBag)
     }
     
-    /** 회원가입으로 이동 */
+    /** 회원가입으로 이동 (이메일 인증) */
     private func moveToJoin() {
         if let nvc = self.navigationController {
             
