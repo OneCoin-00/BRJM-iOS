@@ -93,7 +93,7 @@ extension UITextField {
      */
     func setFont() {
         self.textColor = .black
-        self.font = UIFont.leferiBase(.regular, size: 18)
+        self.font = UIFont.leferiBase(.bold, size: 18)
     }
     
     func setFont(_ type: UIFont.LeferiBaseType) {
