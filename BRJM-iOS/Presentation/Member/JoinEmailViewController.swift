@@ -47,6 +47,7 @@ class JoinEmailViewController: BaseViewController {
         /** 네비게이션 바 설정 */
         setNavigationBar(label: tvNavigationTitle, button: btnBack, title: "join_text_1".localized())
         
+        
         /** 이메일 타이틀 */
         tvEmailTitle.text = "join_text_2".localized()
         tvEmailTitle.textColor = BaseConstraint.COLOR_GRAY
