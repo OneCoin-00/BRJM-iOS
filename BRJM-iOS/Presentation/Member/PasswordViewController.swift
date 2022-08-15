@@ -17,8 +17,6 @@ class PasswordViewController: BaseViewController {
     @IBOutlet weak var tvPwField: TweeTextField!
     @IBOutlet weak var tvPwAlert: UILabel!
     
-    /** 비밀번호 확인 뷰 */
-    @IBOutlet weak var checkPwView: UIView!
     
     /** 비밀번호 확인 */
     @IBOutlet weak var tvCheckPwTitle: UILabel!
@@ -33,6 +31,9 @@ class PasswordViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /** 뷰 설정 */
+        setViews()
+        setRx()
     }
     
     
@@ -49,16 +50,14 @@ class PasswordViewController: BaseViewController {
         tvPwTitle.setFont(type: .regular, size: 16)
         
         /** 비밀번호 필드 */
-        tvPwField.keyboardType = .emailAddress
+        tvPwField.keyboardType = .default
         tvPwField.placeholder = String(format: "join_text_3".localized(), "join_text_8".localized())
         
         /** 비밀번호 알림 */
-        tvPwAlert.text = ""
+        tvPwAlert.text = "join_text_10".localized()
+        tvPwAlert.textColor = BaseConstraint.COLOR_GRAY
         tvPwAlert.setFont(type: .regular, size: 14)
         
-        
-        /** 비밀번호 확인 뷰 */
-        checkPwView.isHidden = true
         
         /** 비밀번호 확인 타이틀 */
         tvCheckPwTitle.text = "join_text_9".localized()
@@ -66,7 +65,8 @@ class PasswordViewController: BaseViewController {
         tvCheckPwTitle.setFont(type: .regular, size: 16)
         
         /** 비밀번호 확인 필드 */
-        tvCheckPwField.keyboardType = .emailAddress
+        tvCheckPwField.isEnabled = false
+        tvCheckPwField.keyboardType = .default
         tvCheckPwField.placeholder = String(format: "join_text_3".localized(), "join_text_8".localized())
         
         /** 비밀번호 확인 알림 */
@@ -143,7 +143,7 @@ class PasswordViewController: BaseViewController {
             tvPwAlert.text = "join_text_11".localized()
             tvPwAlert.textColor = BaseConstraint.COLOR_PRIMARY
             
-            checkPwView.isHidden = false
+            tvCheckPwField.isEnabled = true
             
             setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_PRIMARY)
         }
@@ -152,6 +152,8 @@ class PasswordViewController: BaseViewController {
         else {
             tvPwAlert.text = "join_text_10".localized()
             tvPwAlert.textColor = BaseConstraint.COLOR_RED
+            
+            tvCheckPwField.isEnabled = false
             
             setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_RED)
         }
@@ -162,30 +164,44 @@ class PasswordViewController: BaseViewController {
             tvPwAlert.text = "join_text_10".localized()
             tvPwAlert.textColor = BaseConstraint.COLOR_GRAY
             
-            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_GRAY)
+            tvCheckPwField.isEnabled = false
+            
+            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
         }
     }
     
     /** 비밀번호 동일 여부 확인 */
     private func checkEqualPassword() {
         
-        /** 동일한 경우 */
-        if tvPwField.text! == tvCheckPwField.text! {
+        if tvPwField.text!.count != 0 {
             
-            tvCheckPwAlert.text = "join_text_12".localized()
-            tvCheckPwAlert.textColor = BaseConstraint.COLOR_PRIMARY
+            /** 동일한 경우 */
+            if tvPwField.text! == tvCheckPwField.text! {
+                
+                tvCheckPwAlert.text = "join_text_12".localized()
+                tvCheckPwAlert.textColor = BaseConstraint.COLOR_PRIMARY
+                
+                setButton(true)
+                setTextFieldLine(textField: tvCheckPwField, color: BaseConstraint.COLOR_PRIMARY)
+            }
             
-            setButton(true)
-            setTextFieldLine(textField: tvCheckPwField, color: BaseConstraint.COLOR_PRIMARY)
+            /** 동일하지 않은 경우 */
+            else {
+                tvCheckPwAlert.text = "join_text_13".localized()
+                tvCheckPwAlert.textColor = BaseConstraint.COLOR_RED
+                
+                setButton(false)
+                setTextFieldLine(textField: tvCheckPwField, color: BaseConstraint.COLOR_RED)
+            }
         }
         
-        /** 동일하지 않은 경우 */
-        else {
-            tvCheckPwAlert.text = "join_text_13".localized()
-            tvCheckPwAlert.textColor = BaseConstraint.COLOR_RED
+        /** 비어있는 경우 */
+        if tvCheckPwAlert.text!.count == 0 {
             
-            setButton(false)
-            setTextFieldLine(textField: tvCheckPwField, color: BaseConstraint.COLOR_RED)
+            tvCheckPwAlert.text = ""
+            tvCheckPwAlert.textColor = BaseConstraint.COLOR_GRAY
+            
+            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
         }
     }
     

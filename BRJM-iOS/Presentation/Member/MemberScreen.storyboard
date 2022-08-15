@@ -429,7 +429,6 @@
                     <connections>
                         <outlet property="btnBack" destination="b8Y-ar-EHt" id="6bm-Bz-puH"/>
                         <outlet property="btnCheckPw" destination="FIM-D9-y3Y" id="obx-Cx-7AY"/>
-                        <outlet property="checkPwView" destination="XmF-W7-uvR" id="dXe-nk-30V"/>
                         <outlet property="tvCheckPwAlert" destination="Uol-of-Tky" id="Mob-co-Mq2"/>
                         <outlet property="tvCheckPwField" destination="TbS-Zb-IS4" id="ULG-Us-cuI"/>
                         <outlet property="tvCheckPwTitle" destination="cyt-AD-pcJ" id="lrE-gQ-NsL"/>

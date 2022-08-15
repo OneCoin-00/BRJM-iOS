@@ -226,6 +226,8 @@ class JoinEmailViewController: BaseViewController {
         
         /** 비어있지 않은 경우 */
         else {
+            tvAuthAlert.text = ""
+            
             setButton(isActive: true, isEmail: false, button: btnCheckAuth)
             setTextFieldLine(textField: tvAuthField, color: BaseConstraint.COLOR_PRIMARY)
         }
