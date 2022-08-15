@@ -50,6 +50,7 @@ class PasswordViewController: BaseViewController {
         
         /** 비밀번호 필드 */
         tvPwField.keyboardType = .default
+        tvPwField.isSecureTextEntry = true
         tvPwField.placeholder = String(format: "join_text_3".localized(), "join_text_8".localized())
         
         /** 비밀번호 알림 */
@@ -66,6 +67,7 @@ class PasswordViewController: BaseViewController {
         /** 비밀번호 확인 필드 */
         tvCheckPwField.isEnabled = false
         tvCheckPwField.keyboardType = .default
+        tvCheckPwField.isSecureTextEntry = true
         tvCheckPwField.placeholder = String(format: "join_text_3".localized(), "join_text_8".localized())
         
         /** 비밀번호 확인 알림 */
