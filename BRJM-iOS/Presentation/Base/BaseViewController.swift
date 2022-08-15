@@ -136,6 +136,8 @@ public class BaseViewController: UIViewController {
         button.layer.borderWidth = 1
         button.layer.borderColor = lineColor.cgColor
         button.setBackgroundColor(.clear, for: .normal)
+        
+        button.setFont(type: .bold, size: 16)
     }
     
     /**
@@ -147,6 +149,8 @@ public class BaseViewController: UIViewController {
         button.layer.borderWidth = 0
         button.backgroundColor = backgroundColor
         button.setBackgroundColor(backgroundColor, for: .normal)
+        
+        button.setFont(type: .bold, size: 16)
     }
     
     /**
@@ -366,6 +370,23 @@ public class BaseViewController: UIViewController {
         }else {
             errorCallback()
         }
+    }
+    
+    
+    /** 홈으로 이동 */
+    public func moveToHome() {
+        
+        guard let appDelegate = UIApplication.shared.delegate as? AppDelegate,
+              let window = appDelegate.window else { return }
+        
+        
+        window.rootViewController = {
+        
+            let storyboard = UIStoryboard(name: "HomeScreen", bundle: nil)
+            let navigationController = storyboard.instantiateInitialViewController() as! HomeNavigationController
+            
+            return navigationController
+        }()
     }
     
     

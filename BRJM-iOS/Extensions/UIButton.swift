@@ -177,4 +177,14 @@ extension UIButton {
             }
         }
     }
+    
+    /**
+     - note: 폰트 설정
+     - parameters:
+        - type: 폰트 굵기 - bord or reqular
+        - size: 폰트 크기 - 30 ~ 10
+     */
+    func setFont(type: UIFont.LeferiBaseType, size: CGFloat = UIFont.systemFontSize) {
+        self.titleLabel?.font = UIFont.leferiBase(type, size: size)
+    }
 }

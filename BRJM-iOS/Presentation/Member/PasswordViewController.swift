@@ -17,7 +17,6 @@ class PasswordViewController: BaseViewController {
     @IBOutlet weak var tvPwField: TweeTextField!
     @IBOutlet weak var tvPwAlert: UILabel!
     
-    
     /** 비밀번호 확인 */
     @IBOutlet weak var tvCheckPwTitle: UILabel!
     @IBOutlet weak var tvCheckPwField: TweeTextField!
@@ -113,6 +112,7 @@ class PasswordViewController: BaseViewController {
         /** 확인 버튼 클릭 */
         btnCheckPw.rx.tap.bind {
             
+            self.moveToProfile()
         }.disposed(by: disposeBag)
     }
     
@@ -210,5 +210,20 @@ class PasswordViewController: BaseViewController {
         
         textField.lineColor = color
         textField.activeLineColor = color
+    }
+    
+    /** 회원가입으로 이동 (프로필 설정) */
+    private func moveToProfile() {
+        if let nvc = self.navigationController {
+            
+            if !(nvc.topViewController?.description.contains("ProfileViewController"))! {
+                
+                let storyBoard:UIStoryboard = UIStoryboard(name: "MemberScreen", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "ProfileViewController") as! ProfileViewController
+                vc.modalTransitionStyle = .crossDissolve
+                
+                nvc.pushViewController(vc, animated: true)
+            }
+        }
     }
 }
