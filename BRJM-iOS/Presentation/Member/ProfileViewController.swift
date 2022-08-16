@@ -29,13 +29,17 @@ class ProfileViewController: BaseViewController {
     @IBOutlet weak var btnJoin: UIButton!
     
     /** 프로퍼티 */
-    var useNick: Bool = false/** 닉네임 사용 여부 */
+    private var categoryList: [HomeModel.Category] = []/** 카테고리 리스트 */
+    private var useNick: Bool = false/** 닉네임 사용 여부 */
     
     
     /** life cycle */
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /** 데이터 설정 */
+        setCategory()
+        
         /** 뷰 설정 */
         setViews()
         setRx()
@@ -74,8 +78,10 @@ class ProfileViewController: BaseViewController {
         
         /** 카테고리 컬렉션 뷰 */
         categoryCollectionView.isHidden = true
-        //categoryCollectionView.delegate = self
         
+        categoryCollectionView.delegate = self
+        categoryCollectionView.dataSource = self
+        categoryCollectionView.registerReusableCell(CategoryCell.self)
         
         /** 회원가입 버튼 */
         setButton(true)
@@ -180,5 +186,66 @@ class ProfileViewController: BaseViewController {
             btnJoin.isEnabled = false
             lineButton(btnJoin, lineColor: BaseConstraint.COLOR_PRIMARY)
         }
+    }
+    
+    /** 카테고리 설정 */
+    private func setCategory() {
+        
+        for i in 1...8 {
+            let data = HomeModel.Category()
+            data.title = "icCategory\(i)"
+            
+            categoryList.append(data)
+        }
+    }
+}
+
+extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return categoryList.count
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        
+        let index = indexPath.row
+        let data = categoryList[index]
+        
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CategoryCell.ID, for: indexPath) as! CategoryCell
+        
+        cell.setCells(data, index: index + 1)
+        
+        cell.btnCategory.tag = index
+        cell.btnCategory.addTarget(self, action: #selector(selectedCategory(_:)), for: .touchUpInside)
+        
+        
+        return cell
+    }
+    
+    /** 셀 사이즈 */
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 56, height: (categoryCollectionView.height - 12) / 2)
+    }
+    
+    /** 셀 줄 간격 */
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
+        return 12
+    }
+    
+    /** 셀 간격 */
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
+        return (categoryCollectionView.width / 4) / 5
+    }
+    
+    /** 카테고리 선택 */
+    @objc private func selectedCategory(_ sender: UIButton) {
+        
+        let index = sender.tag
+        let data = categoryList[index]
+        let selectValue = data.isSelected
+        
+        data.isSelected = !selectValue
+        
+        categoryCollectionView.reloadData()
     }
 }

@@ -483,7 +483,7 @@
                                 <rect key="frame" x="0.0" y="94" width="414" height="802"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1zZ-hR-wmM">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="605.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="705.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ihA-Ji-VhV">
                                                 <rect key="frame" x="134" y="47" width="146" height="146"/>
@@ -568,6 +568,13 @@
                                                     </collectionViewCell>
                                                 </cells>
                                             </collectionView>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vFd-ER-0Xp">
+                                                <rect key="frame" x="0.0" y="555.5" width="414" height="100"/>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="100" id="8sa-Fq-MxX"/>
+                                                </constraints>
+                                            </view>
                                         </subviews>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -575,6 +582,8 @@
                                             <constraint firstItem="Pmo-my-8fH" firstAttribute="centerX" secondItem="1zZ-hR-wmM" secondAttribute="centerX" id="0vs-HB-JEY"/>
                                             <constraint firstAttribute="trailing" secondItem="gr3-Ff-ajv" secondAttribute="trailing" constant="20" id="2Ak-zZ-1DT"/>
                                             <constraint firstAttribute="trailing" secondItem="Otc-KN-1Ff" secondAttribute="trailing" constant="20" id="8nM-av-qqJ"/>
+                                            <constraint firstItem="vFd-ER-0Xp" firstAttribute="top" secondItem="yV5-Cn-YSu" secondAttribute="bottom" id="Cpf-33-p1C"/>
+                                            <constraint firstItem="vFd-ER-0Xp" firstAttribute="leading" secondItem="1zZ-hR-wmM" secondAttribute="leading" id="DEG-rG-OZr"/>
                                             <constraint firstItem="yV5-Cn-YSu" firstAttribute="top" secondItem="gr3-Ff-ajv" secondAttribute="bottom" constant="24" id="J0a-Fl-wSJ"/>
                                             <constraint firstItem="ihA-Ji-VhV" firstAttribute="centerX" secondItem="1zZ-hR-wmM" secondAttribute="centerX" id="Lr3-CH-Bgx"/>
                                             <constraint firstAttribute="trailing" secondItem="yV5-Cn-YSu" secondAttribute="trailing" constant="20" id="RMe-gD-7iz"/>
@@ -583,7 +592,8 @@
                                             <constraint firstItem="Pmo-my-8fH" firstAttribute="top" secondItem="1zZ-hR-wmM" secondAttribute="top" constant="47" id="ZCS-RP-4zg"/>
                                             <constraint firstItem="gr3-Ff-ajv" firstAttribute="leading" secondItem="1zZ-hR-wmM" secondAttribute="leading" constant="20" id="e4P-0g-4gO"/>
                                             <constraint firstItem="Otc-KN-1Ff" firstAttribute="top" secondItem="Pmo-my-8fH" secondAttribute="bottom" constant="29" id="kY6-1P-ErM"/>
-                                            <constraint firstAttribute="bottom" secondItem="yV5-Cn-YSu" secondAttribute="bottom" constant="50" id="qoi-7A-QT3"/>
+                                            <constraint firstAttribute="trailing" secondItem="vFd-ER-0Xp" secondAttribute="trailing" id="mEd-k3-GhK"/>
+                                            <constraint firstAttribute="bottom" secondItem="vFd-ER-0Xp" secondAttribute="bottom" constant="50" id="pxv-bb-1dy"/>
                                             <constraint firstItem="ihA-Ji-VhV" firstAttribute="top" secondItem="1zZ-hR-wmM" secondAttribute="top" constant="47" id="wcR-Dg-knO"/>
                                         </constraints>
                                     </view>
@@ -641,8 +651,17 @@
         </scene>
     </scenes>
     <designables>
+        <designable name="DRV-U3-ODV">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="FIM-D9-y3Y">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
         <designable name="GpP-zK-rkT">
             <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="I8F-7R-u1x">
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
         <designable name="L5f-iG-hN4">
             <size key="intrinsicContentSize" width="4" height="18.5"/>
@@ -655,6 +674,15 @@
         </designable>
         <designable name="dfQ-jm-TLi">
             <size key="intrinsicContentSize" width="4" height="18.5"/>
+        </designable>
+        <designable name="iAl-j3-ML9">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="id0-40-gpq">
+            <size key="intrinsicContentSize" width="46" height="30"/>
+        </designable>
+        <designable name="zrT-jO-MlL">
+            <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
     </designables>
     <resources>
