@@ -131,6 +131,10 @@
 		55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */; };
 		55441F7828A3B2EE001B7113 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7728A3B2EE001B7113 /* PasswordViewController.swift */; };
 		557F1A2328AA177400AD729D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1A2228AA177400AD729D /* ProfileViewController.swift */; };
+		55A5942428AB473A006F340E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A5942328AB473A006F340E /* TabBarViewController.swift */; };
+		55C3278A28AB315D001A93D2 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3278928AB315D001A93D2 /* BaseTabBarViewController.swift */; };
+		55C3278D28AB32CB001A93D2 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */; };
+		55C3278F28AB32DE001A93D2 /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3278E28AB32DE001A93D2 /* CustomTabBar.xib */; };
 		55EFB9F928A4A9840022F8AD /* ValidateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
@@ -264,6 +268,10 @@
 		55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinEmailViewController.swift; sourceTree = "<group>"; };
 		55441F7728A3B2EE001B7113 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		557F1A2228AA177400AD729D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		55A5942328AB473A006F340E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
+		55C3278928AB315D001A93D2 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
+		55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
+		55C3278E28AB32DE001A93D2 /* CustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
 		55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUtils.swift; sourceTree = "<group>"; };
 		719AF713B3DFB44C6C15EBFB /* Pods-BRJM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.release.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRJM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -455,10 +463,12 @@
 			isa = PBXGroup;
 			children = (
 				145A945D285891120082D8ED /* Model */,
+				55C3278B28AB3298001A93D2 /* Views */,
 				145A945A285891120082D8ED /* ViewModel */,
 				145A945F285891120082D8ED /* HomeScreen.storyboard */,
 				145A9460285891120082D8ED /* HomeNavigationController.swift */,
 				145A945C285891120082D8ED /* HomeViewController.swift */,
+				55A5942328AB473A006F340E /* TabBarViewController.swift */,
 			);
 			path = Home;
 			sourceTree = "<group>";
@@ -494,6 +504,7 @@
 			children = (
 				145A9468285891120082D8ED /* BaseConstraint.swift */,
 				145A9466285891120082D8ED /* BaseViewController.swift */,
+				55C3278928AB315D001A93D2 /* BaseTabBarViewController.swift */,
 				145A9467285891120082D8ED /* UINavigationController+Extension.swift */,
 			);
 			path = Base;
@@ -738,6 +749,15 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		55C3278B28AB3298001A93D2 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */,
+				55C3278E28AB32DE001A93D2 /* CustomTabBar.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		86A8340833B345CD8652C6F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -836,6 +856,7 @@
 				55259CE728A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf in Resources */,
 				55259CE128A4EB1500B89159 /* LeferiPoint-Black.otf in Resources */,
 				145A94C4285891120082D8ED /* CommonScreen.storyboard in Resources */,
+				55C3278F28AB32DE001A93D2 /* CustomTabBar.xib in Resources */,
 				55259CE628A4EB1500B89159 /* LeferiPoint-Special.otf in Resources */,
 				55259CE228A4EB1500B89159 /* LeferiBase-Regular.otf in Resources */,
 				14596DBB28589372004A5CCF /* Localizable.strings in Resources */,
@@ -891,6 +912,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55A5942428AB473A006F340E /* TabBarViewController.swift in Sources */,
 				145A94D8285891120082D8ED /* UIApplication+Extensions.swift in Sources */,
 				145A949A285891120082D8ED /* Animator.swift in Sources */,
 				145A94CA285891120082D8ED /* CoverViewModel.swift in Sources */,
@@ -933,6 +955,7 @@
 				145A94B2285891120082D8ED /* MemberUtils.swift in Sources */,
 				145A94BA285891120082D8ED /* CommonUtils.swift in Sources */,
 				145A94BC285891120082D8ED /* AnimationUtils.swift in Sources */,
+				55C3278D28AB32CB001A93D2 /* CustomTabBar.swift in Sources */,
 				55441F4228A38918001B7113 /* MyPageViewController.swift in Sources */,
 				145A94DF285891120082D8ED /* UIImage.swift in Sources */,
 				145A94AA285891120082D8ED /* EZNavigationControllerTransitionHelper+HandlePanGesture.swift in Sources */,
@@ -989,6 +1012,7 @@
 				145A94A5285891120082D8ED /* EZSafeTimer.swift in Sources */,
 				145A94A1285891120082D8ED /* EZNavigationControllerTransitionHelper.swift in Sources */,
 				55441F3C28A388DD001B7113 /* BoardViewController.swift in Sources */,
+				55C3278A28AB315D001A93D2 /* BaseTabBarViewController.swift in Sources */,
 				145A94CF285891120082D8ED /* Enum.swift in Sources */,
 				145A94D6285891120082D8ED /* UIView.swift in Sources */,
 				145A94C1285891120082D8ED /* HomeModel.swift in Sources */,

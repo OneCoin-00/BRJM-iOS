@@ -20,6 +20,10 @@ class MemberViewController : BaseViewController {
             
             self.moveToJoin()
         }.disposed(by: disposeBag)
+        
+        btnLogin.rx.tap.bind {
+            self.moveToHome()
+        }.disposed(by: disposeBag)
     }
     
     /** 회원가입으로 이동 (이메일 인증) */

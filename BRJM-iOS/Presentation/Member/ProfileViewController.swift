@@ -78,7 +78,7 @@ class ProfileViewController: BaseViewController {
         
         
         /** 회원가입 버튼 */
-        setButton(false)
+        setButton(true)
     }
     
     /** Rx 설정 */
