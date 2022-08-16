@@ -176,6 +176,7 @@
                 <outlet property="btnMyPage" destination="Mu1-3j-M4y" id="QR3-zJ-iLU"/>
                 <outlet property="btnNews" destination="5cl-gi-OYF" id="IqC-H0-Hym"/>
                 <outlet property="btnWrite" destination="IVT-h5-R7a" id="PHJ-Qn-LJ1"/>
+                <outlet property="lineView" destination="NA0-M6-N0H" id="pFz-bc-2Iq"/>
             </connections>
             <point key="canvasLocation" x="200.00000000000003" y="-130.58035714285714"/>
         </view>

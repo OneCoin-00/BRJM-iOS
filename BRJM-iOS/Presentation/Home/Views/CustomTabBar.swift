@@ -5,6 +5,8 @@ import UIKit
  */
 class CustomTabBar: UIView {
 
+    @IBOutlet weak var lineView: UIView!
+    
     @IBOutlet weak var btnHome: UIButton!
     @IBOutlet weak var btnBoard: UIButton!
     @IBOutlet weak var btnWrite: UIButton!
@@ -26,6 +28,9 @@ class CustomTabBar: UIView {
     
     /** 초기화 */
     public func initTab() {
+        
+        /** 라인 설정 */
+        lineView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
         
         /** 탭바 설정 */
         controlTab(0)
