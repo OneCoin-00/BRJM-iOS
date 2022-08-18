@@ -12,7 +12,7 @@
         <!--Alert Popup View-->
         <scene sceneID="bLO-kR-put">
             <objects>
-                <viewController storyboardIdentifier="AlertPopupView" id="sbq-fy-FYs" customClass="AlertPopupView" customModule="TSID" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="AlertPopupView" id="sbq-fy-FYs" customClass="AlertPopupView" customModule="BRJM_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="QDb-vu-t6K">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -153,7 +153,7 @@
         <!--Confirm Popup View-->
         <scene sceneID="Gsp-Zh-fAY">
             <objects>
-                <viewController storyboardIdentifier="ConfirmPopupView" id="NLH-BN-FpD" customClass="ConfirmPopupView" customModule="TSID" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ConfirmPopupView" id="NLH-BN-FpD" customClass="ConfirmPopupView" customModule="BRJM_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="u3M-kQ-fWi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -248,6 +248,71 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CH9-Ac-CZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="303" y="278"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="zAH-4H-nrJ">
+            <objects>
+                <viewController storyboardIdentifier="WebViewController" id="Xkx-yl-AM9" customClass="WebViewController" customModule="DKMM_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fA5-V6-Mg3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qyz-ki-WcI">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xEO-sg-7bq">
+                                        <rect key="frame" x="186" y="14.5" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyX-1n-sEs">
+                                        <rect key="frame" x="20" y="13" width="24" height="24"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="24" id="0Lg-AQ-Esi"/>
+                                            <constraint firstAttribute="height" constant="24" id="OZV-Mp-fjE"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <connections>
+                                            <action selector="backClick:" destination="Xkx-yl-AM9" eventType="touchUpInside" id="KyU-1n-aDG"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="xEO-sg-7bq" firstAttribute="centerY" secondItem="qyz-ki-WcI" secondAttribute="centerY" id="2DI-eE-3kH"/>
+                                    <constraint firstItem="hyX-1n-sEs" firstAttribute="centerY" secondItem="qyz-ki-WcI" secondAttribute="centerY" id="adX-yb-7zU"/>
+                                    <constraint firstItem="xEO-sg-7bq" firstAttribute="centerX" secondItem="qyz-ki-WcI" secondAttribute="centerX" id="ejU-zE-Zeg"/>
+                                    <constraint firstItem="hyX-1n-sEs" firstAttribute="leading" secondItem="qyz-ki-WcI" secondAttribute="leading" constant="20" id="mnG-SZ-c4a"/>
+                                    <constraint firstAttribute="height" constant="50" id="yN7-Ne-UdD"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pSx-NR-H0c">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BGc-Ni-xqw"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="pSx-NR-H0c" firstAttribute="leading" secondItem="BGc-Ni-xqw" secondAttribute="leading" id="DXI-9u-hOL"/>
+                            <constraint firstItem="qyz-ki-WcI" firstAttribute="leading" secondItem="BGc-Ni-xqw" secondAttribute="leading" id="DYA-8S-muo"/>
+                            <constraint firstAttribute="trailing" secondItem="qyz-ki-WcI" secondAttribute="trailing" id="GX7-hi-1de"/>
+                            <constraint firstItem="pSx-NR-H0c" firstAttribute="trailing" secondItem="BGc-Ni-xqw" secondAttribute="trailing" id="eTW-Fp-DX1"/>
+                            <constraint firstItem="qyz-ki-WcI" firstAttribute="top" secondItem="BGc-Ni-xqw" secondAttribute="top" id="hoT-cg-luw"/>
+                            <constraint firstItem="pSx-NR-H0c" firstAttribute="top" secondItem="qyz-ki-WcI" secondAttribute="bottom" id="r79-iv-MCb"/>
+                            <constraint firstAttribute="bottom" secondItem="pSx-NR-H0c" secondAttribute="bottom" id="wiz-Nd-VoV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="hyX-1n-sEs" id="DQY-kZ-sGh"/>
+                        <outlet property="tvNavigationTitle" destination="xEO-sg-7bq" id="kbB-9l-orv"/>
+                        <outlet property="webGroupView" destination="pSx-NR-H0c" id="pkK-UR-ksv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Wt-dM-EP0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-397" y="978"/>
         </scene>
     </scenes>
     <resources>
