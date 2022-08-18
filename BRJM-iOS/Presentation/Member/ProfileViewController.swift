@@ -32,7 +32,7 @@ class ProfileViewController: BaseViewController {
     /** 프로퍼티 */
     private var categoryList: [HomeModel.Category] = []/** 카테고리 리스트 */
     private var useNick: Bool = false/** 닉네임 사용 여부 */
-    
+    private let imagePickerController = UIImagePickerController()
     
     /** life cycle */
     override func viewDidLoad() {
@@ -65,6 +65,9 @@ class ProfileViewController: BaseViewController {
         tvProfileTitle.textColor = BaseConstraint.COLOR_GRAY
         tvProfileTitle.setFont(type: .bold, size: 10)
         
+        /** ImagePicker delegate 설정 */
+        imagePickerController.delegate = self
+        imagePickerController.sourceType = .photoLibrary
         
         /** 닉네임 타이틀 */
         tvNickTitle.text = "join_text_14".localized()
@@ -103,6 +106,13 @@ class ProfileViewController: BaseViewController {
         btnBack.rx.tap.bind {
             
             self.navigationController?.popViewController(animated: true)
+        }.disposed(by: disposeBag)
+        
+        /** 이미지 업로드 버튼 클릭 */
+        btnProfile.rx.tap.bind {
+            
+            //self.navigationController?.popToViewController(self.imagePickerController, animated: true)
+            self.present(self.imagePickerController, animated: true, completion: nil)
         }.disposed(by: disposeBag)
         
         /** 닉네임 입력 감지 */
@@ -209,6 +219,25 @@ class ProfileViewController: BaseViewController {
     }
 }
 
+
+/** 앨범에서 이미지 선택 */
+extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        
+        if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
+            self.ivProfile.image = image
+        }
+            
+        picker.dismiss(animated: true, completion: nil)
+    }
+    
+    func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
+        picker.dismiss(animated: true, completion: nil)
+    }
+}
+
+/** 카테고리 컬렉션 뷰 */
 extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
