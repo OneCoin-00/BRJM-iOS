@@ -87,11 +87,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eqj-3a-Uyp">
-                                        <rect key="frame" x="20" y="13" width="24" height="24"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YP5-Pc-UIp">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="WDj-Hc-hy6"/>
-                                            <constraint firstAttribute="width" constant="24" id="gnm-nf-Tbm"/>
+                                            <constraint firstAttribute="width" constant="44" id="cW6-ep-qeG"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     </button>
@@ -99,10 +98,11 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="a4B-ai-j2X" firstAttribute="centerX" secondItem="7zI-V3-yes" secondAttribute="centerX" id="57E-Vl-TNp"/>
-                                    <constraint firstItem="Eqj-3a-Uyp" firstAttribute="leading" secondItem="7zI-V3-yes" secondAttribute="leading" constant="20" id="Jfv-Zm-Own"/>
-                                    <constraint firstItem="Eqj-3a-Uyp" firstAttribute="centerY" secondItem="7zI-V3-yes" secondAttribute="centerY" id="bsE-lc-IJ3"/>
+                                    <constraint firstItem="YP5-Pc-UIp" firstAttribute="top" secondItem="7zI-V3-yes" secondAttribute="top" id="M8h-bx-pgZ"/>
                                     <constraint firstAttribute="height" constant="50" id="e4R-Zn-Apo"/>
+                                    <constraint firstAttribute="bottom" secondItem="YP5-Pc-UIp" secondAttribute="bottom" id="kAk-UC-R72"/>
                                     <constraint firstItem="a4B-ai-j2X" firstAttribute="centerY" secondItem="7zI-V3-yes" secondAttribute="centerY" id="lGq-BN-ANh"/>
+                                    <constraint firstItem="YP5-Pc-UIp" firstAttribute="leading" secondItem="7zI-V3-yes" secondAttribute="leading" id="oXs-cf-cxt"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fa0-j0-iP7">
@@ -248,7 +248,7 @@
                     <connections>
                         <outlet property="authView" destination="kVW-fb-56x" id="QLp-mO-HAr"/>
                         <outlet property="btnAuth" destination="id0-40-gpq" id="inr-H8-qpH"/>
-                        <outlet property="btnBack" destination="Eqj-3a-Uyp" id="yiV-vY-iZz"/>
+                        <outlet property="btnBack" destination="YP5-Pc-UIp" id="LJp-UK-NgC"/>
                         <outlet property="btnCheckAuth" destination="I8F-7R-u1x" id="cQr-zn-51Y"/>
                         <outlet property="tvAuthAlert" destination="BdU-CB-sJ8" id="OtN-yC-g09"/>
                         <outlet property="tvAuthField" destination="QZi-wg-1wd" id="Msp-tF-gY7"/>
@@ -280,21 +280,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8Y-ar-EHt">
-                                        <rect key="frame" x="20" y="13" width="24" height="24"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ip6-mW-kva">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="MGa-dS-jhU"/>
-                                            <constraint firstAttribute="height" constant="24" id="bbW-wp-enA"/>
+                                            <constraint firstAttribute="width" constant="44" id="8Pa-Id-7cr"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="ip6-mW-kva" secondAttribute="bottom" id="AE9-MV-cbc"/>
                                     <constraint firstItem="5dh-v7-GF8" firstAttribute="centerX" secondItem="i4b-Hy-qu9" secondAttribute="centerX" id="AEL-ML-KuB"/>
-                                    <constraint firstItem="b8Y-ar-EHt" firstAttribute="centerY" secondItem="i4b-Hy-qu9" secondAttribute="centerY" id="NAd-Tg-p63"/>
                                     <constraint firstAttribute="height" constant="50" id="Vim-MG-Fjp"/>
-                                    <constraint firstItem="b8Y-ar-EHt" firstAttribute="leading" secondItem="i4b-Hy-qu9" secondAttribute="leading" constant="20" id="lJ3-Um-shv"/>
+                                    <constraint firstItem="ip6-mW-kva" firstAttribute="leading" secondItem="i4b-Hy-qu9" secondAttribute="leading" id="hqF-UP-17y"/>
+                                    <constraint firstItem="ip6-mW-kva" firstAttribute="top" secondItem="i4b-Hy-qu9" secondAttribute="top" id="qS6-ST-700"/>
                                     <constraint firstItem="5dh-v7-GF8" firstAttribute="centerY" secondItem="i4b-Hy-qu9" secondAttribute="centerY" id="w6R-Va-9wU"/>
                                 </constraints>
                             </view>
@@ -428,7 +428,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBack" destination="b8Y-ar-EHt" id="6bm-Bz-puH"/>
+                        <outlet property="btnBack" destination="ip6-mW-kva" id="caG-lK-kTI"/>
                         <outlet property="btnCheckPw" destination="FIM-D9-y3Y" id="obx-Cx-7AY"/>
                         <outlet property="tvCheckPwAlert" destination="Uol-of-Tky" id="Mob-co-Mq2"/>
                         <outlet property="tvCheckPwField" destination="TbS-Zb-IS4" id="ULG-Us-cuI"/>
@@ -460,11 +460,10 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-bY-mQn">
-                                        <rect key="frame" x="20" y="13" width="24" height="24"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Jn-bY-mQn">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="KbI-1b-2Gb"/>
-                                            <constraint firstAttribute="width" constant="24" id="k2S-wT-WL0"/>
+                                            <constraint firstAttribute="width" constant="44" id="k2S-wT-WL0"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     </button>
@@ -473,9 +472,11 @@
                                 <constraints>
                                     <constraint firstItem="o1h-4i-kzf" firstAttribute="centerY" secondItem="dS3-ir-Sdl" secondAttribute="centerY" id="1lN-bc-tg4"/>
                                     <constraint firstItem="7Jn-bY-mQn" firstAttribute="centerY" secondItem="dS3-ir-Sdl" secondAttribute="centerY" id="2bU-ay-QgH"/>
-                                    <constraint firstItem="7Jn-bY-mQn" firstAttribute="leading" secondItem="dS3-ir-Sdl" secondAttribute="leading" constant="20" id="EWR-f4-yeT"/>
+                                    <constraint firstItem="7Jn-bY-mQn" firstAttribute="leading" secondItem="dS3-ir-Sdl" secondAttribute="leading" id="4z4-4Z-fL6"/>
                                     <constraint firstAttribute="height" constant="50" id="HJE-Qf-uwH"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Jn-bY-mQn" secondAttribute="bottom" id="Mnq-DX-QiZ"/>
                                     <constraint firstItem="o1h-4i-kzf" firstAttribute="centerX" secondItem="dS3-ir-Sdl" secondAttribute="centerX" id="QUJ-sk-AnR"/>
+                                    <constraint firstItem="7Jn-bY-mQn" firstAttribute="top" secondItem="dS3-ir-Sdl" secondAttribute="top" id="rAR-cE-p1l"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QZF-hy-ZKK">
@@ -491,13 +492,14 @@
                                                     <constraint firstAttribute="height" constant="146" id="xMj-IT-iUq"/>
                                                 </constraints>
                                             </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmo-my-8fH">
-                                                <rect key="frame" x="162" y="98" width="90" height="44"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pmo-my-8fH">
+                                                <rect key="frame" x="162" y="89" width="90" height="62"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="44" id="XTZ-pg-rw1"/>
+                                                    <constraint firstAttribute="height" constant="62" id="XTZ-pg-rw1"/>
                                                     <constraint firstAttribute="width" constant="90" id="mxN-Cu-gcP"/>
                                                 </constraints>
-                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <inset key="imageEdgeInsets" minX="0.0" minY="9" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                <state key="normal" image="icUploadImage"/>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6f8-3K-FkF">
                                                 <rect key="frame" x="186" y="109.5" width="42" height="21"/>
@@ -693,4 +695,7 @@
             <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
     </designables>
+    <resources>
+        <image name="icUploadImage" width="90" height="44"/>
+    </resources>
 </document>

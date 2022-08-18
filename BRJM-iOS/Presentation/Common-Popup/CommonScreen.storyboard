@@ -252,7 +252,7 @@
         <!--Web View Controller-->
         <scene sceneID="zAH-4H-nrJ">
             <objects>
-                <viewController storyboardIdentifier="WebViewController" id="Xkx-yl-AM9" customClass="WebViewController" customModule="DKMM_iOS" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="WebViewController" id="Xkx-yl-AM9" customClass="WebViewController" customModule="BRJM_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fA5-V6-Mg3">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -266,24 +266,21 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hyX-1n-sEs">
-                                        <rect key="frame" x="20" y="13" width="24" height="24"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y0T-Dg-4YQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="24" id="0Lg-AQ-Esi"/>
-                                            <constraint firstAttribute="height" constant="24" id="OZV-Mp-fjE"/>
+                                            <constraint firstAttribute="width" constant="44" id="9Cp-bZ-9FL"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
-                                        <connections>
-                                            <action selector="backClick:" destination="Xkx-yl-AM9" eventType="touchUpInside" id="KyU-1n-aDG"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstItem="xEO-sg-7bq" firstAttribute="centerY" secondItem="qyz-ki-WcI" secondAttribute="centerY" id="2DI-eE-3kH"/>
-                                    <constraint firstItem="hyX-1n-sEs" firstAttribute="centerY" secondItem="qyz-ki-WcI" secondAttribute="centerY" id="adX-yb-7zU"/>
+                                    <constraint firstItem="Y0T-Dg-4YQ" firstAttribute="leading" secondItem="qyz-ki-WcI" secondAttribute="leading" id="dVL-01-uA9"/>
+                                    <constraint firstItem="Y0T-Dg-4YQ" firstAttribute="top" secondItem="qyz-ki-WcI" secondAttribute="top" id="dac-uo-BY3"/>
                                     <constraint firstItem="xEO-sg-7bq" firstAttribute="centerX" secondItem="qyz-ki-WcI" secondAttribute="centerX" id="ejU-zE-Zeg"/>
-                                    <constraint firstItem="hyX-1n-sEs" firstAttribute="leading" secondItem="qyz-ki-WcI" secondAttribute="leading" constant="20" id="mnG-SZ-c4a"/>
+                                    <constraint firstAttribute="bottom" secondItem="Y0T-Dg-4YQ" secondAttribute="bottom" id="tIy-kC-HtI"/>
                                     <constraint firstAttribute="height" constant="50" id="yN7-Ne-UdD"/>
                                 </constraints>
                             </view>
@@ -305,7 +302,7 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="btnBack" destination="hyX-1n-sEs" id="DQY-kZ-sGh"/>
+                        <outlet property="btnBack" destination="Y0T-Dg-4YQ" id="eQ8-cl-54y"/>
                         <outlet property="tvNavigationTitle" destination="xEO-sg-7bq" id="kbB-9l-orv"/>
                         <outlet property="webGroupView" destination="pSx-NR-H0c" id="pkK-UR-ksv"/>
                     </connections>
