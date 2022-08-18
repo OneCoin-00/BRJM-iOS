@@ -105,6 +105,9 @@
 		55259CE528A4EB1500B89159 /* LeferiPoint-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */; };
 		55259CE628A4EB1500B89159 /* LeferiPoint-Special.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */; };
 		55259CE728A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */; };
+		5533592E28AE20B8008B2557 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533592C28AE20B8008B2557 /* ListTableViewCell.swift */; };
+		5533592F28AE20B8008B2557 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5533592D28AE20B8008B2557 /* ListTableViewCell.xib */; };
+		5533593128AE23F0008B2557 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533593028AE23F0008B2557 /* WebViewViewController.swift */; };
 		55441F3428A388A0001B7113 /* BoardScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F3328A388A0001B7113 /* BoardScreen.storyboard */; };
 		55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F3528A388AE001B7113 /* WriteScreen.storyboard */; };
 		55441F3828A388B8001B7113 /* NewsScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55441F3728A388B8001B7113 /* NewsScreen.storyboard */; };
@@ -244,6 +247,9 @@
 		55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-BlackOblique.otf"; sourceTree = "<group>"; };
 		55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Special.otf"; sourceTree = "<group>"; };
 		55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-WhiteOblique.otf"; sourceTree = "<group>"; };
+		5533592C28AE20B8008B2557 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		5533592D28AE20B8008B2557 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
+		5533593028AE23F0008B2557 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		55441F3328A388A0001B7113 /* BoardScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BoardScreen.storyboard; sourceTree = "<group>"; };
 		55441F3528A388AE001B7113 /* WriteScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WriteScreen.storyboard; sourceTree = "<group>"; };
 		55441F3728A388B8001B7113 /* NewsScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewsScreen.storyboard; sourceTree = "<group>"; };
@@ -500,6 +506,7 @@
 				145A9462285891120082D8ED /* CommonScreen.storyboard */,
 				145A9463285891120082D8ED /* ConfirmPopupView.swift */,
 				145A9464285891120082D8ED /* AlertPopupView.swift */,
+				5533593028AE23F0008B2557 /* WebViewViewController.swift */,
 			);
 			path = "Common-Popup";
 			sourceTree = "<group>";
@@ -615,6 +622,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5533592B28AE2080008B2557 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5533592C28AE20B8008B2557 /* ListTableViewCell.swift */,
+				5533592D28AE20B8008B2557 /* ListTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		55441F2628A387AD001B7113 /* Board */ = {
 			isa = PBXGroup;
 			children = (
@@ -656,6 +672,7 @@
 		55441F2B28A387FB001B7113 /* News */ = {
 			isa = PBXGroup;
 			children = (
+				5533592B28AE2080008B2557 /* Cells */,
 				55441F2E28A38839001B7113 /* Model */,
 				55441F3128A38847001B7113 /* ViewModel */,
 				55441F3728A388B8001B7113 /* NewsScreen.storyboard */,
@@ -856,6 +873,7 @@
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
 				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
 				55259CE028A4EB1500B89159 /* LeferiPoint-White.otf in Resources */,
+				5533592F28AE20B8008B2557 /* ListTableViewCell.xib in Resources */,
 				145A94C2285891120082D8ED /* HomeScreen.storyboard in Resources */,
 				14596DB1285892EE004A5CCF /* loading.json in Resources */,
 				14596DB0285892EE004A5CCF /* Assets.xcassets in Resources */,
@@ -997,6 +1015,7 @@
 				145A949C285891120082D8ED /* Promise.swift in Sources */,
 				145A94C5285891120082D8ED /* ConfirmPopupView.swift in Sources */,
 				55441F6C28A3A037001B7113 /* MemberModel.swift in Sources */,
+				5533593128AE23F0008B2557 /* WebViewViewController.swift in Sources */,
 				55441F6028A38C7A001B7113 /* NewsModel.swift in Sources */,
 				145A94C6285891120082D8ED /* AlertPopupView.swift in Sources */,
 				145A94B8285891120082D8ED /* DialogUtils.swift in Sources */,
@@ -1035,6 +1054,7 @@
 				145A94A9285891120082D8ED /* UIPanGestureRecognizer+MainDirection.swift in Sources */,
 				145A94C9285891120082D8ED /* BaseConstraint.swift in Sources */,
 				145A94DB285891120082D8ED /* NSMutableAttributedString.swift in Sources */,
+				5533592E28AE20B8008B2557 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
