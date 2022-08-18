@@ -126,6 +126,14 @@ public class BaseViewController: UIViewController {
         button.setImage(UIImage(named: "icNavigationBack"))
     }
     
+    public func setNavigationBar(label: UILabel, title: String) {
+        
+        /** 타이틀 */
+        label.text = title
+        label.textColor = .black
+        label.setFont(type: .regular, size: 18)
+    }
+    
     /**
      - Note: line 버튼
      */
@@ -389,6 +397,27 @@ public class BaseViewController: UIViewController {
         }()
     }
     
+    /** 웹뷰로 이동 */
+    public func moveToWebView(_ url: String) {
+        
+        if "" == url { return }
+        
+        if let nvc = self.navigationController {
+            
+            if !(nvc.topViewController?.description.contains("WebViewController"))! {
+                
+                let storyBoard:UIStoryboard = UIStoryboard(name: "CommonScreen", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "WebViewController") as! WebViewController
+                vc.modalTransitionStyle = .crossDissolve
+                
+                var pm: [String: Any] = [:]
+                pm["url"] = url
+                Session.shared().setParams(param: pm)
+                
+                nvc.pushViewController(vc, animated: true)
+            }
+        }
+    }
     
     /** 외부 링크로 이동 */
     public func globalMoveBrowser(link: String) {
