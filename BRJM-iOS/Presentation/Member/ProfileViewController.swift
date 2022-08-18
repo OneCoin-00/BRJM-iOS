@@ -15,6 +15,7 @@ class ProfileViewController: BaseViewController {
     /** 프로필 이미지 버튼 */
     @IBOutlet weak var ivProfile: UIImageView!
     @IBOutlet weak var btnProfile: UIButton!
+    @IBOutlet weak var tvProfileTitle: UILabel!
     
     /** 닉네임 */
     @IBOutlet weak var tvNickTitle: UILabel!
@@ -56,10 +57,18 @@ class ProfileViewController: BaseViewController {
         ivProfile.layer.cornerRadius = ivProfile.width / 2
         ivProfile.image = UIImage(named: "icDefaultProfile")
         
+        /** 이미지 업로드 버튼 */
+        btnProfile.setImage(UIImage(named: "icUploadImage"))
+        
+        /** 이미지 업로드 버튼 타이틀*/
+        tvProfileTitle.text = "join_text_16".localized()
+        tvProfileTitle.textColor = BaseConstraint.COLOR_GRAY
+        tvProfileTitle.setFont(type: .bold, size: 10)
+        
         
         /** 닉네임 타이틀 */
         tvNickTitle.text = "join_text_14".localized()
-        tvNickTitle.textColor = BaseConstraint.COLOR_GRAY
+        tvNickTitle.textColor = BaseConstraint.COLOR_GRAY_80
         tvNickTitle.setFont(type: .regular, size: 16)
         
         /** 닉네임 필드 */
