@@ -141,6 +141,9 @@
 		55C3278D28AB32CB001A93D2 /* CustomTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */; };
 		55C3278F28AB32DE001A93D2 /* CustomTabBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55C3278E28AB32DE001A93D2 /* CustomTabBar.xib */; };
 		55EFB9F928A4A9840022F8AD /* ValidateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */; };
+		55FAFC1E28B1275300F71CB0 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAFC1C28B1275300F71CB0 /* CardViewCell.swift */; };
+		55FAFC1F28B1275300F71CB0 /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FAFC1D28B1275300F71CB0 /* CardViewCell.xib */; };
+		55FAFC2328B12B5A00F71CB0 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -283,6 +286,9 @@
 		55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBar.swift; sourceTree = "<group>"; };
 		55C3278E28AB32DE001A93D2 /* CustomTabBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTabBar.xib; sourceTree = "<group>"; };
 		55EFB9F828A4A9840022F8AD /* ValidateUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateUtils.swift; sourceTree = "<group>"; };
+		55FAFC1C28B1275300F71CB0 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
+		55FAFC1D28B1275300F71CB0 /* CardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
+		55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
 		719AF713B3DFB44C6C15EBFB /* Pods-BRJM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.release.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRJM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45322179C542CC362FFDD98 /* Pods-BRJM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -458,6 +464,7 @@
 			children = (
 				145A9465285891120082D8ED /* Base */,
 				145A9461285891120082D8ED /* Common-Popup */,
+				55FAFC1B28B126D000F71CB0 /* Common-Cell */,
 				145A9469285891120082D8ED /* Cover */,
 				55441F6828A39F3A001B7113 /* Member */,
 				145A9459285891120082D8ED /* Home */,
@@ -606,6 +613,7 @@
 				145A948A285891120082D8ED /* UIFont.swift */,
 				145A948B285891120082D8ED /* UILabel.swift */,
 				145A948C285891120082D8ED /* UINavigationController.swift */,
+				55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -625,8 +633,8 @@
 		5533592B28AE2080008B2557 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				5533592C28AE20B8008B2557 /* ListTableViewCell.swift */,
 				5533592D28AE20B8008B2557 /* ListTableViewCell.xib */,
+				5533592C28AE20B8008B2557 /* ListTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -783,10 +791,19 @@
 		55C3278B28AB3298001A93D2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */,
 				55C3278E28AB32DE001A93D2 /* CustomTabBar.xib */,
+				55C3278C28AB32CB001A93D2 /* CustomTabBar.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		55FAFC1B28B126D000F71CB0 /* Common-Cell */ = {
+			isa = PBXGroup;
+			children = (
+				55FAFC1D28B1275300F71CB0 /* CardViewCell.xib */,
+				55FAFC1C28B1275300F71CB0 /* CardViewCell.swift */,
+			);
+			path = "Common-Cell";
 			sourceTree = "<group>";
 		};
 		86A8340833B345CD8652C6F5 /* Frameworks */ = {
@@ -873,6 +890,7 @@
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
 				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
 				55259CE028A4EB1500B89159 /* LeferiPoint-White.otf in Resources */,
+				55FAFC1F28B1275300F71CB0 /* CardViewCell.xib in Resources */,
 				5533592F28AE20B8008B2557 /* ListTableViewCell.xib in Resources */,
 				145A94C2285891120082D8ED /* HomeScreen.storyboard in Resources */,
 				14596DB1285892EE004A5CCF /* loading.json in Resources */,
@@ -1047,9 +1065,11 @@
 				145A94A5285891120082D8ED /* EZSafeTimer.swift in Sources */,
 				145A94A1285891120082D8ED /* EZNavigationControllerTransitionHelper.swift in Sources */,
 				55441F3C28A388DD001B7113 /* BoardViewController.swift in Sources */,
+				55FAFC1E28B1275300F71CB0 /* CardViewCell.swift in Sources */,
 				55C3278A28AB315D001A93D2 /* BaseTabBarViewController.swift in Sources */,
 				145A94CF285891120082D8ED /* Enum.swift in Sources */,
 				145A94D6285891120082D8ED /* UIView.swift in Sources */,
+				55FAFC2328B12B5A00F71CB0 /* UICollectionViewCell.swift in Sources */,
 				145A94C1285891120082D8ED /* HomeModel.swift in Sources */,
 				145A94A9285891120082D8ED /* UIPanGestureRecognizer+MainDirection.swift in Sources */,
 				145A94C9285891120082D8ED /* BaseConstraint.swift in Sources */,
