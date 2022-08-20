@@ -18,7 +18,7 @@ class MemberViewController : BaseViewController {
         
         btnJoin.rx.tap.bind {
             
-            self.moveToJoin()
+            self.moveToLogin()
         }.disposed(by: disposeBag)
         
         btnLogin.rx.tap.bind {
@@ -34,6 +34,21 @@ class MemberViewController : BaseViewController {
                 
                 let storyBoard:UIStoryboard = UIStoryboard(name: "MemberScreen", bundle: nil)
                 let vc = storyBoard.instantiateViewController(withIdentifier: "JoinEmailViewController") as! JoinEmailViewController
+                vc.modalTransitionStyle = .crossDissolve
+                
+                nvc.pushViewController(vc, animated: true)
+            }
+        }
+    }
+    
+    /** 로그인으로 이동 */
+    private func moveToLogin() {
+        if let nvc = self.navigationController {
+            
+            if !(nvc.topViewController?.description.contains("LoginViewController"))! {
+                
+                let storyBoard:UIStoryboard = UIStoryboard(name: "MemberScreen", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
                 vc.modalTransitionStyle = .crossDissolve
                 
                 nvc.pushViewController(vc, animated: true)

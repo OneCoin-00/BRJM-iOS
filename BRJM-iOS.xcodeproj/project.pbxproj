@@ -144,6 +144,7 @@
 		55FAFC1E28B1275300F71CB0 /* CardViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAFC1C28B1275300F71CB0 /* CardViewCell.swift */; };
 		55FAFC1F28B1275300F71CB0 /* CardViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 55FAFC1D28B1275300F71CB0 /* CardViewCell.xib */; };
 		55FAFC2328B12B5A00F71CB0 /* UICollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */; };
+		55FAFC2528B12FAF00F71CB0 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FAFC2428B12FAF00F71CB0 /* LoginViewController.swift */; };
 		F73BB9BE788309193A952480 /* Pods_BRJM_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */; };
 /* End PBXBuildFile section */
 
@@ -289,6 +290,7 @@
 		55FAFC1C28B1275300F71CB0 /* CardViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewCell.swift; sourceTree = "<group>"; };
 		55FAFC1D28B1275300F71CB0 /* CardViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardViewCell.xib; sourceTree = "<group>"; };
 		55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICollectionViewCell.swift; sourceTree = "<group>"; };
+		55FAFC2428B12FAF00F71CB0 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		719AF713B3DFB44C6C15EBFB /* Pods-BRJM-iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.release.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.release.xcconfig"; sourceTree = "<group>"; };
 		AEE7068A249966084DF7E794 /* Pods_BRJM_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BRJM_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C45322179C542CC362FFDD98 /* Pods-BRJM-iOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BRJM-iOS.debug.xcconfig"; path = "Target Support Files/Pods-BRJM-iOS/Pods-BRJM-iOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -759,6 +761,7 @@
 				55441F7528A3B07C001B7113 /* JoinEmailViewController.swift */,
 				55441F7728A3B2EE001B7113 /* PasswordViewController.swift */,
 				557F1A2228AA177400AD729D /* ProfileViewController.swift */,
+				55FAFC2428B12FAF00F71CB0 /* LoginViewController.swift */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -1070,6 +1073,7 @@
 				145A94CF285891120082D8ED /* Enum.swift in Sources */,
 				145A94D6285891120082D8ED /* UIView.swift in Sources */,
 				55FAFC2328B12B5A00F71CB0 /* UICollectionViewCell.swift in Sources */,
+				55FAFC2528B12FAF00F71CB0 /* LoginViewController.swift in Sources */,
 				145A94C1285891120082D8ED /* HomeModel.swift in Sources */,
 				145A94A9285891120082D8ED /* UIPanGestureRecognizer+MainDirection.swift in Sources */,
 				145A94C9285891120082D8ED /* BaseConstraint.swift in Sources */,
