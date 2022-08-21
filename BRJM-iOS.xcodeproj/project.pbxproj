@@ -111,6 +111,8 @@
 		5527EC3E28B2015E005DE031 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3D28B2015E005DE031 /* UpdateProfileViewController.swift */; };
 		5527EC4028B201B1005DE031 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3F28B201B1005DE031 /* SettingViewController.swift */; };
 		5527EC4228B20A21005DE031 /* UIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC4128B20A21005DE031 /* UIPageViewController.swift */; };
+		5527EC4628B21926005DE031 /* AlertCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC4428B21926005DE031 /* AlertCell.swift */; };
+		5527EC4928B21A9D005DE031 /* AlertCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5527EC4828B21A9D005DE031 /* AlertCell.xib */; };
 		5533592E28AE20B8008B2557 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533592C28AE20B8008B2557 /* ListTableViewCell.swift */; };
 		5533592F28AE20B8008B2557 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5533592D28AE20B8008B2557 /* ListTableViewCell.xib */; };
 		5533593128AE23F0008B2557 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533593028AE23F0008B2557 /* WebViewViewController.swift */; };
@@ -263,6 +265,8 @@
 		5527EC3D28B2015E005DE031 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
 		5527EC3F28B201B1005DE031 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		5527EC4128B20A21005DE031 /* UIPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewController.swift; sourceTree = "<group>"; };
+		5527EC4428B21926005DE031 /* AlertCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertCell.swift; sourceTree = "<group>"; };
+		5527EC4828B21A9D005DE031 /* AlertCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertCell.xib; sourceTree = "<group>"; };
 		5533592C28AE20B8008B2557 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		5533592D28AE20B8008B2557 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		5533593028AE23F0008B2557 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
@@ -645,6 +649,15 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		5527EC4328B2190B005DE031 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				5527EC4828B21A9D005DE031 /* AlertCell.xib */,
+				5527EC4428B21926005DE031 /* AlertCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		5533592B28AE2080008B2557 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -707,6 +720,7 @@
 		55441F2C28A38810001B7113 /* MyPage */ = {
 			isa = PBXGroup;
 			children = (
+				5527EC4328B2190B005DE031 /* Cells */,
 				55441F2F28A3883C001B7113 /* Model */,
 				55441F3228A3884A001B7113 /* ViewModel */,
 				55441F3928A388C1001B7113 /* MyPageScreen.storyboard */,
@@ -907,6 +921,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5527EC4928B21A9D005DE031 /* AlertCell.xib in Resources */,
 				55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */,
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
 				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
@@ -1002,6 +1017,7 @@
 				145A94A8285891120082D8ED /* EZNavigationConfiguration.swift in Sources */,
 				145A94D1285891120082D8ED /* NetworkDefine.swift in Sources */,
 				145A94A0285891120082D8ED /* ImagePicker.swift in Sources */,
+				5527EC4628B21926005DE031 /* AlertCell.swift in Sources */,
 				145A94C7285891120082D8ED /* BaseViewController.swift in Sources */,
 				145A949B285891120082D8ED /* Settings.swift in Sources */,
 				145A94A6285891120082D8ED /* UINavigationController+SwizzledPushAndPop.swift in Sources */,
