@@ -828,47 +828,6 @@
             <point key="canvasLocation" x="2230.434782608696" y="115.84821428571428"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="DRV-U3-ODV">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
-        <designable name="FIM-D9-y3Y">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
-        <designable name="GpP-zK-rkT">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="HVe-zE-cqM">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="I8F-7R-u1x">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
-        <designable name="L5f-iG-hN4">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="QZi-wg-1wd">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="TbS-Zb-IS4">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="bmo-kQ-2Er">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="dfQ-jm-TLi">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
-        <designable name="iAl-j3-ML9">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
-        <designable name="id0-40-gpq">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
-        <designable name="zrT-jO-MlL">
-            <size key="intrinsicContentSize" width="46" height="30"/>
-        </designable>
-    </designables>
     <resources>
         <image name="icErrorAlert" width="18" height="18"/>
         <image name="icUploadImage" width="90" height="44"/>

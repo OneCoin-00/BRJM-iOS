@@ -32,6 +32,9 @@ class LoginViewController: BaseViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        /** 뷰 설정 */
+        setViews()
+        setRx()
     }
 
     /** 뷰 설정 */
@@ -125,7 +128,7 @@ class LoginViewController: BaseViewController {
     /** 버튼 설정*/
     private func setButton(isActive: Bool) {
         
-        btnLogin.setTitle(title)
+        btnLogin.setTitle("login_text_1".localized())
         
         /** 버튼 클릭 활성화 */
         if isActive {
@@ -143,8 +146,8 @@ class LoginViewController: BaseViewController {
     /** 입력 확인 */
     private func checkEnterData() {
         
-        if alertView.isHidden {
-            alertView.isHidden = false
+        if !alertView.isHidden {
+            alertView.isHidden = true
         }
         
         if !tvEmailField.text!.isEmpty && !tvPwField.text!.isEmpty {
