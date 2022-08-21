@@ -45,3 +45,10 @@
 // #환경 소식
 "news_text_1" = "환경소식";
 "news_text_2" = "상세보기";
+
+
+// #마이페이지
+"mypage_text_1" = "마이페이지";
+"mypage_text_2" = "프로필";
+"mypage_text_3" = "%1$@ 변경";
+"mypage_text_4" = "수정하기";
