@@ -96,7 +96,7 @@ class ProfileViewController: BaseViewController {
         categoryCollectionView.registerReusableCell(CategoryCell.self)
         
         /** 회원가입 버튼 */
-        setButton(true)
+        setButton(false)
     }
     
     /** Rx 설정 */
@@ -196,7 +196,6 @@ class ProfileViewController: BaseViewController {
         /** 버튼 클릭 활성화 */
         if isActive {
             btnJoin.isEnabled = true
-            
             fullButton(btnJoin, backgroundColor: BaseConstraint.COLOR_PRIMARY)
         }
         
@@ -272,7 +271,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     /** 셀 간격 */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return (categoryCollectionView.width / 4) / 5
+        return (categoryCollectionView.width / 4) / 3
     }
     
     /** 카테고리 선택 */
@@ -284,6 +283,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         
         data.isSelected = !selectValue
         
+        self.setButton(true)
         categoryCollectionView.reloadData()
     }
 }
