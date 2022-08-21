@@ -105,6 +105,12 @@
 		55259CE528A4EB1500B89159 /* LeferiPoint-BlackOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */; };
 		55259CE628A4EB1500B89159 /* LeferiPoint-Special.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */; };
 		55259CE728A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */; };
+		5527EC3828B2008A005DE031 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3728B2008A005DE031 /* AlertView.swift */; };
+		5527EC3A28B200AF005DE031 /* MyPostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3928B200AF005DE031 /* MyPostView.swift */; };
+		5527EC3C28B200D0005DE031 /* MyLikedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3B28B200D0005DE031 /* MyLikedView.swift */; };
+		5527EC3E28B2015E005DE031 /* UpdateProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3D28B2015E005DE031 /* UpdateProfileViewController.swift */; };
+		5527EC4028B201B1005DE031 /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC3F28B201B1005DE031 /* SettingViewController.swift */; };
+		5527EC4228B20A21005DE031 /* UIPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5527EC4128B20A21005DE031 /* UIPageViewController.swift */; };
 		5533592E28AE20B8008B2557 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533592C28AE20B8008B2557 /* ListTableViewCell.swift */; };
 		5533592F28AE20B8008B2557 /* ListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5533592D28AE20B8008B2557 /* ListTableViewCell.xib */; };
 		5533593128AE23F0008B2557 /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5533593028AE23F0008B2557 /* WebViewViewController.swift */; };
@@ -251,6 +257,12 @@
 		55259CDD28A4EB1500B89159 /* LeferiPoint-BlackOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-BlackOblique.otf"; sourceTree = "<group>"; };
 		55259CDE28A4EB1500B89159 /* LeferiPoint-Special.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Special.otf"; sourceTree = "<group>"; };
 		55259CDF28A4EB1500B89159 /* LeferiPoint-WhiteOblique.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-WhiteOblique.otf"; sourceTree = "<group>"; };
+		5527EC3728B2008A005DE031 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
+		5527EC3928B200AF005DE031 /* MyPostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPostView.swift; sourceTree = "<group>"; };
+		5527EC3B28B200D0005DE031 /* MyLikedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLikedView.swift; sourceTree = "<group>"; };
+		5527EC3D28B2015E005DE031 /* UpdateProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateProfileViewController.swift; sourceTree = "<group>"; };
+		5527EC3F28B201B1005DE031 /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
+		5527EC4128B20A21005DE031 /* UIPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIPageViewController.swift; sourceTree = "<group>"; };
 		5533592C28AE20B8008B2557 /* ListTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
 		5533592D28AE20B8008B2557 /* ListTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ListTableViewCell.xib; sourceTree = "<group>"; };
 		5533593028AE23F0008B2557 /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
@@ -616,6 +628,7 @@
 				145A948B285891120082D8ED /* UILabel.swift */,
 				145A948C285891120082D8ED /* UINavigationController.swift */,
 				55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */,
+				5527EC4128B20A21005DE031 /* UIPageViewController.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -698,6 +711,11 @@
 				55441F3228A3884A001B7113 /* ViewModel */,
 				55441F3928A388C1001B7113 /* MyPageScreen.storyboard */,
 				55441F4128A38918001B7113 /* MyPageViewController.swift */,
+				5527EC3728B2008A005DE031 /* AlertView.swift */,
+				5527EC3928B200AF005DE031 /* MyPostView.swift */,
+				5527EC3B28B200D0005DE031 /* MyLikedView.swift */,
+				5527EC3D28B2015E005DE031 /* UpdateProfileViewController.swift */,
+				5527EC3F28B201B1005DE031 /* SettingViewController.swift */,
 			);
 			path = MyPage;
 			sourceTree = "<group>";
@@ -978,6 +996,7 @@
 				145A9499285891120082D8ED /* anim.swift in Sources */,
 				55441F3E28A388F1001B7113 /* WriteViewController.swift in Sources */,
 				145A94C8285891120082D8ED /* UINavigationController+Extension.swift in Sources */,
+				5527EC3C28B200D0005DE031 /* MyLikedView.swift in Sources */,
 				145A949F285891120082D8ED /* Constraint.swift in Sources */,
 				55441F7428A3A2B7001B7113 /* MemberViewController.swift in Sources */,
 				145A94A8285891120082D8ED /* EZNavigationConfiguration.swift in Sources */,
@@ -1004,6 +1023,7 @@
 				145A94DA285891120082D8ED /* UIColor+MColor.swift in Sources */,
 				145A94E2285891120082D8ED /* UIFont.swift in Sources */,
 				145A9493285891120082D8ED /* BottomPopupDismissAnimator.swift in Sources */,
+				5527EC3E28B2015E005DE031 /* UpdateProfileViewController.swift in Sources */,
 				145A94BF285891120082D8ED /* HomeViewModel.swift in Sources */,
 				145A94CE285891120082D8ED /* CoverNavigationController.swift in Sources */,
 				145A94E1285891120082D8ED /* Date_Extensions.swift in Sources */,
@@ -1015,6 +1035,7 @@
 				145A94DF285891120082D8ED /* UIImage.swift in Sources */,
 				145A94AA285891120082D8ED /* EZNavigationControllerTransitionHelper+HandlePanGesture.swift in Sources */,
 				145A9496285891120082D8ED /* BottomPopupPresentationController.swift in Sources */,
+				5527EC4228B20A21005DE031 /* UIPageViewController.swift in Sources */,
 				145A94C3285891120082D8ED /* HomeNavigationController.swift in Sources */,
 				145A94BB285891120082D8ED /* Localizable.swift in Sources */,
 				145A94D2285891120082D8ED /* MultipartsUploadService.swift in Sources */,
@@ -1023,14 +1044,17 @@
 				145A9498285891120082D8ED /* Animator-ios.swift in Sources */,
 				145A94D3285891120082D8ED /* Reachability.swift in Sources */,
 				145A94DD285891120082D8ED /* String.swift in Sources */,
+				5527EC4028B201B1005DE031 /* SettingViewController.swift in Sources */,
 				145A9497285891120082D8ED /* Animator-macos.swift in Sources */,
 				145A94A2285891120082D8ED /* EZPushPopAnimator.swift in Sources */,
 				145A94AC285891120082D8ED /* EZDebouncer.swift in Sources */,
 				55441F5A28A38C01001B7113 /* MyPageViewModel.swift in Sources */,
+				5527EC3828B2008A005DE031 /* AlertView.swift in Sources */,
 				55441F7228A3A168001B7113 /* MemberNavigationController.swift in Sources */,
 				145A94B4285891120082D8ED /* DateUtils.swift in Sources */,
 				55441F5C28A38C62001B7113 /* BoardModel.swift in Sources */,
 				145A94D5285891120082D8ED /* BaseModel.swift in Sources */,
+				5527EC3A28B200AF005DE031 /* MyPostView.swift in Sources */,
 				557F1A2328AA177400AD729D /* ProfileViewController.swift in Sources */,
 				145A94D4285891120082D8ED /* FileModel.swift in Sources */,
 				145A949C285891120082D8ED /* Promise.swift in Sources */,
