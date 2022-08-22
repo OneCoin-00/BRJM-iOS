@@ -30,7 +30,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RHn-Qr-fg0">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="icTabBar01"/>
                                     <state key="selected" image="icTabBar11"/>
                                     <connections>
@@ -51,7 +51,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r71-zj-os0">
                                     <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="icTabBar02"/>
                                     <state key="selected" image="icTabBar12"/>
                                     <connections>
@@ -72,7 +72,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IVT-h5-R7a">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="icTabBar03"/>
                                     <state key="selected" image="icTabBar13"/>
                                     <connections>
@@ -93,7 +93,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cl-gi-OYF">
                                     <rect key="frame" x="0.0" y="0.0" width="83.5" height="83"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="-17" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-23" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="icTabBar04"/>
                                     <state key="selected" image="icTabBar14"/>
                                     <connections>
@@ -114,7 +114,7 @@
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mu1-3j-M4y">
                                     <rect key="frame" x="0.0" y="0.0" width="83" height="83"/>
-                                    <inset key="imageEdgeInsets" minX="0.0" minY="-14" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="-20" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                     <state key="normal" image="icTabBar05"/>
                                     <state key="selected" image="icTabBar15"/>
                                     <connections>
