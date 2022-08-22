@@ -6,6 +6,8 @@ import Foundation
  */
 class BoardModel: BaseModel {
 
+    public var postList:[Post] = []/** 게시글 리스트 */
+    
     public class Post {
         
         public var title: String = ""
