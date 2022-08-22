@@ -10,7 +10,7 @@ class MyPageViewController: BaseViewController {
 
     /** 네비게이션 바 */
     @IBOutlet weak var tvNavigationTitle: UILabel!
-    @IBOutlet weak var btnBack: UIButton!
+    @IBOutlet weak var btnSetting: UIButton!
     
     /** 프로필 */
     @IBOutlet weak var ivProfile: UIImageView!
@@ -54,7 +54,7 @@ class MyPageViewController: BaseViewController {
     private func setViews() {
         
         /** 네비게이션 바 설정 */
-        setNavigationBar(label: tvNavigationTitle, button: btnBack, title: "join_text_1".localized())
+        setNavigationBar(label: tvNavigationTitle, title: "join_text_1".localized())
         
         
         /** 프로필 이미지 */
@@ -101,10 +101,10 @@ class MyPageViewController: BaseViewController {
     /** Rx 설정 */
     private func setRx() {
         
-        /** 뒤로가기 버튼 클릭 */
-        btnBack.rx.tap.bind {
+        /** 설정 버튼 클릭 */
+        btnSetting.rx.tap.bind {
             
-            self.navigationController?.popViewController(animated: true)
+            self.moveToSetting()
         }.disposed(by: disposeBag)
         
         
@@ -223,6 +223,22 @@ class MyPageViewController: BaseViewController {
                 
                 let storyBoard:UIStoryboard = UIStoryboard(name: "MyPageScreen", bundle: nil)
                 let vc = storyBoard.instantiateViewController(withIdentifier: "UpdateProfileViewController") as! UpdateProfileViewController
+                vc.modalTransitionStyle = .crossDissolve
+                
+                nvc.pushViewController(vc, animated: true)
+            }
+        }
+    }
+    
+    /** 설정으로 이동 */
+    private func moveToSetting() {
+        
+        if let nvc = self.navigationController {
+            
+            if !(nvc.topViewController?.description.contains("SettingViewController"))! {
+                
+                let storyBoard:UIStoryboard = UIStoryboard(name: "MyPageScreen", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "SettingViewController") as! SettingViewController
                 vc.modalTransitionStyle = .crossDissolve
                 
                 nvc.pushViewController(vc, animated: true)
