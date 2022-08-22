@@ -27,17 +27,18 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCo-cU-aDU">
-                                        <rect key="frame" x="0.0" y="0.0" width="44" height="50"/>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BCo-cU-aDU">
+                                        <rect key="frame" x="370" y="0.0" width="44" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="44" id="O8Y-Dx-Fo6"/>
                                         </constraints>
                                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="icSetting"/>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
-                                    <constraint firstItem="BCo-cU-aDU" firstAttribute="leading" secondItem="J7c-HG-bt0" secondAttribute="leading" id="59p-Wx-rpi"/>
+                                    <constraint firstAttribute="trailing" secondItem="BCo-cU-aDU" secondAttribute="trailing" id="8Oc-7R-p5X"/>
                                     <constraint firstAttribute="bottom" secondItem="BCo-cU-aDU" secondAttribute="bottom" id="Eg5-qH-btG"/>
                                     <constraint firstAttribute="height" constant="50" id="SXz-LZ-Mmt"/>
                                     <constraint firstItem="f8x-8b-3i4" firstAttribute="centerY" secondItem="J7c-HG-bt0" secondAttribute="centerY" id="X1c-As-d4O"/>
@@ -235,9 +236,9 @@
                     <connections>
                         <outlet property="bottomLineView" destination="DdD-g9-Ufz" id="tqr-mO-hrR"/>
                         <outlet property="btnAlert" destination="f74-gE-F5h" id="M3C-e0-Smf"/>
-                        <outlet property="btnBack" destination="BCo-cU-aDU" id="b0R-uV-Yj3"/>
                         <outlet property="btnLike" destination="xt2-qB-sOM" id="NC8-aX-fa5"/>
                         <outlet property="btnPost" destination="3hy-a1-Q0I" id="PUD-Sw-bOA"/>
+                        <outlet property="btnSetting" destination="BCo-cU-aDU" id="6Nl-0w-PqL"/>
                         <outlet property="btnUpdateProfile" destination="kxL-Xm-RZx" id="UhJ-hv-lbx"/>
                         <outlet property="containerView" destination="1LN-FE-Wpx" id="SSc-0X-CdI"/>
                         <outlet property="indicatorView" destination="2i8-2r-1G3" id="6RP-Gr-4aU"/>
@@ -291,9 +292,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="3Qp-0k-gOf">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QkQ-qW-mx5">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="QkQ-qW-mx5">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -317,9 +318,12 @@
                             <constraint firstItem="3Qp-0k-gOf" firstAttribute="leading" secondItem="3cK-3e-xrH" secondAttribute="leading" id="FsH-Sy-jZP"/>
                             <constraint firstItem="3cK-3e-xrH" firstAttribute="trailing" secondItem="3Qp-0k-gOf" secondAttribute="trailing" id="G1p-5t-CEB"/>
                             <constraint firstItem="3Qp-0k-gOf" firstAttribute="top" secondItem="3cK-3e-xrH" secondAttribute="top" id="SwM-O1-yjl"/>
-                            <constraint firstItem="3cK-3e-xrH" firstAttribute="bottom" secondItem="3Qp-0k-gOf" secondAttribute="bottom" id="r59-LO-4cn"/>
+                            <constraint firstItem="3cK-3e-xrH" firstAttribute="bottom" secondItem="3Qp-0k-gOf" secondAttribute="bottom" constant="40" id="r59-LO-4cn"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="3Qp-0k-gOf" id="i3c-3y-526"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hH5-2X-8sw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -334,9 +338,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gKr-KK-89d">
-                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N7Z-Fb-RaY">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="N7Z-Fb-RaY">
                                     <size key="itemSize" width="128" height="128"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -357,12 +361,15 @@
                         <viewLayoutGuide key="safeArea" id="ftR-8y-M48"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="ftR-8y-M48" firstAttribute="bottom" secondItem="gKr-KK-89d" secondAttribute="bottom" id="4PP-3v-xKx"/>
+                            <constraint firstItem="ftR-8y-M48" firstAttribute="bottom" secondItem="gKr-KK-89d" secondAttribute="bottom" constant="40" id="4PP-3v-xKx"/>
                             <constraint firstItem="gKr-KK-89d" firstAttribute="leading" secondItem="gXG-Nj-FsB" secondAttribute="leading" id="928-sw-n7O"/>
                             <constraint firstItem="ftR-8y-M48" firstAttribute="trailing" secondItem="gKr-KK-89d" secondAttribute="trailing" id="Nff-js-TeK"/>
                             <constraint firstItem="gKr-KK-89d" firstAttribute="top" secondItem="ftR-8y-M48" secondAttribute="top" id="P4a-qr-z08"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="gKr-KK-89d" id="UWl-QV-ARG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fqg-IW-afm" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -605,9 +612,6 @@
         <designable name="4r2-DY-ya8">
             <size key="intrinsicContentSize" width="46" height="30"/>
         </designable>
-        <designable name="cGn-fR-Czs">
-            <size key="intrinsicContentSize" width="4" height="18.5"/>
-        </designable>
     </designables>
     <resources>
         <image name="icBigLikeOff" width="32" height="29.5"/>
@@ -617,6 +621,7 @@
         <image name="icNotificationOn" width="36" height="36"/>
         <image name="icPostOff" width="36" height="36"/>
         <image name="icPostOn" width="36" height="36"/>
+        <image name="icSetting" width="24" height="24"/>
         <image name="icUploadImage" width="90" height="44"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
