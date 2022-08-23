@@ -74,7 +74,7 @@ class BoardViewController: BaseViewController {
         tableView.separatorStyle = .none
         
         /** footer 설정 */
-        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 34))
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 20))
         footerView.backgroundColor = .white
         tableView.tableFooterView = footerView
     }
