@@ -56,7 +56,6 @@
         <!--Home View Controller-->
         <scene sceneID="Pgd-8u-RbH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gbI-sw-fXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="HomeViewController" id="pTX-4D-1Cr" customClass="HomeViewController" customModule="BRJM_iOS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Z6F-vB-87b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -81,12 +80,23 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bw5-ML-vG2">
+                                                <rect key="frame" x="4" y="0.0" width="374" height="40"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstItem="HUZ-ku-dpP" firstAttribute="centerY" secondItem="sSV-50-1YR" secondAttribute="centerY" id="Cr6-id-P7M"/>
                                             <constraint firstItem="8iP-N7-E1q" firstAttribute="leading" secondItem="HUZ-ku-dpP" secondAttribute="trailing" constant="8" id="D7C-2k-hAd"/>
+                                            <constraint firstAttribute="bottom" secondItem="Bw5-ML-vG2" secondAttribute="bottom" id="QQD-fj-tWf"/>
+                                            <constraint firstItem="Bw5-ML-vG2" firstAttribute="top" secondItem="sSV-50-1YR" secondAttribute="top" id="RkV-ba-2Sc"/>
+                                            <constraint firstItem="Bw5-ML-vG2" firstAttribute="centerY" secondItem="sSV-50-1YR" secondAttribute="centerY" id="T2p-7J-iyT"/>
+                                            <constraint firstAttribute="trailing" secondItem="Bw5-ML-vG2" secondAttribute="trailing" id="bN1-8v-bsj"/>
+                                            <constraint firstItem="Bw5-ML-vG2" firstAttribute="leading" secondItem="sSV-50-1YR" secondAttribute="leading" id="jLd-lk-yLv"/>
                                             <constraint firstItem="8iP-N7-E1q" firstAttribute="centerY" secondItem="sSV-50-1YR" secondAttribute="centerY" id="nNk-Ja-Nxe"/>
+                                            <constraint firstItem="Bw5-ML-vG2" firstAttribute="centerX" secondItem="sSV-50-1YR" secondAttribute="centerX" id="wL4-F2-ozI"/>
                                             <constraint firstItem="HUZ-ku-dpP" firstAttribute="leading" secondItem="sSV-50-1YR" secondAttribute="leading" constant="8" id="wLU-nx-P5B"/>
                                         </constraints>
                                     </view>
@@ -119,7 +129,13 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" id="gPj-XJ-fnq"/>
                     <navigationItem key="navigationItem" id="ndf-iT-l03"/>
+                    <connections>
+                        <outlet property="btnSearch" destination="Bw5-ML-vG2" id="6BX-F9-ke0"/>
+                        <outlet property="tableView" destination="dOM-Qz-3nr" id="vaq-UJ-gGQ"/>
+                        <outlet property="tvNavigationTitle" destination="8iP-N7-E1q" id="22p-st-ZnI"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbI-sw-fXt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1669.5652173913045" y="93.75"/>
         </scene>
@@ -168,7 +184,7 @@
             <objects>
                 <viewController id="uze-Na-pRo" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RSV-KO-2EJ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="glS-0K-Txc">
