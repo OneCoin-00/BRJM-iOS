@@ -11,6 +11,7 @@ class BoardModel: BaseModel {
     public class Post {
         
         public var title: String = ""
+        public var description: String = ""
         public var writer: String = ""
         public var views: String = ""
         public var likes: String = ""
