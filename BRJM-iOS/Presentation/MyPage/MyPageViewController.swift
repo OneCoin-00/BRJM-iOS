@@ -33,6 +33,7 @@ class MyPageViewController: BaseViewController {
     private var pageViewController: UIPageViewController!
     private var pages = [UIViewController]()
     private var currentPage: Int? = 0
+    private var beforePage: Int? = 0
     private var currentIndex: Int?
     private var pendingIndex: Int?
     private var page1: AlertView!
@@ -110,6 +111,7 @@ class MyPageViewController: BaseViewController {
         
         /** 탭 바 알림 버튼 클릭 */
         btnAlert.rx.tap.bind {
+            self.beforePage = 0
             self.currentPage = 0
             self.controlPageView()
         }.disposed(by: disposeBag)
@@ -122,6 +124,7 @@ class MyPageViewController: BaseViewController {
         
         /** 탭 바 내가 좋아한 글 버튼 클릭 */
         btnLike.rx.tap.bind {
+            self.beforePage = 2
             self.currentPage = 2
             self.controlPageView()
         }.disposed(by: disposeBag)
@@ -148,7 +151,12 @@ class MyPageViewController: BaseViewController {
         else if currentPage == 1 {
             controlTabBarButton()
             indicatorAnimation(button: btnPost)
-            pageViewController.setViewControllers([self.page2], direction: UIPageViewController.NavigationDirection.forward, animated: true, completion: nil)
+            
+            if beforePage == 0 {
+                pageViewController.setViewControllers([self.page2], direction: UIPageViewController.NavigationDirection.forward, animated: true, completion: nil)
+            } else {
+                pageViewController.setViewControllers([self.page2], direction: UIPageViewController.NavigationDirection.reverse, animated: true, completion: nil)
+            }
         }
         
         /** 내가 좋아한 글 */
@@ -278,12 +286,14 @@ extension MyPageViewController: UIPageViewControllerDelegate, UIPageViewControll
             if currentIndex! == 0 {
                 controlTabBarButton()
                 indicatorAnimation(button: btnAlert)
+                beforePage = currentPage
             } else if currentIndex! == 1 {
                 controlTabBarButton()
                 indicatorAnimation(button: btnPost)
             } else {
                 controlTabBarButton()
                 indicatorAnimation(button: btnLike)
+                beforePage = currentPage
             }
         }
     }
