@@ -15,6 +15,17 @@
 "refresh" = "새로고침";
 
 
+// #카테고리
+"category_text_1" = "생활";
+"category_text_2" = "에너지 절약";
+"category_text_3" = "DIY";
+"category_text_4" = "의류";
+"category_text_5" = "가구";
+"category_text_6" = "식물";
+"category_text_7" = "소품";
+"category_text_8" = "뷰티";
+
+
 // #회원가입
 "join_text_1" = "회원가입";
 "join_text_2" = "이메일";
@@ -40,6 +51,16 @@
 // #로그인
 "login_text_1" = "로그인";
 "login_text_2" = "아이디 및 비밀번호가 일치하지 않습니다.\n입력 정보를 확인해주세요.";
+
+
+// #홈
+"home_text_1" = "이번 주 환경 소식";
+"home_text_2" = "지난 주 랭킹";
+"home_text_3" = "%1$@님을 위한 추천";
+
+
+// #게시판
+"board_text_1" = "전체글";
 
 
 // #환경 소식

@@ -143,6 +143,9 @@
 		55441F7828A3B2EE001B7113 /* PasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55441F7728A3B2EE001B7113 /* PasswordViewController.swift */; };
 		5564251F28AB7E31009FE3AC /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5564251D28AB7E31009FE3AC /* CategoryCell.swift */; };
 		5564252028AB7E31009FE3AC /* CategoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5564251E28AB7E31009FE3AC /* CategoryCell.xib */; };
+		5574D69B28B4CDF100AB2579 /* ListViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574D69928B4CDF100AB2579 /* ListViewCell.swift */; };
+		5574D69C28B4CDF100AB2579 /* ListViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5574D69A28B4CDF100AB2579 /* ListViewCell.xib */; };
+		5574D69E28B4D12200AB2579 /* UITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5574D69D28B4D12200AB2579 /* UITableViewCell.swift */; };
 		557F1A2328AA177400AD729D /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 557F1A2228AA177400AD729D /* ProfileViewController.swift */; };
 		55A5942428AB473A006F340E /* TabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55A5942328AB473A006F340E /* TabBarViewController.swift */; };
 		55C3278A28AB315D001A93D2 /* BaseTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55C3278928AB315D001A93D2 /* BaseTabBarViewController.swift */; };
@@ -297,6 +300,9 @@
 		55441F7728A3B2EE001B7113 /* PasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordViewController.swift; sourceTree = "<group>"; };
 		5564251D28AB7E31009FE3AC /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 		5564251E28AB7E31009FE3AC /* CategoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCell.xib; sourceTree = "<group>"; };
+		5574D69928B4CDF100AB2579 /* ListViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewCell.swift; sourceTree = "<group>"; };
+		5574D69A28B4CDF100AB2579 /* ListViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ListViewCell.xib; sourceTree = "<group>"; };
+		5574D69D28B4D12200AB2579 /* UITableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewCell.swift; sourceTree = "<group>"; };
 		557F1A2228AA177400AD729D /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		55A5942328AB473A006F340E /* TabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewController.swift; sourceTree = "<group>"; };
 		55C3278928AB315D001A93D2 /* BaseTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarViewController.swift; sourceTree = "<group>"; };
@@ -633,6 +639,7 @@
 				145A948C285891120082D8ED /* UINavigationController.swift */,
 				55FAFC2228B12B5A00F71CB0 /* UICollectionViewCell.swift */,
 				5527EC4128B20A21005DE031 /* UIPageViewController.swift */,
+				5574D69D28B4D12200AB2579 /* UITableViewCell.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -837,6 +844,8 @@
 			children = (
 				55FAFC1D28B1275300F71CB0 /* CardViewCell.xib */,
 				55FAFC1C28B1275300F71CB0 /* CardViewCell.swift */,
+				5574D69A28B4CDF100AB2579 /* ListViewCell.xib */,
+				5574D69928B4CDF100AB2579 /* ListViewCell.swift */,
 			);
 			path = "Common-Cell";
 			sourceTree = "<group>";
@@ -935,6 +944,7 @@
 				55259CE528A4EB1500B89159 /* LeferiPoint-BlackOblique.otf in Resources */,
 				55441F3428A388A0001B7113 /* BoardScreen.storyboard in Resources */,
 				55259CE328A4EB1500B89159 /* LeferiBase-Bold.otf in Resources */,
+				5574D69C28B4CDF100AB2579 /* ListViewCell.xib in Resources */,
 				145A94AF285891120082D8ED /* EZCustomNavigation Guide.txt in Resources */,
 				55259CE428A4EB1500B89159 /* LeferiPoint-SpecialItalic.otf in Resources */,
 				55441F3828A388B8001B7113 /* NewsScreen.storyboard in Resources */,
@@ -1046,6 +1056,7 @@
 				145A94B2285891120082D8ED /* MemberUtils.swift in Sources */,
 				145A94BA285891120082D8ED /* CommonUtils.swift in Sources */,
 				145A94BC285891120082D8ED /* AnimationUtils.swift in Sources */,
+				5574D69E28B4D12200AB2579 /* UITableViewCell.swift in Sources */,
 				55C3278D28AB32CB001A93D2 /* CustomTabBar.swift in Sources */,
 				55441F4228A38918001B7113 /* MyPageViewController.swift in Sources */,
 				145A94DF285891120082D8ED /* UIImage.swift in Sources */,
@@ -1087,6 +1098,7 @@
 				55441F6228A38C87001B7113 /* MyPageModel.swift in Sources */,
 				55EFB9F928A4A9840022F8AD /* ValidateUtils.swift in Sources */,
 				145A949D285891120082D8ED /* Ease.swift in Sources */,
+				5574D69B28B4CDF100AB2579 /* ListViewCell.swift in Sources */,
 				55441F7628A3B07C001B7113 /* JoinEmailViewController.swift in Sources */,
 				55441F6428A39A8E001B7113 /* TweeTextField.swift in Sources */,
 				145A94AB285891120082D8ED /* EZNavigationController.swift in Sources */,
