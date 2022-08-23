@@ -48,9 +48,65 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z0A-ZN-o61">
                                 <rect key="frame" x="20" y="100" width="374" height="22"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z4D-Nj-X6U" customClass="BaseButton" customModule="BRJM_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="56" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="6iK-E1-Ero"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ymA-KY-z8A">
+                                        <rect key="frame" x="7" y="1" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ALT-Ij-4d0" customClass="BaseButton" customModule="BRJM_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="60" y="0.0" width="56" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="56" id="Ecn-3o-6ME"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bLl-uh-Q1K">
+                                        <rect key="frame" x="67" y="0.0" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="via-Md-krg" customClass="BaseButton" customModule="BRJM_iOS" customModuleProvider="target">
+                                        <rect key="frame" x="120" y="0.0" width="72" height="22"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="72" id="PoA-3U-BFe"/>
+                                        </constraints>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fgO-79-F3w">
+                                        <rect key="frame" x="135" y="1" width="42" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
+                                    <constraint firstItem="ALT-Ij-4d0" firstAttribute="leading" secondItem="Z4D-Nj-X6U" secondAttribute="trailing" constant="4" id="CfI-hD-EsV"/>
+                                    <constraint firstAttribute="bottom" secondItem="ALT-Ij-4d0" secondAttribute="bottom" id="DBn-Fg-zvC"/>
+                                    <constraint firstItem="via-Md-krg" firstAttribute="top" secondItem="z0A-ZN-o61" secondAttribute="top" id="Fe7-iZ-5tt"/>
+                                    <constraint firstItem="ymA-KY-z8A" firstAttribute="centerY" secondItem="Z4D-Nj-X6U" secondAttribute="centerY" id="Fzp-Hp-TTO"/>
+                                    <constraint firstItem="Z4D-Nj-X6U" firstAttribute="top" secondItem="z0A-ZN-o61" secondAttribute="top" id="MLo-PY-FVW"/>
+                                    <constraint firstItem="Z4D-Nj-X6U" firstAttribute="leading" secondItem="z0A-ZN-o61" secondAttribute="leading" id="OCE-Hk-M2q"/>
+                                    <constraint firstItem="ymA-KY-z8A" firstAttribute="centerX" secondItem="Z4D-Nj-X6U" secondAttribute="centerX" id="RLM-OG-WuS"/>
+                                    <constraint firstAttribute="bottom" secondItem="via-Md-krg" secondAttribute="bottom" id="RZS-Rg-Dgk"/>
+                                    <constraint firstItem="bLl-uh-Q1K" firstAttribute="centerX" secondItem="ALT-Ij-4d0" secondAttribute="centerX" id="TxY-wA-lvh"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z4D-Nj-X6U" secondAttribute="bottom" id="ftq-XR-HXA"/>
+                                    <constraint firstItem="ALT-Ij-4d0" firstAttribute="top" secondItem="z0A-ZN-o61" secondAttribute="top" id="iLu-r7-aQ9"/>
+                                    <constraint firstItem="fgO-79-F3w" firstAttribute="centerY" secondItem="via-Md-krg" secondAttribute="centerY" id="koP-h9-OZR"/>
+                                    <constraint firstItem="via-Md-krg" firstAttribute="leading" secondItem="ALT-Ij-4d0" secondAttribute="trailing" constant="4" id="sFm-G5-elx"/>
+                                    <constraint firstItem="bLl-uh-Q1K" firstAttribute="centerY" secondItem="ALT-Ij-4d0" secondAttribute="centerY" id="sHd-FZ-OjZ"/>
                                     <constraint firstAttribute="height" constant="22" id="uyG-HM-lZ9"/>
+                                    <constraint firstItem="fgO-79-F3w" firstAttribute="centerX" secondItem="via-Md-krg" secondAttribute="centerX" id="ztq-qC-t2r"/>
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="dMH-bN-3Xb">
@@ -74,9 +130,15 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnLike" destination="via-Md-krg" id="7Px-uR-pTW"/>
+                        <outlet property="btnNew" destination="Z4D-Nj-X6U" id="lCG-GC-0te"/>
                         <outlet property="btnSearch" destination="bUg-9n-fdl" id="UNg-LS-Blq"/>
+                        <outlet property="btnView" destination="ALT-Ij-4d0" id="5p0-6Q-f5M"/>
                         <outlet property="tableView" destination="dMH-bN-3Xb" id="4Ty-ry-vdO"/>
+                        <outlet property="tvLike" destination="fgO-79-F3w" id="3zK-AY-weu"/>
                         <outlet property="tvNavigationTitle" destination="ErO-7I-DDZ" id="SkI-cB-O3u"/>
+                        <outlet property="tvNew" destination="ymA-KY-z8A" id="v0w-jF-a2j"/>
+                        <outlet property="tvView" destination="bLl-uh-Q1K" id="6wL-Qm-Fin"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -84,6 +146,17 @@
             <point key="canvasLocation" x="8.6956521739130448" y="114.50892857142857"/>
         </scene>
     </scenes>
+    <designables>
+        <designable name="ALT-Ij-4d0">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="Z4D-Nj-X6U">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+        <designable name="via-Md-krg">
+            <size key="intrinsicContentSize" width="30" height="30"/>
+        </designable>
+    </designables>
     <resources>
         <image name="icSearch" width="24" height="24"/>
         <systemColor name="systemBackgroundColor">

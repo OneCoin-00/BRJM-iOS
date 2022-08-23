@@ -1,5 +1,6 @@
 import UIKit
 import RxCocoa
+import RxSwift
 
 
 /**
@@ -12,6 +13,14 @@ class BoardViewController: BaseViewController {
     @IBOutlet weak var btnSearch: UIButton!
     
     /** 정렬 */
+    @IBOutlet weak var tvNew: UILabel!
+    @IBOutlet weak var btnNew: BaseButton!
+    
+    @IBOutlet weak var tvView: UILabel!
+    @IBOutlet weak var btnView: BaseButton!
+    
+    @IBOutlet weak var tvLike: UILabel!
+    @IBOutlet weak var btnLike: BaseButton!
     
     /** 테이블 뷰 */
     @IBOutlet weak var tableView: UITableView!
@@ -26,6 +35,7 @@ class BoardViewController: BaseViewController {
 
         /** 뷰 설정 */
         setViews()
+        setRx()
         setData()
     }
     
@@ -36,11 +46,79 @@ class BoardViewController: BaseViewController {
         setNavigationBar(label: tvNavigationTitle, title: "board_text_1".localized())
         
         
+        /** 정렬 설정 */
+        tvNew.textColor = .black
+        tvNew.text = "board_text_2".localized()
+        tvNew.setFont(type: .regular, size: 10)
+        btnNew.layer.opacity = 0.3
+        btnNew.layer.cornerRadius = 11
+        
+        tvView.textColor = .black
+        tvView.text = "board_text_3".localized()
+        tvView.setFont(type: .regular, size: 10)
+        btnView.layer.opacity = 0.3
+        btnView.layer.cornerRadius = 11
+        
+        tvLike.textColor = .black
+        tvLike.text = "board_text_4".localized()
+        tvLike.setFont(type: .regular, size: 10)
+        btnLike.layer.opacity = 0.3
+        btnLike.layer.cornerRadius = 11
+        
+        setButton(button: 0)
+        
         /** 테이블 뷰 설정 */
         tableView.delegate = self
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ListViewCell", bundle: nil), forCellReuseIdentifier: "ListViewCell")
         tableView.separatorStyle = .none
+        
+        /** footer 설정 */
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 34))
+        footerView.backgroundColor = .white
+        tableView.tableFooterView = footerView
+    }
+    
+    /** Rx 설정 */
+    private func setRx() {
+        
+        /** 신규순 버튼 클릭 */
+        btnNew.rx.tap.bind {
+            self.setButton(button: 0)
+        }.disposed(by: disposeBag)
+        
+        /** 조회순 버튼 클릭 */
+        btnView.rx.tap.bind {
+            self.setButton(button: 1)
+        }.disposed(by: disposeBag)
+        
+        /** 좋아요 순 버튼 클릭 */
+        btnLike.rx.tap.bind {
+            self.setButton(button: 2)
+        }.disposed(by: disposeBag)
+    }
+    
+    /** 버튼 설정 */
+    private func setButton(button: Int) {
+        
+        /** 신규순 */
+        if button == 0 {
+            btnNew.backgroundColor = BaseConstraint.COLOR_PRIMARY
+            btnView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+            btnLike.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        }
+        /** 조회순 */
+        else if button == 1 {
+            btnView.backgroundColor = BaseConstraint.COLOR_PRIMARY
+            btnNew.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+            btnLike.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        }
+        /** 좋아요 순 */
+        else {
+            btnLike.backgroundColor = BaseConstraint.COLOR_PRIMARY
+            btnNew.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+            btnView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        }
     }
     
     /** test data */
