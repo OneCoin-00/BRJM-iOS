@@ -37,12 +37,17 @@ class NewsViewController: BaseViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "ListTableViewCell", bundle: nil), forCellReuseIdentifier: "ListTableViewCell")
         tableView.separatorStyle = .none
+        
+        /** footer 설정 */
+        let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 34))
+        footerView.backgroundColor = .white
+        tableView.tableFooterView = footerView
     }
     
     /** test data */
     private func setData() {
         
-        for i in 0..<10 {
+        for i in 0..<15 {
             let data = NewsModel.News()
             data.title = "테스트 데이터 \(i)"
             data.url = "https://m.naver.com"
