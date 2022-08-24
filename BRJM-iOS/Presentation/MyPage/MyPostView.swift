@@ -66,7 +66,7 @@ extension MyPostView: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         let index = indexPath.row
         let data = postList[index]
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardViewCell", for: indexPath) as! CardCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCell
         
         cell.setUpCell(data: data)
         
