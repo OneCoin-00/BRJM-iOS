@@ -34,4 +34,10 @@ class RxUtils {
     public var selectTabBarObserver:Observable<Enum.TabBarType> {
         return selectTabBarObservable.asObservable()
     }
+    
+    /** 게시판 - 카테고리 */
+    public let selectCategoryObservable = PublishSubject<Enum.Category>()/** Observable */
+    public var selectCategoryObserver:Observable<Enum.Category> {
+        return selectCategoryObservable.asObservable()
+    }
 }

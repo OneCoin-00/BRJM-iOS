@@ -39,6 +39,13 @@ class BoardViewController: BaseViewController {
         setData()
     }
     
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        
+        /** 네비게이션 바 설정 */
+        setNavigationBar(label: tvNavigationTitle, title: "board_text_1".localized())
+    }
+    
     /** 뷰 설정 */
     private func setViews() {
         
@@ -96,6 +103,13 @@ class BoardViewController: BaseViewController {
         btnLike.rx.tap.bind {
             self.setButton(button: 2)
         }.disposed(by: disposeBag)
+        
+        
+        /** rx - 게시판 - 카테고리 */
+        RxUtils.shared().selectCategoryObserver.subscribe(onNext: { category in
+            
+            self.setNavigationBar(label: self.tvNavigationTitle, title: category.rawValue)
+        }).disposed(by: disposeBag)
     }
     
     /** 버튼 설정 */
