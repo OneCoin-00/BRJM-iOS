@@ -12,6 +12,7 @@ class NewsModel: BaseModel {
     public class News {
         
         public var title: String = ""/** 제목 */
+        public var imageURL: String = ""/** 이미지 */
         public var url: String = ""/** url */
     }
 }
