@@ -55,7 +55,7 @@ class MyPageViewController: BaseViewController {
     private func setViews() {
         
         /** 네비게이션 바 설정 */
-        setNavigationBar(label: tvNavigationTitle, title: "join_text_1".localized())
+        setNavigationBar(label: tvNavigationTitle, title: "mypage_text_1".localized())
         
         
         /** 프로필 이미지 */

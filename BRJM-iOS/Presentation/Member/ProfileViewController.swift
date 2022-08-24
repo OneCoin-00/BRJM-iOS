@@ -264,6 +264,10 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
         return CGSize(width: 56, height: (categoryCollectionView.height - 12) / 2)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+    
     /** 셀 줄 간격 */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 12
@@ -271,7 +275,7 @@ extension ProfileViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     /** 셀 간격 */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return (categoryCollectionView.width / 4) / 3
+        return ((collectionView.width - 40) / 4) / 3
     }
     
     /** 카테고리 선택 */
