@@ -42,7 +42,17 @@ class RankingCell: UICollectionViewCell {
     }
 
     /** 셀 설정 */
-    public func setUpCell() {
+    public func setUpCell(data: BoardModel.Post, index: Int) {
         
+        if data.imageURL != "" {
+            setNukeImage(url: data.imageURL, iv: ivPost) { image in }
+        }
+        
+        btnLike.isSelected = data.isLiked
+        tvTitle.text = data.title
+        tvWriter.text = data.writer
+        tvViews.text = data.views
+        tvLikes.text = data.likes
+        ivInsignia.image = UIImage(named: "icInsignia\(index + 1)")
     }
 }

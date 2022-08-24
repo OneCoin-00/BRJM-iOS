@@ -29,7 +29,13 @@ class NewsCell: UICollectionViewCell {
     }
     
     /** 셀 설정 */
-    public func setUpCell() {
+    public func setUpCell(data: NewsModel.News, index: Int, totalCount: Int) {
         
+        tvTitle.text = data.title
+        btnMore.setTitle("\(index)/\(totalCount)")
+        
+        if data.imageURL != "" {
+            setNukeImage(url: data.imageURL, iv: ivNews) { image in }
+        }
     }
 }

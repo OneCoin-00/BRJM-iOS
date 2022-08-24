@@ -35,7 +35,7 @@
                         <fontDescription key="fontDescription" type="system" pointSize="8"/>
                         <inset key="titleEdgeInsets" minX="7" minY="0.0" maxX="0.0" maxY="0.0"/>
                         <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="-10" maxY="0.0"/>
-                        <state key="normal" image="icMore"/>
+                        <state key="normal" image="icAll"/>
                     </button>
                 </subviews>
             </view>
@@ -53,14 +53,14 @@
             </constraints>
             <size key="customSize" width="281" height="160"/>
             <connections>
-                <outlet property="btnMore" destination="nM2-dO-2v0" id="gIJ-Cd-lV2"/>
-                <outlet property="ivNews" destination="gCk-Si-2GL" id="OQp-DK-zVy"/>
-                <outlet property="tvTitle" destination="T81-H5-Nvg" id="gzZ-f9-XSl"/>
+                <outlet property="btnMore" destination="nM2-dO-2v0" id="Xqc-yW-hJ2"/>
+                <outlet property="ivNews" destination="gCk-Si-2GL" id="bYo-cm-7V5"/>
+                <outlet property="tvTitle" destination="T81-H5-Nvg" id="sbt-nD-Hrt"/>
             </connections>
             <point key="canvasLocation" x="299.27536231884062" y="93.75"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <image name="icMore" width="16" height="16"/>
+        <image name="icAll" width="16" height="16"/>
     </resources>
 </document>

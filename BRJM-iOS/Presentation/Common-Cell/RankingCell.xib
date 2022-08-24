@@ -10,7 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RankingCell">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="RankingCell" customModule="BRJM_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="325" height="108"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -87,13 +87,13 @@
                 <constraint firstItem="xhe-jM-vjA" firstAttribute="top" secondItem="iea-rB-ZDr" secondAttribute="bottom" constant="4" id="pap-SA-TKI"/>
             </constraints>
             <connections>
-                <outlet property="btnLike" destination="WoQ-9i-QdY" id="9dz-ZP-hjd"/>
-                <outlet property="ivInsignia" destination="gue-Vp-zLL" id="lna-yz-Xf1"/>
-                <outlet property="ivPost" destination="DDd-tu-oI5" id="iPk-tf-xe1"/>
-                <outlet property="tvLikes" destination="ATK-yd-PCY" id="flJ-zW-h6I"/>
-                <outlet property="tvTitle" destination="iea-rB-ZDr" id="5Kf-Cc-Arj"/>
-                <outlet property="tvViews" destination="Pkt-6R-9Ly" id="tH5-gV-WPL"/>
-                <outlet property="tvWriter" destination="xhe-jM-vjA" id="2nU-jD-BEG"/>
+                <outlet property="btnLike" destination="WoQ-9i-QdY" id="POf-5F-8zY"/>
+                <outlet property="ivInsignia" destination="gue-Vp-zLL" id="559-AA-C4t"/>
+                <outlet property="ivPost" destination="DDd-tu-oI5" id="M4d-x3-1vb"/>
+                <outlet property="tvLikes" destination="ATK-yd-PCY" id="NJY-wy-Yzx"/>
+                <outlet property="tvTitle" destination="iea-rB-ZDr" id="Xog-0Y-mpT"/>
+                <outlet property="tvViews" destination="Pkt-6R-9Ly" id="iLJ-3q-fPQ"/>
+                <outlet property="tvWriter" destination="xhe-jM-vjA" id="fF9-sM-icw"/>
             </connections>
             <point key="canvasLocation" x="131.8840579710145" y="130.58035714285714"/>
         </collectionViewCell>

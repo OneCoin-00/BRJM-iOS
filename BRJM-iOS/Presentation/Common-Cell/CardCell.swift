@@ -40,6 +40,7 @@ class CardCell: UICollectionViewCell {
         tvLikes.setFont(type: .regular, size: 10)
     }
     
+    /** 셀 설정 */
     public func setUpCell(data: BoardModel.Post) {
         
         if data.imageURL != "" {
