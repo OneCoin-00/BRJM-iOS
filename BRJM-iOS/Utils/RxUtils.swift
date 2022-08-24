@@ -28,4 +28,10 @@ class RxUtils {
     /** Rx DisposeBag */
     public var disposeBag = DisposeBag()
     
+    
+    /** 홈 - 탭 이동 */
+    public let selectTabBarObservable = PublishSubject<Enum.TabBarType>()/** Observable */
+    public var selectTabBarObserver:Observable<Enum.TabBarType> {
+        return selectTabBarObservable.asObservable()
+    }
 }

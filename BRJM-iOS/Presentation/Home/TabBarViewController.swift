@@ -52,6 +52,29 @@ class TabBarViewController: BaseTabBarViewController {
         customTabBar.setActionMyPageTapped {
             self.setViews(4)
         }
+        
+        
+        /** rx - 홈 - 탭바 */
+        RxUtils.shared().selectTabBarObserver.subscribe(onNext: { type in
+            
+            switch type {
+            /** 홈 */
+            case .home:
+                self.setViews(0)
+            /** 게시판 */
+            case .board:
+                self.setViews(1)
+            /** 글쓰기 */
+            case .write:
+                self.setViews(2)
+            /** 환경 소식 */
+            case .news:
+                self.setViews(3)
+            /** 마이페이지 */
+            case .mypage:
+                self.setViews(4)
+            }
+        }).disposed(by: disposeBag)
     }
     
     private func setViews(_ index: Int) {
