@@ -25,6 +25,7 @@ class RankingViewCell: UITableViewCell {
     private func setViews() {
         
         /** 타이틀 */
+        tvTitle.text = "home_text_3".localized()
         tvTitle.textColor = .black
         tvTitle.setFont(type: .bold, size: 18)
         

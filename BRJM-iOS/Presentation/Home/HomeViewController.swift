@@ -10,6 +10,7 @@ class HomeViewController : BaseViewController {
 
     /** 네비게이션 바 */
     @IBOutlet weak var tvNavigationTitle: UILabel!
+    @IBOutlet weak var searchView: UIView!
     @IBOutlet weak var btnSearch: UIButton!
     
     /** 컬렉션 뷰 */
@@ -29,8 +30,13 @@ class HomeViewController : BaseViewController {
         
         /** 네비게이션 타이틀 */
         tvNavigationTitle.text = "home_text_1".localized()
-        tvNavigationTitle.textColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        tvNavigationTitle.textColor = BaseConstraint.COLOR_GRAY
         tvNavigationTitle.setFont(type: .regular, size: 14)
+        
+        /** 네비게이션 뷰 */
+        searchView.layer.cornerRadius = 8
+        searchView.layer.opacity = 0.21
+        searchView.backgroundColor = BaseConstraint.COLOR_GRAY
         
         /** 테이블 뷰 설정 */
         tableView.delegate = self
@@ -88,11 +94,13 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
         case 0:
             return 189
         case 1:
-            return 205
+            return 211
         case 2:
-            return 168
+            return 190
         case 3:
-            return 500
+            let count: CGFloat = 5/** 데이터 개수 */
+            let result: CGFloat = 24 + 27 + 217 * count + 23 * (count - 1) + 20
+            return result
         default:
             return 0
         }

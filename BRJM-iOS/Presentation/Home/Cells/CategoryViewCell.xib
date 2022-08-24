@@ -14,7 +14,7 @@
         <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CategoryViewCell" customModule="BRJM_iOS" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="335" height="205"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
                 <rect key="frame" x="0.0" y="0.0" width="335" height="205"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
@@ -32,7 +32,7 @@
                         </collectionViewFlowLayout>
                     </collectionView>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XeN-GG-ABW">
-                        <rect key="frame" x="20" y="204" width="295" height="1"/>
+                        <rect key="frame" x="20" y="210" width="295" height="1"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="1" id="Nk5-lP-dol"/>
@@ -41,7 +41,7 @@
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
-                    <constraint firstItem="XeN-GG-ABW" firstAttribute="top" secondItem="Iyf-8Y-auq" secondAttribute="bottom" constant="18" id="3i4-yU-h1x"/>
+                    <constraint firstItem="XeN-GG-ABW" firstAttribute="top" secondItem="Iyf-8Y-auq" secondAttribute="bottom" constant="24" id="3i4-yU-h1x"/>
                     <constraint firstItem="XeN-GG-ABW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="3sE-aT-qRe"/>
                     <constraint firstAttribute="trailing" secondItem="Iyf-8Y-auq" secondAttribute="trailing" constant="20" id="7Ys-UH-YEr"/>
                     <constraint firstItem="Iyf-8Y-auq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ADA-Hb-4JV"/>

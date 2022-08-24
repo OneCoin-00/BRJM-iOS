@@ -31,6 +31,7 @@ class CategoryViewCell: UITableViewCell {
         for i in 1...8 {
             let data = HomeModel.Category()
             data.title = "icCategory\(i)"
+            data.isSelected = true
             
             categoryList.append(data)
         }
@@ -65,6 +66,10 @@ extension CategoryViewCell: UICollectionViewDelegate, UICollectionViewDataSource
         return CGSize(width: 56, height: (collectionView.height - 12) / 2)
     }
     
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
+        return UIEdgeInsets(top: 0, left: 10, bottom: 0, right: 10)
+    }
+    
     /** 셀 줄 간격 */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumLineSpacingForSectionAt section: Int) -> CGFloat {
         return 12
@@ -72,7 +77,7 @@ extension CategoryViewCell: UICollectionViewDelegate, UICollectionViewDataSource
     
     /** 셀 간격 */
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, minimumInteritemSpacingForSectionAt section: Int) -> CGFloat {
-        return (collectionView.width / 4) / 3
+        return ((collectionView.width - 40) / 4) / 3
     }
     
     /** 카테고리 선택 */

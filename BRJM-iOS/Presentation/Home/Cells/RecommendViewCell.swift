@@ -25,12 +25,14 @@ class RecommendViewCell: UITableViewCell {
     private func setViews() {
         
         /** 타이틀 */
+        tvTitle.text = String(format: "home_text_4".localized(), "기무정")
         tvTitle.textColor = .black
         tvTitle.setFont(type: .bold, size: 18)
         
         /** 컬렉션 뷰 */
         collectionView.delegate = self
         collectionView.dataSource = self
+        collectionView.isScrollEnabled = false
         collectionView.registerReusableCell(CardCell.self)
     }
     

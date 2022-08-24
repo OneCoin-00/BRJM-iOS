@@ -25,6 +25,7 @@ class NewsViewCell: UITableViewCell {
     private func setViews() {
         
         /** 타이틀 */
+        tvTitle.text = "home_text_2".localized()
         tvTitle.textColor = .black
         tvTitle.setFont(type: .bold, size: 18)
         
