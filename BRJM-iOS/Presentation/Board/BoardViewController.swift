@@ -27,6 +27,7 @@ class BoardViewController: BaseViewController {
     
     /** 프로퍼티 */
     private var postList:[BoardModel.Post] = []/** 게시글 리스트 */
+    private var isCategoryTapped: Bool = false/** 홈 - 카테고리 선택 */
     
     
     /** Lifecycle */
@@ -42,8 +43,11 @@ class BoardViewController: BaseViewController {
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         
-        /** 네비게이션 바 설정 */
-        setNavigationBar(label: tvNavigationTitle, title: "board_text_1".localized())
+        if isCategoryTapped {
+            
+            isCategoryTapped = !isCategoryTapped
+            tvNavigationTitle.text = "board_text_1".localized()
+        }
     }
     
     /** 뷰 설정 */
@@ -108,7 +112,8 @@ class BoardViewController: BaseViewController {
         /** rx - 게시판 - 카테고리 */
         RxUtils.shared().selectCategoryObserver.subscribe(onNext: { category in
             
-            self.setNavigationBar(label: self.tvNavigationTitle, title: category.rawValue)
+            self.isCategoryTapped = true
+            self.tvNavigationTitle.text = category.rawValue
         }).disposed(by: disposeBag)
     }
     
@@ -118,20 +123,20 @@ class BoardViewController: BaseViewController {
         /** 신규순 */
         if button == 0 {
             btnNew.backgroundColor = BaseConstraint.COLOR_PRIMARY
-            btnView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
-            btnLike.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+            btnView.backgroundColor = BaseConstraint.COLOR_GRAY
+            btnLike.backgroundColor = BaseConstraint.COLOR_GRAY
         }
         /** 조회순 */
         else if button == 1 {
             btnView.backgroundColor = BaseConstraint.COLOR_PRIMARY
-            btnNew.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
-            btnLike.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+            btnNew.backgroundColor = BaseConstraint.COLOR_GRAY
+            btnLike.backgroundColor = BaseConstraint.COLOR_GRAY
         }
         /** 좋아요 순 */
         else {
             btnLike.backgroundColor = BaseConstraint.COLOR_PRIMARY
-            btnNew.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
-            btnView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+            btnNew.backgroundColor = BaseConstraint.COLOR_GRAY
+            btnView.backgroundColor = BaseConstraint.COLOR_GRAY
         }
     }
     

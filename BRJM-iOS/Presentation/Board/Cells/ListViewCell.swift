@@ -51,6 +51,7 @@ class ListViewCell: UITableViewCell {
         tvWriter.text = data.writer
         tvViews.text = data.views
         tvLikes.text = data.likes
+        btnLike.isSelected = data.isLiked
         
         if data.imageURL != "" {
             setNukeImage(url: data.imageURL, iv: ivPost) { image in }
