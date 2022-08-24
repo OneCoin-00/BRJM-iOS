@@ -32,17 +32,69 @@ class HomeViewController : BaseViewController {
         tvNavigationTitle.textColor = BaseConstraint.COLOR_LIGHTE_GRAY
         tvNavigationTitle.setFont(type: .regular, size: 14)
         
-        /*
         /** 테이블 뷰 설정 */
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.register(UINib(nibName: "CardViewCell", bundle: nil), forCellReuseIdentifier: "CardViewCell")
+        tableView.register(UINib(nibName: "NewsViewCell", bundle: nil), forCellReuseIdentifier: "NewsViewCell")
+        tableView.register(UINib(nibName: "CategoryViewCell", bundle: nil), forCellReuseIdentifier: "CategoryViewCell")
+        tableView.register(UINib(nibName: "RankingViewCell", bundle: nil), forCellReuseIdentifier: "RankingViewCell")
+        tableView.register(UINib(nibName: "RecommendViewCell", bundle: nil), forCellReuseIdentifier: "RecommendViewCell")
         tableView.separatorStyle = .none
         
         /** footer 설정 */
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 34))
         footerView.backgroundColor = .white
         tableView.tableFooterView = footerView
-         */
+    }
+}
+
+
+extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 4
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        var cell = UITableViewCell()
+        
+        switch indexPath.section {
+        case 0:
+            cell = tableView.dequeueReusableCell(withIdentifier: "NewsViewCell", for: indexPath as IndexPath) as! NewsViewCell
+        case 1:
+            cell = tableView.dequeueReusableCell(withIdentifier: "CategoryViewCell", for: indexPath as IndexPath) as! CategoryViewCell
+        case 2:
+            cell = tableView.dequeueReusableCell(withIdentifier: "RankingViewCell", for: indexPath as IndexPath) as! RankingViewCell
+        case 3:
+            cell = tableView.dequeueReusableCell(withIdentifier: "RecommendViewCell", for: indexPath as IndexPath) as! RecommendViewCell
+        default:
+            return cell
+        }
+        
+        cell.selectionStyle = .none
+        cell.backgroundColor = .clear
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        switch indexPath.section {
+        case 0:
+            return 189
+        case 1:
+            return 205
+        case 2:
+            return 168
+        case 3:
+            return 500
+        default:
+            return 0
+        }
     }
 }
