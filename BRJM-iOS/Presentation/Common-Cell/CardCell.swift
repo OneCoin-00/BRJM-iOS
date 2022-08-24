@@ -1,9 +1,9 @@
 import UIKit
 
 /**
- - note: Card View Cell 설정
+ - note: Card Cell 설정
  */
-class CardViewCell: UICollectionViewCell {
+class CardCell: UICollectionViewCell {
 
     /** 게시글 */
     @IBOutlet weak var ivPost: UIImageView!

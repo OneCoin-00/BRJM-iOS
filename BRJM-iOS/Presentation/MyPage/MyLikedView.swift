@@ -30,7 +30,7 @@ class MyLikedView: BaseViewController {
         /** 테이블 뷰 설정 */
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.registerReusableCell(CardViewCell.self)
+        collectionView.registerReusableCell(CardCell.self)
         
         /** footer 설정 */
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 34))
@@ -69,7 +69,7 @@ extension MyLikedView: UICollectionViewDelegate, UICollectionViewDataSource, UIC
         let index = indexPath.row
         let data = postList[index]
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardViewCell", for: indexPath) as! CardViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCell
         
         cell.setUpCell(data: data)
         

@@ -30,7 +30,7 @@ class MyPostView: BaseViewController {
         /** 테이블 뷰 설정 */
         collectionView.delegate = self
         collectionView.dataSource = self
-        collectionView.registerReusableCell(CardViewCell.self)
+        collectionView.registerReusableCell(CardCell.self)
     }
     
     /** test data */
@@ -66,7 +66,7 @@ extension MyPostView: UICollectionViewDelegate, UICollectionViewDataSource, UICo
         let index = indexPath.row
         let data = postList[index]
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardViewCell", for: indexPath) as! CardViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardViewCell", for: indexPath) as! CardCell
         
         cell.setUpCell(data: data)
         
