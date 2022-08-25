@@ -31,6 +31,7 @@ class BaseConstraint:NSObject {
     /** 로그인 데이터 */
     public static let APP_PUSH_TOKEN = "APP_PUSH_TOKEN"/** 푸시 토큰 저장 키 */
     public static let APP_USER_ID = "APP_USER_ID"/** 로그인 아이디 */
+    public static let APP_USER_PROFILE = "APP_USER_PROFILE"/** 로그인 프로필 이미지 */
     public static let APP_USER_AUTOLOGIN = "APP_USER_AUTOLOGIN"/** 자동 로그인 여부(true/false)*/
     
     // # 이미지 로드 시 페이드인 시간

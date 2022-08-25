@@ -1,4 +1,5 @@
 import UIKit
+import SwiftyUserDefaults
 import RxCocoa
 import RxSwift
 
@@ -30,9 +31,10 @@ class UpdateProfileViewController: BaseViewController {
     @IBOutlet weak var btnUpdate: UIButton!
     
     /** 프로퍼티 */
+    private let imagePickerController = UIImagePickerController()
     private var categoryList: [HomeModel.Category] = []/** 카테고리 리스트 */
     private var useNick: Bool = false/** 닉네임 사용 여부 */
-    private let imagePickerController = UIImagePickerController()
+    private var isUpdateImage: Bool = false/** 이미지 변경 여부 */
     
     
     /** life cycle */
@@ -56,7 +58,14 @@ class UpdateProfileViewController: BaseViewController {
         
         /** 프로필 이미지 */
         ivProfile.layer.cornerRadius = ivProfile.width / 2
-        ivProfile.image = UIImage(named: "icDefaultProfile")
+        
+        if let data = UserDefaults.standard.data(forKey: BaseConstraint.APP_USER_PROFILE) {
+            let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
+            let image = UIImage(data: decoded)
+            ivProfile.image = image
+        } else {
+            ivProfile.image = UIImage(named: "icDefaultProfile")
+        }
         
         /** 이미지 업로드 버튼 */
         btnProfile.setImage(UIImage(named: "icUploadImage"))
@@ -139,6 +148,14 @@ class UpdateProfileViewController: BaseViewController {
         /** 확인 버튼 클릭 */
         btnUpdate.rx.tap.bind {
             
+            if self.isUpdateImage {
+                
+                /** 임시로 기기에 저장 */
+                guard let data = self.ivProfile.image!.jpegData(compressionQuality: 0.5) else { return }
+                let encoded = try! PropertyListEncoder().encode(data)
+                UserDefaults.standard.set(encoded, forKey: BaseConstraint.APP_USER_PROFILE)
+            }
+            
             self.navigationController?.popViewController(animated: true)
         }.disposed(by: disposeBag)
     }
@@ -220,7 +237,10 @@ extension UpdateProfileViewController: UIImagePickerControllerDelegate, UINaviga
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            self.ivProfile.image = image
+            
+            setButton(true)
+            isUpdateImage = true
+            ivProfile.image = image
         }
             
         picker.dismiss(animated: true, completion: nil)

@@ -30,9 +30,10 @@ class ProfileViewController: BaseViewController {
     @IBOutlet weak var btnJoin: UIButton!
     
     /** 프로퍼티 */
+    private let imagePickerController = UIImagePickerController()
     private var categoryList: [HomeModel.Category] = []/** 카테고리 리스트 */
     private var useNick: Bool = false/** 닉네임 사용 여부 */
-    private let imagePickerController = UIImagePickerController()
+    private var isUpdateImage: Bool = false/** 이미지 변경 여부 */
     
     /** life cycle */
     override func viewDidLoad() {
@@ -142,6 +143,14 @@ class ProfileViewController: BaseViewController {
         /** 확인 버튼 클릭 */
         btnJoin.rx.tap.bind {
             
+            if self.isUpdateImage {
+                
+                /** 임시로 기기에 저장 */
+                guard let data = self.ivProfile.image!.jpegData(compressionQuality: 0.5) else { return }
+                let encoded = try! PropertyListEncoder().encode(data)
+                UserDefaults.standard.set(encoded, forKey: BaseConstraint.APP_USER_PROFILE)
+            }
+            
             self.moveToHome()
         }.disposed(by: disposeBag)
     }
@@ -225,7 +234,9 @@ extension ProfileViewController: UIImagePickerControllerDelegate, UINavigationCo
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         
         if let image = info[UIImagePickerController.InfoKey.originalImage] as? UIImage {
-            self.ivProfile.image = image
+            
+            isUpdateImage = true
+            ivProfile.image = image
         }
             
         picker.dismiss(animated: true, completion: nil)

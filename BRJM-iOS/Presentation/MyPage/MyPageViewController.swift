@@ -1,4 +1,5 @@
 import UIKit
+import SwiftyUserDefaults
 import RxCocoa
 import RxSwift
 
@@ -49,6 +50,18 @@ class MyPageViewController: BaseViewController {
         setViews()
         setPageViews()
         setRx()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if let data = UserDefaults.standard.data(forKey: BaseConstraint.APP_USER_PROFILE) {
+            let decoded = try! PropertyListDecoder().decode(Data.self, from: data)
+            let image = UIImage(data: decoded)
+            ivProfile.image = image
+        } else {
+            ivProfile.image = UIImage(named: "icDefaultProfile")
+        }
     }
     
     /** 뷰 설정 */
