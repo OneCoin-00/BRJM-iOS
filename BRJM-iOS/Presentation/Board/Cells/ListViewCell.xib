@@ -69,14 +69,21 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENE-ab-0q8">
+                        <rect key="frame" x="20" y="0.0" width="295" height="109"/>
+                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    </button>
                 </subviews>
                 <constraints>
                     <constraint firstItem="x2e-Dp-Czn" firstAttribute="top" secondItem="JsQ-Jf-opS" secondAttribute="bottom" constant="4" id="0EI-4D-3Yy"/>
+                    <constraint firstAttribute="bottom" secondItem="ENE-ab-0q8" secondAttribute="bottom" constant="20" id="29W-Q6-jZS"/>
                     <constraint firstItem="WDZ-05-KMk" firstAttribute="leading" secondItem="JsQ-Jf-opS" secondAttribute="trailing" constant="30" id="2xn-gc-7B2"/>
                     <constraint firstItem="kZu-xq-P7R" firstAttribute="bottom" secondItem="DUM-Xz-WAs" secondAttribute="bottom" id="4fa-JX-5LC"/>
                     <constraint firstItem="JsQ-Jf-opS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="A75-by-jMd"/>
                     <constraint firstAttribute="trailing" secondItem="3hH-Ca-vKT" secondAttribute="trailing" constant="28" id="FPC-IZ-YHk"/>
                     <constraint firstAttribute="trailing" secondItem="WDZ-05-KMk" secondAttribute="trailing" constant="20" id="FtW-eV-zzC"/>
+                    <constraint firstAttribute="trailing" secondItem="ENE-ab-0q8" secondAttribute="trailing" constant="20" id="Ful-fe-le2"/>
+                    <constraint firstItem="ENE-ab-0q8" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="MeN-ue-6ky"/>
                     <constraint firstItem="x2e-Dp-Czn" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="R7A-Uk-N0i"/>
                     <constraint firstItem="DUM-Xz-WAs" firstAttribute="top" secondItem="8Xf-qN-thT" secondAttribute="bottom" id="UiM-57-k8x"/>
                     <constraint firstItem="3hH-Ca-vKT" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aJH-dM-MCz"/>
@@ -86,12 +93,14 @@
                     <constraint firstAttribute="bottom" secondItem="DUM-Xz-WAs" secondAttribute="bottom" constant="20" id="vg7-2d-qfX"/>
                     <constraint firstItem="WDZ-05-KMk" firstAttribute="leading" secondItem="x2e-Dp-Czn" secondAttribute="trailing" constant="30" id="w8c-bi-8SV"/>
                     <constraint firstItem="kZu-xq-P7R" firstAttribute="leading" secondItem="DUM-Xz-WAs" secondAttribute="trailing" constant="4" id="wuA-IV-tcd"/>
+                    <constraint firstItem="ENE-ab-0q8" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="x3G-Ie-8Sl"/>
                     <constraint firstAttribute="bottom" secondItem="WDZ-05-KMk" secondAttribute="bottom" constant="20" id="xJc-gC-fCd"/>
                     <constraint firstItem="8Xf-qN-thT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="zxP-GJ-1x6"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
+                <outlet property="btnDetail" destination="ENE-ab-0q8" id="kdm-Ky-hra"/>
                 <outlet property="btnLike" destination="3hH-Ca-vKT" id="Jfh-p1-YBA"/>
                 <outlet property="ivPost" destination="kRO-np-Yd7" id="7o5-1f-RZE"/>
                 <outlet property="tvDesc" destination="x2e-Dp-Czn" id="DW7-gE-8Pm"/>
