@@ -84,7 +84,7 @@ class MyPageViewController: BaseViewController {
         btnLike.isSelected = false
         
         /** 하단 라인 뷰 */
-        bottomLineView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        bottomLineView.backgroundColor = BaseConstraint.COLOR_LIGHT_GRAY
         indicatorView.backgroundColor = BaseConstraint.COLOR_PRIMARY
     }
     

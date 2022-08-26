@@ -171,7 +171,7 @@ class UpdateProfileViewController: BaseViewController {
         /** 비어있는 경우 */
         else {
             useNickname(false)
-            setTextFieldLine(textField: tvNickField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
+            setTextFieldLine(textField: tvNickField, color: BaseConstraint.COLOR_LIGHT_GRAY)
         }
     }
     

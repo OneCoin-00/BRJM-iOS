@@ -168,7 +168,7 @@ class PasswordViewController: BaseViewController {
             
             tvCheckPwField.isEnabled = false
             
-            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
+            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_LIGHT_GRAY)
         }
     }
     
@@ -203,7 +203,7 @@ class PasswordViewController: BaseViewController {
             tvCheckPwAlert.text = ""
             tvCheckPwAlert.textColor = BaseConstraint.COLOR_GRAY
             
-            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
+            setTextFieldLine(textField: tvPwField, color: BaseConstraint.COLOR_LIGHT_GRAY)
         }
     }
     

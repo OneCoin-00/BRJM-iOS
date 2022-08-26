@@ -23,7 +23,7 @@ class AlertCell: UITableViewCell {
         ivAlert.isHidden = false
         
         /** 하단 라인 뷰 */
-        bottomLineView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        bottomLineView.backgroundColor = BaseConstraint.COLOR_LIGHT_GRAY
     }
     
     /** 셀 설정 */

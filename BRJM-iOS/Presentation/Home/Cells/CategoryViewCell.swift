@@ -16,7 +16,7 @@ class CategoryViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        lineView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        lineView.backgroundColor = BaseConstraint.COLOR_LIGHT_GRAY
         
         collectionView.delegate = self
         collectionView.dataSource = self

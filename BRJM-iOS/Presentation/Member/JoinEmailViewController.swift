@@ -108,7 +108,7 @@ class JoinEmailViewController: BaseViewController {
             self.tvEmailAlert.text = ""
             
             self.setButton(isActive: false, isEmail: true, button: self.btnAuth)
-            self.setTextFieldLine(textField: self.tvEmailField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
+            self.setTextFieldLine(textField: self.tvEmailField, color: BaseConstraint.COLOR_LIGHT_GRAY)
         }
         
         /** 인증번호 버튼 클릭 */
@@ -208,7 +208,7 @@ class JoinEmailViewController: BaseViewController {
             tvEmailAlert.text = ""
             
             setButton(isActive: false, isEmail: true, button: btnAuth)
-            setTextFieldLine(textField: tvEmailField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
+            setTextFieldLine(textField: tvEmailField, color: BaseConstraint.COLOR_LIGHT_GRAY)
         }
     }
     
@@ -221,7 +221,7 @@ class JoinEmailViewController: BaseViewController {
             tvAuthAlert.text = ""
             
             setButton(isActive: false, isEmail: false, button: btnCheckAuth)
-            setTextFieldLine(textField: tvAuthField, color: BaseConstraint.COLOR_LIGHTE_GRAY)
+            setTextFieldLine(textField: tvAuthField, color: BaseConstraint.COLOR_LIGHT_GRAY)
         }
         
         /** 비어있지 않은 경우 */

@@ -30,7 +30,7 @@ class CustomTabBar: UIView {
     public func initTab() {
         
         /** 라인 설정 */
-        lineView.backgroundColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        lineView.backgroundColor = BaseConstraint.COLOR_LIGHT_GRAY
         
         /** 탭바 설정 */
         controlTab(0)

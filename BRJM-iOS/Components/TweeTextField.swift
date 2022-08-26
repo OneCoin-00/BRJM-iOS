@@ -32,12 +32,12 @@ class TweeTextField: TweeActiveTextField {
         TweeTextField.appearance().tintColor = BaseConstraint.COLOR_PRIMARY
         
         /** 플레이스 홀더 컬러 설정 */
-        placeholderColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        placeholderColor = BaseConstraint.COLOR_LIGHT_GRAY
         
         /** 라인 설정 */
-        lineColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        lineColor = BaseConstraint.COLOR_LIGHT_GRAY
         lineWidth = 1.0
-        activeLineColor = BaseConstraint.COLOR_LIGHTE_GRAY
+        activeLineColor = BaseConstraint.COLOR_LIGHT_GRAY
         activeLineWidth = 1.0
         
         /** 라인 애니메이션 동작 시간 */

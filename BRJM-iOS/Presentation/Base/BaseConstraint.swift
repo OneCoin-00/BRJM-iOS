@@ -13,7 +13,7 @@ class BaseConstraint:NSObject {
     public static let COLOR_PRIMARY:UIColor = UIColor(hex: "32a05f")
     public static let COLOR_RED:UIColor = UIColor(hex: "e35252")
     public static let COLOR_GRAY:UIColor = UIColor(hex: "868686")
-    public static let COLOR_LIGHTE_GRAY:UIColor = UIColor(hex: "e5e5e5")
+    public static let COLOR_LIGHT_GRAY:UIColor = UIColor(hex: "e5e5e5")
     
     /** Gray Color */
     public static let COLOR_GRAY_10:UIColor = UIColor(hex: "555555")
