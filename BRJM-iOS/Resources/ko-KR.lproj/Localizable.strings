@@ -67,6 +67,13 @@
 "board_text_4" = "좋아요 순";
 
 
+// #검색
+"search_text_1" = "검색어를 입력해주세요.";
+"search_text_2" = "최근 검색어";
+"search_text_3" = "전체 삭제";
+"search_text_4" = "검색 결과가 없습니다.";
+
+
 // #환경 소식
 "news_text_1" = "환경소식";
 "news_text_2" = "상세보기";

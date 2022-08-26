@@ -397,6 +397,22 @@ public class BaseViewController: UIViewController {
         }()
     }
     
+    /** 검색 뷰로 이동 */
+    public func moveToSearchView() {
+        
+        if let nvc = self.navigationController {
+            
+            if !(nvc.topViewController?.description.contains("SearchViewController"))! {
+                
+                let storyBoard:UIStoryboard = UIStoryboard(name: "BoardScreen", bundle: nil)
+                let vc = storyBoard.instantiateViewController(withIdentifier: "SearchViewController") as! SearchViewController
+                vc.modalTransitionStyle = .crossDissolve
+                
+                nvc.pushViewController(vc, animated: true)
+            }
+        }
+    }
+    
     /** 웹뷰로 이동 */
     public func moveToWebView(_ url: String) {
         

@@ -97,6 +97,10 @@
 		145A94E2285891120082D8ED /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A948A285891120082D8ED /* UIFont.swift */; };
 		145A94E3285891120082D8ED /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A948B285891120082D8ED /* UILabel.swift */; };
 		145A94E4285891120082D8ED /* UINavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 145A948C285891120082D8ED /* UINavigationController.swift */; };
+		5506CC3828B88EA5003450B7 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506CC3728B88EA5003450B7 /* SearchViewController.swift */; };
+		5506CC3B28B897DD003450B7 /* HistoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506CC3928B897DD003450B7 /* HistoryTableViewCell.swift */; };
+		5506CC3C28B897DD003450B7 /* HistoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5506CC3A28B897DD003450B7 /* HistoryTableViewCell.xib */; };
+		5506CC4228B8ADE8003450B7 /* TextFieldWithDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5506CC4128B8ADE8003450B7 /* TextFieldWithDelete.swift */; };
 		55259CE028A4EB1500B89159 /* LeferiPoint-White.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CD828A4EB1500B89159 /* LeferiPoint-White.otf */; };
 		55259CE128A4EB1500B89159 /* LeferiPoint-Black.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CD928A4EB1500B89159 /* LeferiPoint-Black.otf */; };
 		55259CE228A4EB1500B89159 /* LeferiBase-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 55259CDA28A4EB1500B89159 /* LeferiBase-Regular.otf */; };
@@ -266,6 +270,10 @@
 		145A948B285891120082D8ED /* UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
 		145A948C285891120082D8ED /* UINavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UINavigationController.swift; sourceTree = "<group>"; };
 		1AEA7D3DAF5098428EF5605C /* Pods-DKMM_iOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DKMM_iOS.release.xcconfig"; path = "Target Support Files/Pods-DKMM_iOS/Pods-DKMM_iOS.release.xcconfig"; sourceTree = "<group>"; };
+		5506CC3728B88EA5003450B7 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		5506CC3928B897DD003450B7 /* HistoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableViewCell.swift; sourceTree = "<group>"; };
+		5506CC3A28B897DD003450B7 /* HistoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HistoryTableViewCell.xib; sourceTree = "<group>"; };
+		5506CC4128B8ADE8003450B7 /* TextFieldWithDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldWithDelete.swift; sourceTree = "<group>"; };
 		55259CD828A4EB1500B89159 /* LeferiPoint-White.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-White.otf"; sourceTree = "<group>"; };
 		55259CD928A4EB1500B89159 /* LeferiPoint-Black.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiPoint-Black.otf"; sourceTree = "<group>"; };
 		55259CDA28A4EB1500B89159 /* LeferiBase-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "LeferiBase-Regular.otf"; sourceTree = "<group>"; };
@@ -420,6 +428,7 @@
 				145A9448285891120082D8ED /* LabelWithPadding.swift */,
 				55441F6328A39A8E001B7113 /* TweeTextField.swift */,
 				55441F6528A39B63001B7113 /* BaseButton.swift */,
+				5506CC4128B8ADE8003450B7 /* TextFieldWithDelete.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -706,6 +715,7 @@
 				55441F2828A387CE001B7113 /* ViewModel */,
 				55441F3328A388A0001B7113 /* BoardScreen.storyboard */,
 				55441F3B28A388DD001B7113 /* BoardViewController.swift */,
+				5506CC3728B88EA5003450B7 /* SearchViewController.swift */,
 			);
 			path = Board;
 			sourceTree = "<group>";
@@ -866,6 +876,8 @@
 			children = (
 				5574D69A28B4CDF100AB2579 /* ListViewCell.xib */,
 				5574D69928B4CDF100AB2579 /* ListViewCell.swift */,
+				5506CC3A28B897DD003450B7 /* HistoryTableViewCell.xib */,
+				5506CC3928B897DD003450B7 /* HistoryTableViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -978,6 +990,7 @@
 				55441F3628A388AE001B7113 /* WriteScreen.storyboard in Resources */,
 				145A94CB285891120082D8ED /* CoverScreen.storyboard in Resources */,
 				55441F7028A3A0B8001B7113 /* MemberScreen.storyboard in Resources */,
+				5506CC3C28B897DD003450B7 /* HistoryTableViewCell.xib in Resources */,
 				55259CE028A4EB1500B89159 /* LeferiPoint-White.otf in Resources */,
 				55B6713C28B5BDB50031B677 /* NewsCell.xib in Resources */,
 				55FAFC1F28B1275300F71CB0 /* CardCell.xib in Resources */,
@@ -1074,6 +1087,7 @@
 				145A94C8285891120082D8ED /* UINavigationController+Extension.swift in Sources */,
 				5527EC3C28B200D0005DE031 /* MyLikedView.swift in Sources */,
 				145A949F285891120082D8ED /* Constraint.swift in Sources */,
+				5506CC3828B88EA5003450B7 /* SearchViewController.swift in Sources */,
 				55441F7428A3A2B7001B7113 /* MemberViewController.swift in Sources */,
 				145A94A8285891120082D8ED /* EZNavigationConfiguration.swift in Sources */,
 				145A94D1285891120082D8ED /* NetworkDefine.swift in Sources */,
@@ -1112,6 +1126,7 @@
 				5574D69E28B4D12200AB2579 /* UITableViewCell.swift in Sources */,
 				55C3278D28AB32CB001A93D2 /* CustomTabBar.swift in Sources */,
 				55441F4228A38918001B7113 /* MyPageViewController.swift in Sources */,
+				5506CC3B28B897DD003450B7 /* HistoryTableViewCell.swift in Sources */,
 				55B6714428B5C80B0031B677 /* NewsViewCell.swift in Sources */,
 				55B6715328B608980031B677 /* RankingCell.swift in Sources */,
 				145A94DF285891120082D8ED /* UIImage.swift in Sources */,
@@ -1132,6 +1147,7 @@
 				145A94AC285891120082D8ED /* EZDebouncer.swift in Sources */,
 				55441F5A28A38C01001B7113 /* MyPageViewModel.swift in Sources */,
 				5527EC3828B2008A005DE031 /* AlertView.swift in Sources */,
+				5506CC4228B8ADE8003450B7 /* TextFieldWithDelete.swift in Sources */,
 				55441F7228A3A168001B7113 /* MemberNavigationController.swift in Sources */,
 				145A94B4285891120082D8ED /* DateUtils.swift in Sources */,
 				55441F5C28A38C62001B7113 /* BoardModel.swift in Sources */,

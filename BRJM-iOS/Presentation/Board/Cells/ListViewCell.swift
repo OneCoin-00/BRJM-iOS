@@ -15,6 +15,8 @@ class ListViewCell: UITableViewCell {
     @IBOutlet weak var ivPost: UIImageView!
     @IBOutlet weak var btnLike: UIButton!
     
+    @IBOutlet weak var btnDetail: UIButton!
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()

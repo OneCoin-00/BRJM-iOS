@@ -93,6 +93,11 @@ class BoardViewController: BaseViewController {
     /** Rx 설정 */
     private func setRx() {
         
+        /** 검색 버튼 클릭 */
+        btnSearch.rx.tap.bind {
+            self.moveToSearchView()
+        }.disposed(by: disposeBag)
+        
         /** 신규순 버튼 클릭 */
         btnNew.rx.tap.bind {
             self.setButton(button: 0)
@@ -179,17 +184,15 @@ extension BoardViewController: UITableViewDelegate, UITableViewDataSource {
         cell.btnLike.tag = index
         cell.btnLike.addTarget(self, action: #selector(likeTapped(_:)), for: .touchUpInside)
         
+        cell.btnDetail.tag = index
+        cell.btnDetail.addTarget(self, action: #selector(detailTapped(_:)), for: .touchUpInside)
+        
         cell.selectionStyle = .none
         
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        /** 상세 페이지로 이동*/
-    }
-    
-    /** 찜 탭 */
+    /** 좋아요 탭 */
     @objc private func likeTapped(_ sender: UIButton) {
         
         let index = sender.tag
@@ -200,5 +203,14 @@ extension BoardViewController: UITableViewDelegate, UITableViewDataSource {
         postList[index].isLiked = data.isLiked
         
         tableView.reloadData()
+    }
+    
+    /** 상세보기 탭 */
+    @objc private func detailTapped(_ sender: UIButton) {
+        
+        let index = sender.tag
+        let data = postList[index]
+        
+        /** 상세보기로 이동 */
     }
 }

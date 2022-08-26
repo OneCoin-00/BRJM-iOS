@@ -51,6 +51,12 @@ class HomeViewController : BaseViewController {
         let footerView = UIView(frame: CGRect(x: 0, y: 0, width: view.frame.size.width, height: 34))
         footerView.backgroundColor = .white
         tableView.tableFooterView = footerView
+        
+        
+        /** 검색 버튼 클릭 */
+        btnSearch.rx.tap.bind {
+            self.moveToSearchView()
+        }.disposed(by: disposeBag)
     }
 }
 
