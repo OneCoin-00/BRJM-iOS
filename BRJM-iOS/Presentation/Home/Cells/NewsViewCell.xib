@@ -24,8 +24,8 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="efv-8o-vqi">
-                        <rect key="frame" x="20" y="37" width="295" height="150"/>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="efv-8o-vqi">
+                        <rect key="frame" x="0.0" y="37" width="335" height="150"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="150" id="IlB-gG-RWD"/>
@@ -41,11 +41,11 @@
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstItem="efv-8o-vqi" firstAttribute="top" secondItem="0gV-WM-Hn1" secondAttribute="bottom" constant="12" id="4nB-v9-ofA"/>
-                    <constraint firstItem="efv-8o-vqi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="8Sb-qU-DXb"/>
+                    <constraint firstItem="efv-8o-vqi" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Sb-qU-DXb"/>
                     <constraint firstAttribute="bottom" secondItem="efv-8o-vqi" secondAttribute="bottom" id="G3n-3e-IVh"/>
                     <constraint firstItem="0gV-WM-Hn1" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Nnw-wa-RY1"/>
                     <constraint firstItem="0gV-WM-Hn1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="ZK7-7o-9Jf"/>
-                    <constraint firstAttribute="trailing" secondItem="efv-8o-vqi" secondAttribute="trailing" constant="20" id="gT2-8i-1KB"/>
+                    <constraint firstAttribute="trailing" secondItem="efv-8o-vqi" secondAttribute="trailing" id="gT2-8i-1KB"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>

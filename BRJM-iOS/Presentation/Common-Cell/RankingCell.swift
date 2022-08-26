@@ -5,7 +5,7 @@ import UIKit
  - note: Ranking Cell 설정
  */
 class RankingCell: UICollectionViewCell {
-
+    
     @IBOutlet weak var ivPost: UIImageView!
     @IBOutlet weak var tvTitle: UILabel!
     @IBOutlet weak var tvWriter: UILabel!

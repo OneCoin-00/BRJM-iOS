@@ -12,6 +12,11 @@ class NewsViewCell: UITableViewCell {
     /** 프로퍼티 */
     private var newsList:[NewsModel.News] = []/** 환경소식 리스트 */
     
+    var currentIndex: CGFloat = 0
+    let lineSpacing: CGFloat = 20
+    let cellRatio: CGFloat = 0.7
+    var isOneStepPaging = true
+    
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -30,16 +35,25 @@ class NewsViewCell: UITableViewCell {
         tvTitle.setFont(type: .bold, size: 18)
         
         /** 컬렉션 뷰 */
+        setCollectionView()
+    }
+    
+    /** 컬렉션 뷰 */
+    private func setCollectionView() {
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.registerReusableCell(NewsCell.self)
         
-        collectionView.isPagingEnabled = true
-        collectionView.decelerationRate = .fast
+        collectionView.isPagingEnabled = false
         collectionView.showsHorizontalScrollIndicator = false
-        
+        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+                
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        layout.itemSize = CGSize(width: collectionView.frame.width, height: 150)
+        layout.minimumLineSpacing = 10
         collectionView.setCollectionViewLayout(layout, animated: true)
     }
     
@@ -77,6 +91,26 @@ class NewsViewCell: UITableViewCell {
             }
         }
     }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        guard let layout = self.collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        
+        let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+        
+        let estimatedIndex = scrollView.contentOffset.x / cellWidthIncludingSpacing
+        let index: Int
+        
+        if velocity.x > 0 {
+            index = Int(ceil(estimatedIndex))
+        } else if velocity.x < 0 {
+            index = Int(floor(estimatedIndex))
+        } else {
+            index = Int(round(estimatedIndex))
+        }
+        
+        targetContentOffset.pointee = CGPoint(x: CGFloat(index) * cellWidthIncludingSpacing, y: 0)
+    }
 }
 
 
@@ -105,12 +139,12 @@ extension NewsViewCell: UICollectionViewDelegate, UICollectionViewDataSource, UI
         
         self.moveToWebView(data.url)
     }
-    
+    /*
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
-        let width: CGFloat = collectionView.bounds.width
+        let width: CGFloat = collectionView.bounds.width - 20
         let height: CGFloat = 150
         
         return CGSize(width: width, height: height)
-    }
+    }*/
 }

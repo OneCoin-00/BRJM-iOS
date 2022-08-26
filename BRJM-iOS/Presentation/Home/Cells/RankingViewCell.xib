@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -32,8 +31,8 @@
                         </constraints>
                     </imageView>
                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="lKI-df-Ni7">
-                        <rect key="frame" x="20" y="63" width="295" height="108"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <rect key="frame" x="0.0" y="63" width="335" height="108"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="height" constant="108" id="N0b-C3-WcU"/>
                         </constraints>
@@ -58,11 +57,11 @@
                     <constraint firstItem="7oc-wK-yAc" firstAttribute="leading" secondItem="mlp-NZ-o4G" secondAttribute="trailing" constant="8" id="Ctr-Kc-Fyb"/>
                     <constraint firstItem="mlp-NZ-o4G" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="24" id="GNc-7K-IBD"/>
                     <constraint firstAttribute="trailing" secondItem="bFb-qy-lWZ" secondAttribute="trailing" constant="20" id="Phv-Nx-UMP"/>
-                    <constraint firstItem="lKI-df-Ni7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Rbf-x9-evR"/>
+                    <constraint firstItem="lKI-df-Ni7" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rbf-x9-evR"/>
                     <constraint firstItem="lKI-df-Ni7" firstAttribute="top" secondItem="mlp-NZ-o4G" secondAttribute="bottom" constant="16" id="Xgx-YM-by9"/>
                     <constraint firstItem="bFb-qy-lWZ" firstAttribute="top" secondItem="lKI-df-Ni7" secondAttribute="bottom" id="hRd-jH-cYd"/>
                     <constraint firstItem="mlp-NZ-o4G" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="lfC-zX-hMJ"/>
-                    <constraint firstAttribute="trailing" secondItem="lKI-df-Ni7" secondAttribute="trailing" constant="20" id="uyy-hn-oWr"/>
+                    <constraint firstAttribute="trailing" secondItem="lKI-df-Ni7" secondAttribute="trailing" id="uyy-hn-oWr"/>
                     <constraint firstItem="bFb-qy-lWZ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="v7P-Ik-bzL"/>
                     <constraint firstAttribute="bottom" secondItem="bFb-qy-lWZ" secondAttribute="bottom" id="xsW-df-3FZ"/>
                 </constraints>
@@ -77,8 +76,5 @@
     </objects>
     <resources>
         <image name="icRanking" width="24" height="24"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

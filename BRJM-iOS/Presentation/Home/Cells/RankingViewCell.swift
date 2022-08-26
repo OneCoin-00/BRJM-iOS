@@ -30,16 +30,25 @@ class RankingViewCell: UITableViewCell {
         tvTitle.setFont(type: .bold, size: 18)
         
         /** 컬렉션 뷰 */
+        setCollectionView()
+    }
+    
+    /** 컬렉션 뷰 */
+    private func setCollectionView() {
+        
         collectionView.delegate = self
         collectionView.dataSource = self
         collectionView.registerReusableCell(RankingCell.self)
         
-        collectionView.isPagingEnabled = true
-        collectionView.decelerationRate = .fast
+        collectionView.isPagingEnabled = false
         collectionView.showsHorizontalScrollIndicator = false
-        
+        collectionView.decelerationRate = UIScrollView.DecelerationRate.fast
+                
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsets(top: 0, left: 20, bottom: 0, right: 20)
+        layout.itemSize = CGSize(width: collectionView.frame.width, height: 108)
+        layout.minimumLineSpacing = 10
         collectionView.setCollectionViewLayout(layout, animated: true)
     }
     
@@ -56,6 +65,26 @@ class RankingViewCell: UITableViewCell {
             
             postList.append(data)
         }
+    }
+    
+    func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
+        
+        guard let layout = self.collectionView.collectionViewLayout as? UICollectionViewFlowLayout else { return }
+        
+        let cellWidthIncludingSpacing = layout.itemSize.width + layout.minimumLineSpacing
+        
+        let estimatedIndex = scrollView.contentOffset.x / cellWidthIncludingSpacing
+        let index: Int
+        
+        if velocity.x > 0 {
+            index = Int(ceil(estimatedIndex))
+        } else if velocity.x < 0 {
+            index = Int(floor(estimatedIndex))
+        } else {
+            index = Int(round(estimatedIndex))
+        }
+        
+        targetContentOffset.pointee = CGPoint(x: CGFloat(index) * cellWidthIncludingSpacing, y: 0)
     }
 }
 
@@ -84,14 +113,6 @@ extension RankingViewCell: UICollectionViewDelegate, UICollectionViewDataSource,
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         /** 게시글 보기 페이지로 이동*/
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        
-        let width: CGFloat = collectionView.bounds.width
-        let height: CGFloat = 108
-        
-        return CGSize(width: width, height: height)
     }
     
     /** 찜 탭 */

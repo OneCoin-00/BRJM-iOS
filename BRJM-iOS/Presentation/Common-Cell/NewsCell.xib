@@ -60,6 +60,11 @@
             <point key="canvasLocation" x="299.27536231884062" y="93.75"/>
         </collectionViewCell>
     </objects>
+    <designables>
+        <designable name="nM2-dO-2v0">
+            <size key="intrinsicContentSize" width="16" height="16"/>
+        </designable>
+    </designables>
     <resources>
         <image name="icAll" width="16" height="16"/>
     </resources>
